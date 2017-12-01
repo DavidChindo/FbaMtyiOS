@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'FbMty' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FbMty
+
+pod 'RealmSwift'
+pod 'Alamofire'
+pod 'AlamofireObjectMapper'
+pod 'STPopup'
+pod 'SwiftSpinner'
+pod 'IQKeyboardManagerSwift'
+pod 'Kingfisher'
+pod 'CryptoSwift'
+pod 'SpaceView'
+pod 'Zip', '~> 0.7'
+pod 'StatefulTableView', '0.0.17'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
+
+
+end
