@@ -36,6 +36,12 @@
 		B64574651FD1F3DB002185C6 /* MaintenanceTicketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574641FD1F3DB002185C6 /* MaintenanceTicketRequest.swift */; };
 		B64574671FD1F49B002185C6 /* PaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574661FD1F49B002185C6 /* PaymentRequest.swift */; };
 		B64574691FD1F55B002185C6 /* RecoveryPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574681FD1F55B002185C6 /* RecoveryPasswordRequest.swift */; };
+		B65DD6A81FDF16CE00F3626C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6A71FDF16CE00F3626C /* BaseViewController.swift */; };
+		B65DD6AA1FDF16F700F3626C /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6A91FDF16F700F3626C /* BasePresenter.swift */; };
+		B65DD6AE1FDF175E00F3626C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6AD1FDF175E00F3626C /* MenuViewController.swift */; };
+		B65DD6B01FDF3D9C00F3626C /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6AF1FDF3D9C00F3626C /* PaymentsViewController.swift */; };
+		B65DD6B21FDF3DAE00F3626C /* MaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6B11FDF3DAE00F3626C /* MaintenanceViewController.swift */; };
+		B65DD6B41FDF3DBB00F3626C /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6B31FDF3DBB00F3626C /* TicketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,12 @@
 		B64574641FD1F3DB002185C6 /* MaintenanceTicketRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceTicketRequest.swift; sourceTree = "<group>"; };
 		B64574661FD1F49B002185C6 /* PaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentRequest.swift; sourceTree = "<group>"; };
 		B64574681FD1F55B002185C6 /* RecoveryPasswordRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordRequest.swift; sourceTree = "<group>"; };
+		B65DD6A71FDF16CE00F3626C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B65DD6A91FDF16F700F3626C /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		B65DD6AD1FDF175E00F3626C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B65DD6AF1FDF3D9C00F3626C /* PaymentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		B65DD6B11FDF3DAE00F3626C /* MaintenanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceViewController.swift; sourceTree = "<group>"; };
+		B65DD6B31FDF3DBB00F3626C /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +235,11 @@
 			isa = PBXGroup;
 			children = (
 				B64574021FD1D481002185C6 /* ViewController.swift */,
+				B65DD6A71FDF16CE00F3626C /* BaseViewController.swift */,
+				B65DD6AD1FDF175E00F3626C /* MenuViewController.swift */,
+				B65DD6AF1FDF3D9C00F3626C /* PaymentsViewController.swift */,
+				B65DD6B11FDF3DAE00F3626C /* MaintenanceViewController.swift */,
+				B65DD6B31FDF3DBB00F3626C /* TicketViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -335,6 +352,7 @@
 		B645743F1FD1DC0A002185C6 /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
+				B65DD6A91FDF16F700F3626C /* BasePresenter.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -538,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65DD6B21FDF3DAE00F3626C /* MaintenanceViewController.swift in Sources */,
 				B64574571FD1ED84002185C6 /* Picture.swift in Sources */,
 				B64574651FD1F3DB002185C6 /* MaintenanceTicketRequest.swift in Sources */,
 				B64574671FD1F49B002185C6 /* PaymentRequest.swift in Sources */,
@@ -545,16 +564,21 @@
 				B645745D1FD1EF4B002185C6 /* Service.swift in Sources */,
 				B645745B1FD1EECC002185C6 /* Provider.swift in Sources */,
 				B64574691FD1F55B002185C6 /* RecoveryPasswordRequest.swift in Sources */,
+				B65DD6B41FDF3DBB00F3626C /* TicketViewController.swift in Sources */,
+				B65DD6AE1FDF175E00F3626C /* MenuViewController.swift in Sources */,
 				B64574031FD1D481002185C6 /* ViewController.swift in Sources */,
 				B64574451FD1E3C7002185C6 /* DesignUtils.swift in Sources */,
 				B64574591FD1EE53002185C6 /* Plan.swift in Sources */,
 				B64574511FD1EAE2002185C6 /* Maintenance.swift in Sources */,
+				B65DD6AA1FDF16F700F3626C /* BasePresenter.swift in Sources */,
 				B645744F1FD1EA6F002185C6 /* Coordinate.swift in Sources */,
 				B64574631FD1F320002185C6 /* LoginRequest.swift in Sources */,
+				B65DD6A81FDF16CE00F3626C /* BaseViewController.swift in Sources */,
 				B64574551FD1EC99002185C6 /* Payments.swift in Sources */,
 				B64574471FD1E555002185C6 /* ActivityHolding.swift in Sources */,
 				B645745F1FD1EFFB002185C6 /* Ticket.swift in Sources */,
 				B645744D1FD1E986002185C6 /* Phone.swift in Sources */,
+				B65DD6B01FDF3D9C00F3626C /* PaymentsViewController.swift in Sources */,
 				B64574531FD1EBCD002185C6 /* Office.swift in Sources */,
 				B64574611FD1F20B002185C6 /* ChatRequest.swift in Sources */,
 				B64574011FD1D481002185C6 /* AppDelegate.swift in Sources */,
@@ -715,6 +739,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PKFT6H4J27;
 				INFOPLIST_FILE = FbMty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fbmty.FbMty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -729,6 +754,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PKFT6H4J27;
 				INFOPLIST_FILE = FbMty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fbmty.FbMty;
 				PRODUCT_NAME = "$(TARGET_NAME)";

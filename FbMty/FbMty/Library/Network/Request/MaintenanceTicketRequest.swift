@@ -21,7 +21,7 @@ public class MaintenanceTicketRequest: NSObject, Mappable {
         
     }
     
-    public mutating func mapping(map: Map) {
+    public func mapping(map: Map) {
         idHolding <- map["idHolding"]
     }
 }

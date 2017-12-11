@@ -25,7 +25,7 @@ public class PaymentRequest: NSObject,Mappable {
         
     }
     
-    public mutating func mapping(map: Map) {
+    public func mapping(map: Map) {
         month <- map["month"]
         year <- map["year"]
         idHolding <- map["idHolding"]

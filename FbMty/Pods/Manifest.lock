@@ -4,35 +4,10 @@ PODS:
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
   - CryptoSwift (0.6.9)
-  - Firebase/Core (4.0.3):
-    - FirebaseAnalytics (= 4.0.2)
-    - FirebaseCore (= 4.0.3)
-  - Firebase/Messaging (4.0.3):
-    - Firebase/Core
-    - FirebaseMessaging (= 2.0.0)
-  - FirebaseAnalytics (4.0.2):
-    - FirebaseCore (~> 4.0)
-    - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseCore (4.0.3):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseInstanceID (2.0.0):
-    - FirebaseCore (~> 4.0)
-  - FirebaseMessaging (2.0.0):
-    - FirebaseAnalytics (~> 4.0)
-    - FirebaseCore (~> 4.0)
-    - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/Logger (~> 2.1)
-    - Protobuf (~> 3.1)
-  - GoogleToolboxForMac/Defines (2.1.1)
-  - GoogleToolboxForMac/Logger (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
-  - GoogleToolboxForMac/NSData+zlib (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - CTPanoramaView (1.0)
   - IQKeyboardManagerSwift (4.0.10)
   - Kingfisher (3.10.3)
   - ObjectMapper (2.2.7)
-  - Protobuf (3.3.0)
   - Realm (2.5.1):
     - Realm/Headers (= 2.5.1)
   - Realm/Headers (2.5.1)
@@ -48,8 +23,7 @@ DEPENDENCIES:
   - Alamofire
   - AlamofireObjectMapper
   - CryptoSwift
-  - Firebase/Core
-  - Firebase/Messaging
+  - CTPanoramaView (~> 1.0)
   - IQKeyboardManagerSwift
   - Kingfisher
   - RealmSwift
@@ -63,16 +37,10 @@ SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
   CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
-  Firebase: 9e33fdfbca37cab635c693883caa90a4475b842b
-  FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
-  FirebaseCore: c709067051de07bdaffdc4e735cd7299a23c463a
-  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
-  FirebaseMessaging: 227406c05b0dc9290702d2e9f18ab5528f0c2cf2
-  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  CTPanoramaView: 26a11a330ff606ea5d059ffe86b7e34eb902023e
   IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
   Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
-  Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
   Realm: 32f86104d37c8521f864d4274050b38ba6190733
   RealmSwift: f719e7511c902b8908593e8f143f59e47931bdb6
   SpaceView: 1619ebbb5162f4f3547a4cb383bea479a54fa76c
@@ -81,6 +49,6 @@ SPEC CHECKSUMS:
   SwiftSpinner: c249fffed3e74b5f3e6492dcc05d6bc1525a8220
   Zip: e34513299ac38c0686d5b24504da7ce343799ab9
 
-PODFILE CHECKSUM: 2125f14aa12a777584657d548a47634b9026e969
+PODFILE CHECKSUM: 19f841c9ad39471a4df962d43c284616625db44f
 
 COCOAPODS: 1.2.1

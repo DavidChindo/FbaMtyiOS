@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CryptoSwift.xcscheme</key>
+		<key>CTPanoramaView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleToolboxForMac.xcscheme</key>
+		<key>CryptoSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -40,11 +40,6 @@
 			<false/>
 		</dict>
 		<key>Pods-FbMty.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Protobuf.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -87,7 +82,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>10BBAC62B026C05D1100C528A7D09565</key>
+		<key>0FCD5E3158B365E0DB073B75D1E56FC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EAE739F54FA5CD7101FAA462C5292B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,17 +102,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34A283A8FAA53014C4DA1F4E4D24C7E1</key>
+		<key>3DE70EC0D388050BA2EDA32AAA215EF5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4DDD3D05AB01FE7F47BB06EC8B479CD0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5DDD3B8C60870B26C649D6009FF719EA</key>
+		<key>68261A5077C385B2DCA7FA64FA99D384</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +117,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CBE37C9AA362F48B3C7951F79978E5A</key>
+		<key>781094730302BF0A233A5E1D999D3427</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>790208514408D41FC16B073B8BA207BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,7 +137,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B281535057022E3EEA2984B8ADE72653</key>
+		<key>965BB2E9FE0637E641E75D03FBF927E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,22 +147,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5B80060FE8C664DF08841000F41D515</key>
+		<key>F1D18541AEE5762066B1BE997C74459B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE15BC806078B99239E7A92FAE0A208F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E3C3E1317A4D0BEA2CA03FD7A2B6A90D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F3759C315968FF27CCABF4E2A335D15B</key>
+		<key>FBA431458AF24B4EDC01ED4358B72C1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -18,8 +18,9 @@ pod 'CryptoSwift'
 pod 'SpaceView'
 pod 'Zip', '~> 0.7'
 pod 'StatefulTableView', '0.0.17'
-pod 'Firebase/Core'
-pod 'Firebase/Messaging'
+#pod 'Firebase/Core'
+#pod 'Firebase/Messaging'
+pod 'CTPanoramaView', '~> 1.0'
 
 
 end
