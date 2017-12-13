@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func customNavBar(){
-        UINavigationBar.appearance().barTintColor = UIColor.black
+        UINavigationBar.appearance().barTintColor = DesignUtils.darkPrimary
         UINavigationBar.appearance().tintColor = UIColor.white
         
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]

@@ -10,16 +10,13 @@ import UIKit
 import CTPanoramaView
 
 class ViewController: BaseViewController {
-    @IBOutlet weak var pv: CTPanoramaView!
     
+    @IBOutlet weak var pv: CTPanoramaView!
     @IBOutlet weak var usernameTxtField: UITextField!
     @IBOutlet weak var passwordTxtField: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
     
     var window:UIWindow?
-
-    @IBOutlet weak var compassView: CTPieSliceView!
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,31 +29,21 @@ class ViewController: BaseViewController {
     
     @IBAction func panoramaTypeTapped() {
         if pv.panoramaType == .spherical {
-            let image = UIImage(named: "back.jpg")
+            let image = UIImage(named: "login_img.png")
             pv.image = image
         }
         else {
-            let image = UIImage(named: "back.jpg")
+            let image = UIImage(named: "login_img.png")
             pv.image = image
-        }
-    }
-    
-    @IBAction func motionTypeTapped() {
-        if pv.controlMethod == .touch {
-            pv.controlMethod = .motion
-        }
-        else {
-            pv.controlMethod = .touch
         }
     }
     
     func customViews(){
-        let image = UIImage(named: "back.jpg")
+        let image = UIImage(named: "login_img.png")
         pv.image = image
-        pv.compass = compassView
+        pv.controlMethod = .motion
+        
     }
-
-    //        initView(idView: "ChooseCompanyID")
 
     func initView(idView:String){
         self.window = UIWindow(frame: UIScreen.main.bounds)
