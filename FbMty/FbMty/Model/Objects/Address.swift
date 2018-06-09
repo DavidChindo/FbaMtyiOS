@@ -13,6 +13,7 @@ import Realm
 
 open class Address: Object, Mappable {
     
+    dynamic var idHolding:Double = -1
     dynamic var street:String?
     dynamic var numberInt:String?
     dynamic var numberExt:String?
@@ -20,23 +21,23 @@ open class Address: Object, Mappable {
     dynamic var town:String?
     dynamic var state:String?
     dynamic var zip:String?
-    
-    override open static func primaryKey()-> String?{
-        return "id"
-    }
+    dynamic var idState:Double = -1
+
     
     public required convenience init?(map: Map) {
         self.init()
     }
     
     public  func mapping(map: Map) {
-        street <- map["street"]
+        idHolding <- map["IdHolding"]
+        street <- map["Street"]
         numberInt <- map["NumberInt"]
         numberExt <- map["NumberExt"]
         suburb <- map["Suburb"]
-        town <- map["town"]
-        state <- map["state"]
-        zip <- map["zip"]
+        town <- map["Town"]
+        state <- map["State"]
+        zip <- map["ZIP"]
+        idState <- map["IdState"]
     }
     
 }

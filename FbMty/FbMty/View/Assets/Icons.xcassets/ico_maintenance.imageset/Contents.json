@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "ico_maintenance@2x.png",
+      "filename" : "ico_maintenance.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ico_maintenance@3x.png",
+      "filename" : "ico_maintenance-1.png",
       "scale" : "3x"
     }
   ],

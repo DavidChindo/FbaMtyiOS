@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FbMty/View/ViewControllers/MenuViewController.swift"
-            timestampString = "534727191.189609"
+            filePath = "FbMty/View/ViewControllers/DownloadsViewController.swift"
+            timestampString = "550195580.584111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "onOpenPaymentsClick(_:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "initViews()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

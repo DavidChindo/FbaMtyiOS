@@ -20,9 +20,6 @@ open class Maintenance: Object,Mappable {
     dynamic var provider:String?
     dynamic var cost:String?
     
-    override open static func primaryKey()-> String?{
-        return "id"
-    }
     
     public required convenience init?(map: Map) {
         self.init()

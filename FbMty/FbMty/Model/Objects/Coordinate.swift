@@ -13,20 +13,18 @@ import RealmSwift
 
 open class Coordinate: Object,Mappable {
     
+    dynamic var idHolding:Double = -1
     dynamic var latitude:Double = -1
     dynamic var longitude:Double = -1
-    
-    override open static func primaryKey()-> String?{
-        return "id"
-    }
     
     public required convenience init?(map: Map) {
         self.init()
     }
     
     public func mapping(map: Map) {
-        latitude <- map["latitude"]
-        longitude <- map["longitude"]
+        idHolding <- map["IdHolding"]
+        latitude <- map["Latitude"]
+        longitude <- map["Longitude"]
     }
 
 }

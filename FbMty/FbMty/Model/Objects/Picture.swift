@@ -11,16 +11,20 @@ import ObjectMapper
 import RealmSwift
 import Realm
 
+
 open class Picture: Object,Mappable {
 
+    dynamic var mediaId:Int = -1
+    dynamic var HoldingId: Double = -1
+    dynamic var Nombre:String?
+    dynamic var Extension:String?
+    dynamic var TipoMedio:String?
+    dynamic var Path:String?
+    dynamic var MediaAparicion:String?
     dynamic var id:Int = -1
-    dynamic var size:Int = -1
-    dynamic var url:String?
-    dynamic var order:Int = -1
-    dynamic var descriptionPic: String?
     
     override open static func primaryKey()-> String?{
-        return "id"
+        return "mediaId"
     }
     
     public required convenience init?(map: Map) {
@@ -28,11 +32,13 @@ open class Picture: Object,Mappable {
     }
     
     public func mapping(map: Map) {
-        id <- map["Id"]
-        size <- map["size"]
-        url <- map["url"]
-        order <- map["order"]
-        descriptionPic <- map["description"]
+        mediaId <- map["MediaId"]
+        HoldingId <- map["HoldingId"]
+        Nombre <- map["Nombre"]
+        Extension <- map["Extension"]
+        Path <- map["Path"]
+        TipoMedio <- map["TipoMedio"]
+        MediaAparicion <- map["MediaAparicion"]
     }
     
 }

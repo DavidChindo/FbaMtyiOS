@@ -18,9 +18,6 @@ open class Provider: Object, Mappable {
     dynamic var mobile:String?
     dynamic var email:String?
     
-    override open static func primaryKey()-> String?{
-        return "id"
-    }
     
     public required convenience init?(map: Map) {
         self.init()

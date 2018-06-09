@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9859F6FB3C7737EF76B1BDF0 /* Pods_FbMty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49224737D84D00102777A932 /* Pods_FbMty.framework */; };
+		B6316B7920C052970050DC02 /* TicketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6316B7820C052970050DC02 /* TicketPresenter.swift */; };
+		B6316B7B20C075C40050DC02 /* StatusParkings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6316B7A20C075C40050DC02 /* StatusParkings.swift */; };
 		B64574011FD1D481002185C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574001FD1D481002185C6 /* AppDelegate.swift */; };
 		B64574031FD1D481002185C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574021FD1D481002185C6 /* ViewController.swift */; };
 		B64574061FD1D481002185C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64574041FD1D481002185C6 /* Main.storyboard */; };
@@ -36,12 +38,64 @@
 		B64574651FD1F3DB002185C6 /* MaintenanceTicketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574641FD1F3DB002185C6 /* MaintenanceTicketRequest.swift */; };
 		B64574671FD1F49B002185C6 /* PaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574661FD1F49B002185C6 /* PaymentRequest.swift */; };
 		B64574691FD1F55B002185C6 /* RecoveryPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574681FD1F55B002185C6 /* RecoveryPasswordRequest.swift */; };
+		B64E53DF20B78A090062C41E /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53DE20B78A090062C41E /* Reach.swift */; };
+		B64E53E120B78B850062C41E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53E020B78B850062C41E /* Constants.swift */; };
+		B64E53E320B88F550062C41E /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53E220B88F550062C41E /* Validators.swift */; };
+		B64E53E520B8D4070062C41E /* HoldingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53E420B8D4070062C41E /* HoldingPresenter.swift */; };
+		B64E53E720BC5EA90062C41E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53E620BC5EA90062C41E /* LoginPresenter.swift */; };
+		B64E53E920BC6B650062C41E /* MaintenancePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53E820BC6B650062C41E /* MaintenancePresenter.swift */; };
+		B64E53EB20BC6FBC0062C41E /* MyTicketsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53EA20BC6FBC0062C41E /* MyTicketsPresenter.swift */; };
+		B64E53ED20BC750C0062C41E /* ParkingsInboxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53EC20BC750C0062C41E /* ParkingsInboxPresenter.swift */; };
+		B64E53EF20BC78990062C41E /* ParkingsRequestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53EE20BC78990062C41E /* ParkingsRequestPresenter.swift */; };
+		B64E53F120BC83150062C41E /* PaymentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53F020BC83150062C41E /* PaymentsPresenter.swift */; };
+		B64E53F320BC87D10062C41E /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53F220BC87D10062C41E /* ProfilePresenter.swift */; };
+		B64E53F520BCA8640062C41E /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53F420BCA8640062C41E /* RegisterPresenter.swift */; };
+		B64E53F720BCAA4E0062C41E /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53F620BCAA4E0062C41E /* RegisterRequest.swift */; };
 		B65DD6A81FDF16CE00F3626C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6A71FDF16CE00F3626C /* BaseViewController.swift */; };
 		B65DD6AA1FDF16F700F3626C /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6A91FDF16F700F3626C /* BasePresenter.swift */; };
 		B65DD6AE1FDF175E00F3626C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6AD1FDF175E00F3626C /* MenuViewController.swift */; };
 		B65DD6B01FDF3D9C00F3626C /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6AF1FDF3D9C00F3626C /* PaymentsViewController.swift */; };
 		B65DD6B21FDF3DAE00F3626C /* MaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6B11FDF3DAE00F3626C /* MaintenanceViewController.swift */; };
 		B65DD6B41FDF3DBB00F3626C /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6B31FDF3DBB00F3626C /* TicketViewController.swift */; };
+		B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */; };
+		B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */; };
+		B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */; };
+		B6ACBE1120C9F781006561EE /* ServicesTabDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ACBE1020C9F781006561EE /* ServicesTabDelegate.swift */; };
+		B6B2CE1220C1BF04003BD535 /* LogicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2CE1120C1BF04003BD535 /* LogicUtils.swift */; };
+		B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2CE1320C1BFF1003BD535 /* Prefs.swift */; };
+		B6B3BD2A20C8338C00EDAF89 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3BD2920C8338C00EDAF89 /* Keys.swift */; };
+		B6B3BD2C20C884ED00EDAF89 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */; };
+		B6CF2D7720B625550035EA51 /* HoldingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7620B625550035EA51 /* HoldingResponse.swift */; };
+		B6CF2D7920B62DE10035EA51 /* PicturesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7820B62DE10035EA51 /* PicturesResponse.swift */; };
+		B6CF2D7B20B75CBC0035EA51 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7A20B75CBC0035EA51 /* LoginResponse.swift */; };
+		B6CF2D7D20B75F580035EA51 /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7C20B75F580035EA51 /* MessageResponse.swift */; };
+		B6CF2D7F20B760F90035EA51 /* MyTicketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7E20B760F90035EA51 /* MyTicketResponse.swift */; };
+		B6CF2D8120B764580035EA51 /* ServicesDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D8020B764580035EA51 /* ServicesDataResponse.swift */; };
+		B6CF2D8320B767D50035EA51 /* ServicesDescResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D8220B767D50035EA51 /* ServicesDescResponse.swift */; };
+		B6CF2D8520B76CB50035EA51 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D8420B76CB50035EA51 /* Urls.swift */; };
+		B6CF2D8720B77DF60035EA51 /* ChatDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D8620B77DF60035EA51 /* ChatDelegate.swift */; };
+		B6CF2D8920B77FA10035EA51 /* DonwloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D8820B77FA10035EA51 /* DonwloadDelegate.swift */; };
+		B6CF2D8B20B77FDF0035EA51 /* HoldingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D8A20B77FDF0035EA51 /* HoldingDelegate.swift */; };
+		B6CF2D8D20B780500035EA51 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D8C20B780500035EA51 /* LoginDelegate.swift */; };
+		B6CF2D8F20B780EC0035EA51 /* MaintenanceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D8E20B780EC0035EA51 /* MaintenanceDelegate.swift */; };
+		B6CF2D9120B781810035EA51 /* MyTicketsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9020B781810035EA51 /* MyTicketsDelegate.swift */; };
+		B6CF2D9320B781F30035EA51 /* ParkingsInboxDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9220B781F30035EA51 /* ParkingsInboxDelegate.swift */; };
+		B6CF2D9520B782420035EA51 /* ParkingsRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9420B782420035EA51 /* ParkingsRequestDelegate.swift */; };
+		B6CF2D9720B782BE0035EA51 /* PaymentsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9620B782BE0035EA51 /* PaymentsDelegate.swift */; };
+		B6CF2D9920B783510035EA51 /* ProfileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9820B783510035EA51 /* ProfileDelegate.swift */; };
+		B6CF2D9B20B783B70035EA51 /* RegisterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9A20B783B70035EA51 /* RegisterDelegate.swift */; };
+		B6CF2D9D20B784500035EA51 /* TicketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9C20B784500035EA51 /* TicketDelegate.swift */; };
+		B6CF2D9F20B785E90035EA51 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9E20B785E90035EA51 /* ChatPresenter.swift */; };
+		B6CF2DA120B788080035EA51 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2DA020B788080035EA51 /* RealmManager.swift */; };
+		B6E498A0201BEE7800703224 /* MySpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4989F201BEE7800703224 /* MySpaceViewController.swift */; };
+		B6E498A2201EB14D00703224 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498A1201EB14C00703224 /* LocationViewController.swift */; };
+		B6E498A4201EB17900703224 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498A3201EB17900703224 /* DownloadsViewController.swift */; };
+		B6E498A6201EB18D00703224 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498A5201EB18D00703224 /* ServicesViewController.swift */; };
+		B6E498A8201EB1A000703224 /* CharacteristicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498A7201EB1A000703224 /* CharacteristicsViewController.swift */; };
+		B6E498AA201EB34200703224 /* ActivityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498A9201EB34200703224 /* ActivityDataSource.swift */; };
+		B6E498AC201EB36000703224 /* ServicesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498AB201EB36000703224 /* ServicesDataSource.swift */; };
+		B6E498AE201EB38F00703224 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498AD201EB38F00703224 /* ActivityTableViewCell.swift */; };
+		B6E498B0201EB3A800703224 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498AF201EB3A800703224 /* ServicesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +119,8 @@
 		24DDC1B4EC3D1659C16A8776 /* Pods-FbMty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FbMty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FbMty/Pods-FbMty.debug.xcconfig"; sourceTree = "<group>"; };
 		49224737D84D00102777A932 /* Pods_FbMty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FbMty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91904E2BF6FCD468340A11F3 /* Pods-FbMty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FbMty.release.xcconfig"; path = "Pods/Target Support Files/Pods-FbMty/Pods-FbMty.release.xcconfig"; sourceTree = "<group>"; };
+		B6316B7820C052970050DC02 /* TicketPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketPresenter.swift; sourceTree = "<group>"; };
+		B6316B7A20C075C40050DC02 /* StatusParkings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusParkings.swift; sourceTree = "<group>"; };
 		B64573FD1FD1D481002185C6 /* FbMty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FbMty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64574001FD1D481002185C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B64574021FD1D481002185C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../ViewController.swift; sourceTree = "<group>"; };
@@ -99,12 +155,64 @@
 		B64574641FD1F3DB002185C6 /* MaintenanceTicketRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceTicketRequest.swift; sourceTree = "<group>"; };
 		B64574661FD1F49B002185C6 /* PaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentRequest.swift; sourceTree = "<group>"; };
 		B64574681FD1F55B002185C6 /* RecoveryPasswordRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordRequest.swift; sourceTree = "<group>"; };
+		B64E53DE20B78A090062C41E /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		B64E53E020B78B850062C41E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B64E53E220B88F550062C41E /* Validators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		B64E53E420B8D4070062C41E /* HoldingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldingPresenter.swift; sourceTree = "<group>"; };
+		B64E53E620BC5EA90062C41E /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		B64E53E820BC6B650062C41E /* MaintenancePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenancePresenter.swift; sourceTree = "<group>"; };
+		B64E53EA20BC6FBC0062C41E /* MyTicketsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketsPresenter.swift; sourceTree = "<group>"; };
+		B64E53EC20BC750C0062C41E /* ParkingsInboxPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingsInboxPresenter.swift; sourceTree = "<group>"; };
+		B64E53EE20BC78990062C41E /* ParkingsRequestPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingsRequestPresenter.swift; sourceTree = "<group>"; };
+		B64E53F020BC83150062C41E /* PaymentsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsPresenter.swift; sourceTree = "<group>"; };
+		B64E53F220BC87D10062C41E /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		B64E53F420BCA8640062C41E /* RegisterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		B64E53F620BCAA4E0062C41E /* RegisterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		B65DD6A71FDF16CE00F3626C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B65DD6A91FDF16F700F3626C /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		B65DD6AD1FDF175E00F3626C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B65DD6AF1FDF3D9C00F3626C /* PaymentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		B65DD6B11FDF3DAE00F3626C /* MaintenanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceViewController.swift; sourceTree = "<group>"; };
 		B65DD6B31FDF3DBB00F3626C /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsDataSource.swift; sourceTree = "<group>"; };
+		B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsTableViewCell.swift; sourceTree = "<group>"; };
+		B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDelegate.swift; sourceTree = "<group>"; };
+		B6ACBE1020C9F781006561EE /* ServicesTabDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTabDelegate.swift; sourceTree = "<group>"; };
+		B6B2CE1120C1BF04003BD535 /* LogicUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicUtils.swift; sourceTree = "<group>"; };
+		B6B2CE1320C1BFF1003BD535 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		B6B3BD2920C8338C00EDAF89 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B6CF2D7620B625550035EA51 /* HoldingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldingResponse.swift; sourceTree = "<group>"; };
+		B6CF2D7820B62DE10035EA51 /* PicturesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesResponse.swift; sourceTree = "<group>"; };
+		B6CF2D7A20B75CBC0035EA51 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		B6CF2D7C20B75F580035EA51 /* MessageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
+		B6CF2D7E20B760F90035EA51 /* MyTicketResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketResponse.swift; sourceTree = "<group>"; };
+		B6CF2D8020B764580035EA51 /* ServicesDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesDataResponse.swift; sourceTree = "<group>"; };
+		B6CF2D8220B767D50035EA51 /* ServicesDescResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesDescResponse.swift; sourceTree = "<group>"; };
+		B6CF2D8420B76CB50035EA51 /* Urls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		B6CF2D8620B77DF60035EA51 /* ChatDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D8820B77FA10035EA51 /* DonwloadDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonwloadDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D8A20B77FDF0035EA51 /* HoldingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldingDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D8C20B780500035EA51 /* LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D8E20B780EC0035EA51 /* MaintenanceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D9020B781810035EA51 /* MyTicketsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketsDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D9220B781F30035EA51 /* ParkingsInboxDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingsInboxDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D9420B782420035EA51 /* ParkingsRequestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingsRequestDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D9620B782BE0035EA51 /* PaymentsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D9820B783510035EA51 /* ProfileDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D9A20B783B70035EA51 /* RegisterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D9C20B784500035EA51 /* TicketDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDelegate.swift; sourceTree = "<group>"; };
+		B6CF2D9E20B785E90035EA51 /* ChatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
+		B6CF2DA020B788080035EA51 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B6E4989F201BEE7800703224 /* MySpaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySpaceViewController.swift; sourceTree = "<group>"; };
+		B6E498A1201EB14C00703224 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		B6E498A3201EB17900703224 /* DownloadsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		B6E498A5201EB18D00703224 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		B6E498A7201EB1A000703224 /* CharacteristicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicsViewController.swift; sourceTree = "<group>"; };
+		B6E498A9201EB34200703224 /* ActivityDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDataSource.swift; sourceTree = "<group>"; };
+		B6E498AB201EB36000703224 /* ServicesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesDataSource.swift; sourceTree = "<group>"; };
+		B6E498AD201EB38F00703224 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		B6E498AF201EB3A800703224 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +326,12 @@
 		B64574311FD1DBEB002185C6 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				B6E498A9201EB34200703224 /* ActivityDataSource.swift */,
+				B6E498AB201EB36000703224 /* ServicesDataSource.swift */,
+				B6E498AD201EB38F00703224 /* ActivityTableViewCell.swift */,
+				B6E498AF201EB3A800703224 /* ServicesTableViewCell.swift */,
+				B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */,
+				B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -240,6 +354,12 @@
 				B65DD6AF1FDF3D9C00F3626C /* PaymentsViewController.swift */,
 				B65DD6B11FDF3DAE00F3626C /* MaintenanceViewController.swift */,
 				B65DD6B31FDF3DBB00F3626C /* TicketViewController.swift */,
+				B6E4989F201BEE7800703224 /* MySpaceViewController.swift */,
+				B6E498A1201EB14C00703224 /* LocationViewController.swift */,
+				B6E498A3201EB17900703224 /* DownloadsViewController.swift */,
+				B6E498A5201EB18D00703224 /* ServicesViewController.swift */,
+				B6E498A7201EB1A000703224 /* CharacteristicsViewController.swift */,
+				B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -266,6 +386,7 @@
 		B64574361FD1DBF8002185C6 /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
+				B6CF2D8420B76CB50035EA51 /* Urls.swift */,
 			);
 			path = Definitions;
 			sourceTree = "<group>";
@@ -278,6 +399,7 @@
 				B64574641FD1F3DB002185C6 /* MaintenanceTicketRequest.swift */,
 				B64574661FD1F49B002185C6 /* PaymentRequest.swift */,
 				B64574681FD1F55B002185C6 /* RecoveryPasswordRequest.swift */,
+				B64E53F620BCAA4E0062C41E /* RegisterRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -285,6 +407,7 @@
 		B64574381FD1DBF8002185C6 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				B6CF2D7A20B75CBC0035EA51 /* LoginResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -293,6 +416,12 @@
 			isa = PBXGroup;
 			children = (
 				B64574441FD1E3C7002185C6 /* DesignUtils.swift */,
+				B64E53DE20B78A090062C41E /* Reach.swift */,
+				B64E53E020B78B850062C41E /* Constants.swift */,
+				B64E53E220B88F550062C41E /* Validators.swift */,
+				B6B2CE1120C1BF04003BD535 /* LogicUtils.swift */,
+				B6B2CE1320C1BFF1003BD535 /* Prefs.swift */,
+				B6B3BD2920C8338C00EDAF89 /* Keys.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -309,6 +438,7 @@
 		B645743B1FD1DC01002185C6 /* Managment */ = {
 			isa = PBXGroup;
 			children = (
+				B6CF2DA020B788080035EA51 /* RealmManager.swift */,
 			);
 			path = Managment;
 			sourceTree = "<group>";
@@ -329,6 +459,13 @@
 				B645745A1FD1EECC002185C6 /* Provider.swift */,
 				B645745C1FD1EF4B002185C6 /* Service.swift */,
 				B645745E1FD1EFFB002185C6 /* Ticket.swift */,
+				B6CF2D7620B625550035EA51 /* HoldingResponse.swift */,
+				B6CF2D7820B62DE10035EA51 /* PicturesResponse.swift */,
+				B6CF2D7C20B75F580035EA51 /* MessageResponse.swift */,
+				B6CF2D7E20B760F90035EA51 /* MyTicketResponse.swift */,
+				B6CF2D8020B764580035EA51 /* ServicesDataResponse.swift */,
+				B6CF2D8220B767D50035EA51 /* ServicesDescResponse.swift */,
+				B6316B7A20C075C40050DC02 /* StatusParkings.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -345,6 +482,20 @@
 		B645743E1FD1DC0A002185C6 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				B6CF2D8620B77DF60035EA51 /* ChatDelegate.swift */,
+				B6CF2D8820B77FA10035EA51 /* DonwloadDelegate.swift */,
+				B6CF2D8A20B77FDF0035EA51 /* HoldingDelegate.swift */,
+				B6CF2D8C20B780500035EA51 /* LoginDelegate.swift */,
+				B6CF2D8E20B780EC0035EA51 /* MaintenanceDelegate.swift */,
+				B6CF2D9020B781810035EA51 /* MyTicketsDelegate.swift */,
+				B6CF2D9220B781F30035EA51 /* ParkingsInboxDelegate.swift */,
+				B6CF2D9420B782420035EA51 /* ParkingsRequestDelegate.swift */,
+				B6CF2D9620B782BE0035EA51 /* PaymentsDelegate.swift */,
+				B6CF2D9820B783510035EA51 /* ProfileDelegate.swift */,
+				B6CF2D9A20B783B70035EA51 /* RegisterDelegate.swift */,
+				B6CF2D9C20B784500035EA51 /* TicketDelegate.swift */,
+				B6ACBE1020C9F781006561EE /* ServicesTabDelegate.swift */,
+				B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -353,6 +504,17 @@
 			isa = PBXGroup;
 			children = (
 				B65DD6A91FDF16F700F3626C /* BasePresenter.swift */,
+				B6CF2D9E20B785E90035EA51 /* ChatPresenter.swift */,
+				B64E53E420B8D4070062C41E /* HoldingPresenter.swift */,
+				B64E53E620BC5EA90062C41E /* LoginPresenter.swift */,
+				B64E53E820BC6B650062C41E /* MaintenancePresenter.swift */,
+				B64E53EA20BC6FBC0062C41E /* MyTicketsPresenter.swift */,
+				B64E53EC20BC750C0062C41E /* ParkingsInboxPresenter.swift */,
+				B64E53EE20BC78990062C41E /* ParkingsRequestPresenter.swift */,
+				B64E53F020BC83150062C41E /* PaymentsPresenter.swift */,
+				B64E53F220BC87D10062C41E /* ProfilePresenter.swift */,
+				B64E53F420BCA8640062C41E /* RegisterPresenter.swift */,
+				B6316B7820C052970050DC02 /* TicketPresenter.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -378,7 +540,7 @@
 				B64573FA1FD1D480002185C6 /* Frameworks */,
 				B64573FB1FD1D480002185C6 /* Resources */,
 				6A6F678AFE8E3BF8B4C06A65 /* [CP] Embed Pods Frameworks */,
-				DBF538D67D58CA941AFD3B14 /* [CP] Copy Pods Resources */,
+				EB81895E466A32480BD97423 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -438,7 +600,7 @@
 					B64573FC1FD1D480002185C6 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = PKFT6H4J27;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					B64574101FD1D481002185C6 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -510,13 +672,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FbMty-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6A6F678AFE8E3BF8B4C06A65 /* [CP] Embed Pods Frameworks */ = {
@@ -525,24 +690,64 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FbMty/Pods-FbMty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AACarousel/AACarousel.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/CTPanoramaView/CTPanoramaView.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PocketSVG/PocketSVG.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/STPopup/STPopup.framework",
+				"${BUILT_PRODUCTS_DIR}/SlidingContainerViewController/SlidingContainerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SpaceView/SpaceView.framework",
+				"${BUILT_PRODUCTS_DIR}/StatefulTableView/StatefulTableView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AACarousel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTPanoramaView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSVG.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STPopup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlidingContainerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpaceView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatefulTableView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FbMty/Pods-FbMty-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DBF538D67D58CA941AFD3B14 /* [CP] Copy Pods Resources */ = {
+		EB81895E466A32480BD97423 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FbMty/Pods-FbMty-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -556,33 +761,87 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */,
+				B64E53F720BCAA4E0062C41E /* RegisterRequest.swift in Sources */,
+				B6CF2D9920B783510035EA51 /* ProfileDelegate.swift in Sources */,
+				B6CF2D8920B77FA10035EA51 /* DonwloadDelegate.swift in Sources */,
 				B65DD6B21FDF3DAE00F3626C /* MaintenanceViewController.swift in Sources */,
+				B6CF2D9720B782BE0035EA51 /* PaymentsDelegate.swift in Sources */,
+				B6E498A8201EB1A000703224 /* CharacteristicsViewController.swift in Sources */,
+				B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */,
+				B6CF2D9520B782420035EA51 /* ParkingsRequestDelegate.swift in Sources */,
+				B64E53EB20BC6FBC0062C41E /* MyTicketsPresenter.swift in Sources */,
+				B6CF2D9F20B785E90035EA51 /* ChatPresenter.swift in Sources */,
+				B6CF2D9D20B784500035EA51 /* TicketDelegate.swift in Sources */,
+				B6E498AC201EB36000703224 /* ServicesDataSource.swift in Sources */,
 				B64574571FD1ED84002185C6 /* Picture.swift in Sources */,
+				B64E53E520B8D4070062C41E /* HoldingPresenter.swift in Sources */,
+				B6CF2D7F20B760F90035EA51 /* MyTicketResponse.swift in Sources */,
 				B64574651FD1F3DB002185C6 /* MaintenanceTicketRequest.swift in Sources */,
 				B64574671FD1F49B002185C6 /* PaymentRequest.swift in Sources */,
 				B645744B1FD1E92B002185C6 /* Contact.swift in Sources */,
 				B645745D1FD1EF4B002185C6 /* Service.swift in Sources */,
+				B64E53E920BC6B650062C41E /* MaintenancePresenter.swift in Sources */,
+				B6CF2D7720B625550035EA51 /* HoldingResponse.swift in Sources */,
 				B645745B1FD1EECC002185C6 /* Provider.swift in Sources */,
 				B64574691FD1F55B002185C6 /* RecoveryPasswordRequest.swift in Sources */,
 				B65DD6B41FDF3DBB00F3626C /* TicketViewController.swift in Sources */,
+				B6B3BD2C20C884ED00EDAF89 /* RegisterViewController.swift in Sources */,
 				B65DD6AE1FDF175E00F3626C /* MenuViewController.swift in Sources */,
 				B64574031FD1D481002185C6 /* ViewController.swift in Sources */,
+				B6B3BD2A20C8338C00EDAF89 /* Keys.swift in Sources */,
+				B6CF2D8520B76CB50035EA51 /* Urls.swift in Sources */,
 				B64574451FD1E3C7002185C6 /* DesignUtils.swift in Sources */,
 				B64574591FD1EE53002185C6 /* Plan.swift in Sources */,
 				B64574511FD1EAE2002185C6 /* Maintenance.swift in Sources */,
+				B6CF2D9120B781810035EA51 /* MyTicketsDelegate.swift in Sources */,
+				B6E498A6201EB18D00703224 /* ServicesViewController.swift in Sources */,
+				B6CF2D8B20B77FDF0035EA51 /* HoldingDelegate.swift in Sources */,
 				B65DD6AA1FDF16F700F3626C /* BasePresenter.swift in Sources */,
+				B64E53E720BC5EA90062C41E /* LoginPresenter.swift in Sources */,
+				B6CF2D9320B781F30035EA51 /* ParkingsInboxDelegate.swift in Sources */,
 				B645744F1FD1EA6F002185C6 /* Coordinate.swift in Sources */,
+				B6CF2D7D20B75F580035EA51 /* MessageResponse.swift in Sources */,
 				B64574631FD1F320002185C6 /* LoginRequest.swift in Sources */,
+				B6CF2D8720B77DF60035EA51 /* ChatDelegate.swift in Sources */,
+				B6E498A2201EB14D00703224 /* LocationViewController.swift in Sources */,
+				B64E53EF20BC78990062C41E /* ParkingsRequestPresenter.swift in Sources */,
+				B64E53E120B78B850062C41E /* Constants.swift in Sources */,
+				B6CF2D8120B764580035EA51 /* ServicesDataResponse.swift in Sources */,
 				B65DD6A81FDF16CE00F3626C /* BaseViewController.swift in Sources */,
+				B6B2CE1220C1BF04003BD535 /* LogicUtils.swift in Sources */,
+				B64E53F120BC83150062C41E /* PaymentsPresenter.swift in Sources */,
+				B64E53E320B88F550062C41E /* Validators.swift in Sources */,
 				B64574551FD1EC99002185C6 /* Payments.swift in Sources */,
+				B6E498A4201EB17900703224 /* DownloadsViewController.swift in Sources */,
+				B64E53F320BC87D10062C41E /* ProfilePresenter.swift in Sources */,
+				B6E498A0201BEE7800703224 /* MySpaceViewController.swift in Sources */,
+				B6E498B0201EB3A800703224 /* ServicesTableViewCell.swift in Sources */,
+				B6CF2D8D20B780500035EA51 /* LoginDelegate.swift in Sources */,
 				B64574471FD1E555002185C6 /* ActivityHolding.swift in Sources */,
+				B6CF2DA120B788080035EA51 /* RealmManager.swift in Sources */,
 				B645745F1FD1EFFB002185C6 /* Ticket.swift in Sources */,
+				B6316B7B20C075C40050DC02 /* StatusParkings.swift in Sources */,
 				B645744D1FD1E986002185C6 /* Phone.swift in Sources */,
 				B65DD6B01FDF3D9C00F3626C /* PaymentsViewController.swift in Sources */,
+				B6CF2D7920B62DE10035EA51 /* PicturesResponse.swift in Sources */,
+				B6CF2D7B20B75CBC0035EA51 /* LoginResponse.swift in Sources */,
 				B64574531FD1EBCD002185C6 /* Office.swift in Sources */,
+				B6E498AA201EB34200703224 /* ActivityDataSource.swift in Sources */,
 				B64574611FD1F20B002185C6 /* ChatRequest.swift in Sources */,
+				B6CF2D8F20B780EC0035EA51 /* MaintenanceDelegate.swift in Sources */,
+				B6E498AE201EB38F00703224 /* ActivityTableViewCell.swift in Sources */,
+				B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */,
+				B6CF2D9B20B783B70035EA51 /* RegisterDelegate.swift in Sources */,
+				B6CF2D8320B767D50035EA51 /* ServicesDescResponse.swift in Sources */,
+				B64E53F520BCA8640062C41E /* RegisterPresenter.swift in Sources */,
 				B64574011FD1D481002185C6 /* AppDelegate.swift in Sources */,
+				B6316B7920C052970050DC02 /* TicketPresenter.swift in Sources */,
 				B64574491FD1E780002185C6 /* Address.swift in Sources */,
+				B6ACBE1120C9F781006561EE /* ServicesTabDelegate.swift in Sources */,
+				B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */,
+				B64E53ED20BC750C0062C41E /* ParkingsInboxPresenter.swift in Sources */,
+				B64E53DF20B78A090062C41E /* Reach.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,12 +996,15 @@
 			baseConfigurationReference = 24DDC1B4EC3D1659C16A8776 /* Pods-FbMty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = PKFT6H4J27;
 				INFOPLIST_FILE = FbMty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fbmty.FbMty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c5f1c32-02ad-459b-b093-9b2a5c01137c";
+				PROVISIONING_PROFILE_SPECIFIER = FibraAdhoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -752,12 +1014,15 @@
 			baseConfigurationReference = 91904E2BF6FCD468340A11F3 /* Pods-FbMty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = PKFT6H4J27;
 				INFOPLIST_FILE = FbMty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fbmty.FbMty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c5f1c32-02ad-459b-b093-9b2a5c01137c";
+				PROVISIONING_PROFILE_SPECIFIER = FibraAdhoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

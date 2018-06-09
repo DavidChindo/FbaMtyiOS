@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "ico_ticket@2x.png",
+      "filename" : "ico_ticket.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ico_ticket@3x.png",
+      "filename" : "ico_ticket-1.png",
       "scale" : "3x"
     }
   ],

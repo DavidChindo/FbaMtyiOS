@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AACarousel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,11 +24,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CryptoSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -35,6 +35,11 @@
 			<false/>
 		</dict>
 		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PocketSVG.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -59,6 +64,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SlidingContainerViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SpaceView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -74,6 +84,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>XLPagerTabStrip-XLPagerTabStrip.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XLPagerTabStrip.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Zip.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,12 +102,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0FCD5E3158B365E0DB073B75D1E56FC4</key>
+		<key>002C3B6B514305BB1A92A8B76BD00B0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1EAE739F54FA5CD7101FAA462C5292B1</key>
+		<key>172FDF9FB35A732B106A89CEAB3EE2BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2BF55D7130ABB23B4C11A6ACE2C69134</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,27 +127,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DE70EC0D388050BA2EDA32AAA215EF5</key>
+		<key>59D1E888CED84662DD6CCC1AACF15F4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68261A5077C385B2DCA7FA64FA99D384</key>
+		<key>5A9B12517AA0F389115608B4651A56FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6BB1C1403B2419F911818DA8413FDA07</key>
+		<key>5ACF1E869D5989954966BEDA3AADF383</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>781094730302BF0A233A5E1D999D3427</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>790208514408D41FC16B073B8BA207BB</key>
+		<key>7EB31AD5861E17AD28EFB10D4CA40DAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,7 +157,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>965BB2E9FE0637E641E75D03FBF927E6</key>
+		<key>A61ADB24C322DD7B01955DF545B53617</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A6E5D27E438D46EB67457646BC9BDE2B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A985A5468400C0EB5FC48C2C29CE8E17</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,7 +177,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1D18541AEE5762066B1BE997C74459B</key>
+		<key>D1077942BFAA2CFF62ABCF097CD616EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7C48CD9F9A41E944B4CCC99C88D78FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D98986199D4F04C546E0E25C7DC731EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

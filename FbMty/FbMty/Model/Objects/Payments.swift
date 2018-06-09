@@ -20,10 +20,6 @@ open class Payments: Object, Mappable {
     dynamic var dateAccounting:String?
     dynamic var status:String?
     
-    override open static func primaryKey()-> String?{
-        return "id"
-    }
-    
     public required convenience init?(map: Map) {
         self.init()
     }

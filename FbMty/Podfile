@@ -14,13 +14,15 @@ pod 'STPopup'
 pod 'SwiftSpinner'
 pod 'IQKeyboardManagerSwift'
 pod 'Kingfisher'
-pod 'CryptoSwift'
 pod 'SpaceView'
 pod 'Zip', '~> 0.7'
 pod 'StatefulTableView', '0.0.17'
-#pod 'Firebase/Core'
-#pod 'Firebase/Messaging'
+pod 'SlidingContainerViewController'
 pod 'CTPanoramaView', '~> 1.0'
-
+pod 'AACarousel'
+pod 'PocketSVG', '~> 2.0'
+pod 'XLPagerTabStrip', '~> 7.0.0’
+pod 'GoogleMaps'
+pod 'GooglePlaces'
 
 end

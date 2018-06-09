@@ -14,12 +14,8 @@ import RealmSwift
 open class Contact: Object,Mappable {
 
     dynamic var name:String?
-    dynamic var phones:[Phone] = []
+    var phones = List<Phone>()
     dynamic var email:String?
-    
-    override open static func primaryKey()-> String?{
-        return "id"
-    }
     
     public required convenience init?(map: Map) {
         self.init()

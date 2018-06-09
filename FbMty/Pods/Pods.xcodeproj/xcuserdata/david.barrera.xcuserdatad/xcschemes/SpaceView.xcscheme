@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '781094730302BF0A233A5E1D999D3427'
-               BlueprintName = 'SpaceView'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SpaceView.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A6E5D27E438D46EB67457646BC9BDE2B"
+               BlueprintName = "SpaceView"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "SpaceView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

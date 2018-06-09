@@ -17,7 +17,7 @@ open class Service: Object, Mappable {
     dynamic var title:String?
     dynamic var descriptionSer: String?
     dynamic var icon:String?
-    dynamic var order:String?
+    dynamic var order:Int = -1
     dynamic var type:String?
     
     override open static func primaryKey()-> String?{
@@ -30,10 +30,10 @@ open class Service: Object, Mappable {
     
     public func mapping(map: Map) {
         id <- map["Id"]
-        title <- map["title"]
-        descriptionSer <- map["description"]
-        icon <- map["icon"]
-        order <- map["order"]
+        title <- map["Title"]
+        descriptionSer <- map["Description"]
+        icon <- map["Icon"]
+        order <- map["Order"]
         type <- map["type"]
     }
 

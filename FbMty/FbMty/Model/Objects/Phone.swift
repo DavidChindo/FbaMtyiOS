@@ -16,9 +16,6 @@ open class Phone: Object, Mappable {
     dynamic var number:String?
     dynamic var ext:String?
     
-    override open static func primaryKey()-> String?{
-        return "id"
-    }
     
     public required convenience init?(map: Map) {
         self.init()

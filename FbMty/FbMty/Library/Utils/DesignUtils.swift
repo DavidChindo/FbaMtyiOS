@@ -11,7 +11,7 @@ import SpaceView
 
 class DesignUtils: NSObject {
     
-    static let darkPrimary = UIColor(red: 68/255, green: 103/255, blue: 114/255, alpha: 1)
+    static let darkPrimary = UIColor(red: 92/255, green: 193/255, blue: 220/255, alpha: 1)
     static let grayStatus = UIColor(red: 187/255, green: 189/255, blue: 191/255, alpha: 1)
     static let redBio = UIColor(red: 160/255, green: 43/255, blue: 66/255, alpha: 1)
     static let backGroundColor = UIColor(red: 240/255, green: 242/255, blue: 247/255, alpha: 1)
@@ -19,7 +19,12 @@ class DesignUtils: NSObject {
     
     class func setBorder(button: UIButton,mred:Int,mgreen:Int,mblue:Int){
         button.layer.borderColor = UIColor(red: CGFloat(mred)/255, green: CGFloat(mgreen)/255, blue: CGFloat(mblue)/255, alpha: 1).cgColor
-        button.layer.borderWidth = 1.0
+        button.layer.borderWidth = 1.0 
+    }
+    
+    class func setBorderView(view: UIView,mred:Int,mgreen:Int,mblue:Int){
+        view.layer.borderColor = UIColor(red: CGFloat(mred)/255, green: CGFloat(mgreen)/255, blue: CGFloat(mblue)/255, alpha: 1).cgColor
+        view.layer.borderWidth = 1.0
     }
     
     class func alertConfirm(titleMessage:String, message:String,vc:UIViewController){
@@ -88,6 +93,22 @@ class DesignUtils: NSObject {
         let valueFormated = formater.string(from: NSNumber(value: numberd))
         return valueFormated!
     }
-
+    
+    class func validateCredentials(username: String, password: String)-> String{
+        if username.isEmpty && password.isEmpty {
+            return "Favor de ingresar usuario y contraseña"
+        }else{
+            if !username.isEmpty {
+                if !password.isEmpty {
+                    return "";
+                }else {
+                    return "La contraseña es requerida"
+                }
+            }else{
+                return "El usuario es requerido"
+            }
+        }
+    }
+ 
 
 }
