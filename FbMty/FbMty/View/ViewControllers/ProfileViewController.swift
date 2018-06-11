@@ -32,6 +32,7 @@ class ProfileViewController: BaseViewController,ProfileDelegate,UIPickerViewDele
         holdings = RealmManager.holdingsName()
         userLbl.text = RealmManager.user()
         holdingPicker.delegate = self
+        holdingPicker.selectRow(Prefs.instance().integer(Keys.PREF_POSITION_SELECTED), inComponent: 0, animated: true)
         reloadImage()
         BmoImageViewFactory.shape(holdingImg, shape: BmoImageViewShape.roundedRect(corner: 4))
         
