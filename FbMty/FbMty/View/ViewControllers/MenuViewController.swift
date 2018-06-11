@@ -20,6 +20,19 @@ class MenuViewController: BaseViewController {
         initViews()
     }
     
+    @IBAction func onOpenTicketClick(_ sender: Any) {
+    
+        let destination = self.storyboard?.instantiateViewController(withIdentifier: "ticketNavigation")
+        self.present(destination!, animated: true, completion: nil)
+    }
+    
+    @IBAction func onOpenMaintenanceClick(_ sender: Any) {
+    
+        let destination = self.storyboard?.instantiateViewController(withIdentifier: "maintenanceNavigation")
+        self.present(destination!, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func onOpenPaymentsClick(_ sender: Any) {
         
         let destination = self.storyboard?.instantiateViewController(withIdentifier: "PaymentsNavigation")
@@ -27,8 +40,10 @@ class MenuViewController: BaseViewController {
     }
     
     @IBAction func onMultimediOpenClick(_ sender: Any) {
+        
         let destination = self.storyboard?.instantiateViewController(withIdentifier: "multimediaId")
         self.present(destination!, animated: true, completion: nil)
+        
     }
     
     func initViews(){
