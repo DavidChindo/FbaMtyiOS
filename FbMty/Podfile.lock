@@ -1,9 +1,13 @@
 PODS:
   - AACarousel (1.0.5)
   - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
   - AlamofireObjectMapper (4.1.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
+  - BmoImageLoader (1.0.1):
+    - AlamofireImage (~> 3.1)
   - CTPanoramaView (1.0)
   - GoogleMaps (2.3.1):
     - GoogleMaps/Maps (= 2.3.1)
@@ -33,6 +37,7 @@ DEPENDENCIES:
   - AACarousel
   - Alamofire
   - AlamofireObjectMapper
+  - BmoImageLoader
   - CTPanoramaView (~> 1.0)
   - GoogleMaps
   - GooglePlaces
@@ -52,7 +57,9 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AACarousel
     - Alamofire
+    - AlamofireImage
     - AlamofireObjectMapper
+    - BmoImageLoader
     - CTPanoramaView
     - GoogleMaps
     - GooglePlaces
@@ -73,7 +80,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AACarousel: 834ff62c787fea1d8656c84986ac92d9436a2190
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  BmoImageLoader: 5e6ba842d321e3fd7d59c5ac13e3d978f87b9794
   CTPanoramaView: 26a11a330ff606ea5d059ffe86b7e34eb902023e
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
@@ -91,6 +100,6 @@ SPEC CHECKSUMS:
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
   Zip: e34513299ac38c0686d5b24504da7ce343799ab9
 
-PODFILE CHECKSUM: bdd838dcaf85c2580263888405f6a046b8795a85
+PODFILE CHECKSUM: c85b68661d10057da02a5be2c7df491d35df7102
 
 COCOAPODS: 1.5.3

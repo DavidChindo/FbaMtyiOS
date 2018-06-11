@@ -16,6 +16,7 @@ class DesignUtils: NSObject {
     static let redBio = UIColor(red: 160/255, green: 43/255, blue: 66/255, alpha: 1)
     static let backGroundColor = UIColor(red: 240/255, green: 242/255, blue: 247/255, alpha: 1)
     static let grayFont = UIColor(red: 88/255, green: 89/255, blue: 91/255, alpha: 1)
+    static let primaryDark = UIColor(red: 16/255, green: 40/255, blue: 58/255, alpha: 1)
     
     class func setBorder(button: UIButton,mred:Int,mgreen:Int,mblue:Int){
         button.layer.borderColor = UIColor(red: CGFloat(mred)/255, green: CGFloat(mgreen)/255, blue: CGFloat(mblue)/255, alpha: 1).cgColor
@@ -110,5 +111,14 @@ class DesignUtils: NSObject {
         }
     }
  
+    class func getUrlImage(holding:HoldingResponse)->String{
+        var url:String = ""
+        if LogicUtils.isObjectNotNil(object: holding) && LogicUtils.isObjectNotNil(object:holding.Picture) {
+            if (holding.Picture?.comercialImages.count)! > 0 {
+                url = Urls.API_FBMTY + (holding.Picture?.comercialImages[0].Path)!
+            }
+        }
+        return url
+    }
 
 }

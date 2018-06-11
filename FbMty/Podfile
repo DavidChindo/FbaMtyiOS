@@ -24,5 +24,6 @@ pod 'PocketSVG', '~> 2.0'
 pod 'XLPagerTabStrip', '~> 7.0.0’
 pod 'GoogleMaps'
 pod 'GooglePlaces'
+pod 'BmoImageLoader'
 
 end

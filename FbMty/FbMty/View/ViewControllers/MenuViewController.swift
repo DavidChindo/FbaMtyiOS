@@ -21,7 +21,13 @@ class MenuViewController: BaseViewController {
     }
     
     @IBAction func onOpenPaymentsClick(_ sender: Any) {
+        
         let destination = self.storyboard?.instantiateViewController(withIdentifier: "PaymentsNavigation")
+        self.present(destination!, animated: true, completion: nil)
+    }
+    
+    @IBAction func onMultimediOpenClick(_ sender: Any) {
+        let destination = self.storyboard?.instantiateViewController(withIdentifier: "multimediaId")
         self.present(destination!, animated: true, completion: nil)
     }
     
@@ -41,4 +47,8 @@ class MenuViewController: BaseViewController {
             imgView.kf.setImage(with: resource, placeholder: imagePlaceHolder, options: [.transition(.fade(0.2))], progressBlock: nil, completionHandler: nil)
         }
     }
+    
+    
+      
+    
 }

@@ -9,8 +9,11 @@
 import UIKit
 import SlidingContainerViewController
 
-class MySpaceViewController: BaseViewController {
 
+
+class MySpaceViewController: BaseViewController{
+
+    
     @IBOutlet weak var containerView: UIView!
     static var slidingParent: SlidingContainerViewController?
     
@@ -44,6 +47,9 @@ class MySpaceViewController: BaseViewController {
         MySpaceViewController.slidingParent = slidingContainerViewController
         containerView.addSubview((slidingContainerViewController?.view)!)
 }
+
+    
+    
     
 
 }

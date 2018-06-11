@@ -72,4 +72,22 @@ class RealmManager: NSObject {
         return user != nil ? user!.token! : ""
     }
     
+    class func user() -> String{
+        
+        let user = findFirst(object: LoginResponse.self)
+        return user != nil ? user!.username! : ""
+    }
+    
+    class func holdingsName()->[String]{
+        
+        var names:[String] = []
+        if(MenuViewController.holdingResponses.count > 0){
+            for holding in MenuViewController.holdingResponses {
+                names.append(holding.NombreEdificio!)
+            }
+        }
+        
+        return names
+    }
+    
 }

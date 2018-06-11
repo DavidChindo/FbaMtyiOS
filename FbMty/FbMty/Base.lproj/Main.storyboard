@@ -302,10 +302,10 @@
             </objects>
             <point key="canvasLocation" x="-1897.5" y="119.36619718309859"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Sqe-fY-9Cr">
             <objects>
-                <viewController id="nqy-IX-JJE" sceneMemberID="viewController">
+                <viewController id="nqy-IX-JJE" customClass="ProfileViewController" customModule="FbMty" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ICM-B9-vF8"/>
                         <viewControllerLayoutGuide type="bottom" id="Gnb-Ut-jdp"/>
@@ -313,9 +313,55 @@
                     <view key="view" contentMode="scaleToFill" id="FNA-4o-NND">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cuenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyP-ox-OdU">
+                                <rect key="frame" x="8" y="220" width="304" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.61583662029999997" green="0.61947381499999998" blue="0.63142466549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwV-Pu-vJy">
+                                <rect key="frame" x="8" y="249" width="304" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P6a-MA-F3d">
+                                <rect key="frame" x="0.0" y="307" width="320" height="193"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edificios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUu-Ea-LPJ">
+                                <rect key="frame" x="8" y="278" width="304" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.61583662029999997" green="0.61947381499999998" blue="0.63142466549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nhc-s9-NQ0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="533-5d-oVP">
+                                <rect key="frame" x="272" y="24" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ico_mnu_salir"/>
+                                <connections>
+                                    <action selector="onLogoutClick:" destination="nqy-IX-JJE" eventType="touchUpInside" id="EHN-Gn-Hik"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94513511660000005" green="0.94901299480000001" blue="0.94902718070000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="6El-eb-bwq"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="holdingImg" destination="Nhc-s9-NQ0" id="4np-YU-IJC"/>
+                        <outlet property="holdingPicker" destination="P6a-MA-F3d" id="5kV-3S-jZU"/>
+                        <outlet property="logoutBtn" destination="533-5d-oVP" id="LUG-91-UfI"/>
+                        <outlet property="userLbl" destination="hwV-Pu-vJy" id="5Kb-hB-5Qo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hc1-KZ-uqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -470,10 +516,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="550"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_header" translatesAutoresizingMaskIntoConstraints="NO" id="19z-ci-qt9">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Redwood" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bF-NA-7Mh">
                                                 <rect key="frame" x="88" y="36" width="149" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -484,6 +526,11 @@
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kcH-gZ-cc2">
                                                 <rect key="frame" x="0.0" y="211" width="320" height="339"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0G-qL-k0z">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -725,10 +772,10 @@
             </objects>
             <point key="canvasLocation" x="2393" y="416"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Menu Tab View Controller-->
         <scene sceneID="dTt-pz-YXj">
             <objects>
-                <tabBarController storyboardIdentifier="MenuTabViewController" id="yH7-Xx-jeQ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MenuTabViewController" id="yH7-Xx-jeQ" customClass="MenuTabViewController" customModule="FbMty" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="y5S-dK-g4B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -830,7 +877,7 @@
                                         <rect key="frame" x="180" y="139" width="132" height="132"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vista 360" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldU-2P-sIf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Multimedia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldU-2P-sIf">
                                                 <rect key="frame" x="0.0" y="95" width="130" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -846,6 +893,7 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <connections>
+                                                    <action selector="onMultimediOpenClick:" destination="dte-XU-g0e" eventType="touchUpInside" id="IkS-EY-2dh"/>
                                                     <action selector="onOpenPaymentsClick:" destination="dte-XU-g0e" eventType="touchUpInside" id="fZY-gc-YyS"/>
                                                 </connections>
                                             </button>
@@ -865,6 +913,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bag-mP-Tq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2394.375" y="-978.16901408450701"/>
+        </scene>
+        <!--Multimedia View Controller-->
+        <scene sceneID="gyx-Sh-a5N">
+            <objects>
+                <viewController storyboardIdentifier="multimediaId" id="cod-Ae-vzr" customClass="MultimediaViewController" customModule="FbMty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3x7-tV-GIJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wWn-QL-Hc7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7hC-Dc-Fjr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ufE-CY-EkU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="ufE-CY-EkU" id="B69-Eh-QOa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csh-M1-A6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3378.75" y="-978.16901408450701"/>
         </scene>
         <!--Maintenance View Controller-->
         <scene sceneID="gVt-hM-lSE">
@@ -1049,13 +1125,13 @@
         <image name="ico_maintenance" width="75" height="75"/>
         <image name="ico_mnu_miesp" width="25" height="25"/>
         <image name="ico_mnu_perfil" width="25" height="25"/>
+        <image name="ico_mnu_salir" width="25" height="25"/>
         <image name="ico_mnu_serv" width="25" height="25"/>
         <image name="ico_payments" width="75" height="75"/>
         <image name="ico_pswd" width="75" height="75"/>
         <image name="ico_ticket" width="75" height="75"/>
         <image name="ico_user" width="75" height="75"/>
         <image name="iconBackButton" width="64" height="64"/>
-        <image name="img_header" width="540" height="381"/>
         <image name="img_location" width="440" height="356"/>
         <image name="img_menu_back" width="540" height="960"/>
         <image name="logo" width="331" height="88"/>

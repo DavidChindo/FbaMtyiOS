@@ -57,6 +57,9 @@
 		B65DD6B01FDF3D9C00F3626C /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6AF1FDF3D9C00F3626C /* PaymentsViewController.swift */; };
 		B65DD6B21FDF3DAE00F3626C /* MaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6B11FDF3DAE00F3626C /* MaintenanceViewController.swift */; };
 		B65DD6B41FDF3DBB00F3626C /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DD6B31FDF3DBB00F3626C /* TicketViewController.swift */; };
+		B6653C1120CEEB4500F9189C /* MultimediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6653C1020CEEB4500F9189C /* MultimediaViewController.swift */; };
+		B6653C1320CEFDE100F9189C /* MenuTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6653C1220CEFDE100F9189C /* MenuTabViewController.swift */; };
+		B6653C1520CF1C9B00F9189C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6653C1420CF1C9B00F9189C /* ProfileViewController.swift */; };
 		B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */; };
 		B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */; };
 		B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */; };
@@ -174,6 +177,9 @@
 		B65DD6AF1FDF3D9C00F3626C /* PaymentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		B65DD6B11FDF3DAE00F3626C /* MaintenanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceViewController.swift; sourceTree = "<group>"; };
 		B65DD6B31FDF3DBB00F3626C /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		B6653C1020CEEB4500F9189C /* MultimediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultimediaViewController.swift; sourceTree = "<group>"; };
+		B6653C1220CEFDE100F9189C /* MenuTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabViewController.swift; sourceTree = "<group>"; };
+		B6653C1420CF1C9B00F9189C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsDataSource.swift; sourceTree = "<group>"; };
 		B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsTableViewCell.swift; sourceTree = "<group>"; };
 		B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDelegate.swift; sourceTree = "<group>"; };
@@ -360,6 +366,9 @@
 				B6E498A5201EB18D00703224 /* ServicesViewController.swift */,
 				B6E498A7201EB1A000703224 /* CharacteristicsViewController.swift */,
 				B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */,
+				B6653C1020CEEB4500F9189C /* MultimediaViewController.swift */,
+				B6653C1220CEFDE100F9189C /* MenuTabViewController.swift */,
+				B6653C1420CF1C9B00F9189C /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -693,7 +702,9 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FbMty/Pods-FbMty-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AACarousel/AACarousel.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/BmoImageLoader/BmoImageLoader.framework",
 				"${BUILT_PRODUCTS_DIR}/CTPanoramaView/CTPanoramaView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -713,7 +724,9 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AACarousel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BmoImageLoader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTPanoramaView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -763,6 +776,7 @@
 			files = (
 				B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */,
 				B64E53F720BCAA4E0062C41E /* RegisterRequest.swift in Sources */,
+				B6653C1320CEFDE100F9189C /* MenuTabViewController.swift in Sources */,
 				B6CF2D9920B783510035EA51 /* ProfileDelegate.swift in Sources */,
 				B6CF2D8920B77FA10035EA51 /* DonwloadDelegate.swift in Sources */,
 				B65DD6B21FDF3DAE00F3626C /* MaintenanceViewController.swift in Sources */,
@@ -778,6 +792,7 @@
 				B64E53E520B8D4070062C41E /* HoldingPresenter.swift in Sources */,
 				B6CF2D7F20B760F90035EA51 /* MyTicketResponse.swift in Sources */,
 				B64574651FD1F3DB002185C6 /* MaintenanceTicketRequest.swift in Sources */,
+				B6653C1520CF1C9B00F9189C /* ProfileViewController.swift in Sources */,
 				B64574671FD1F49B002185C6 /* PaymentRequest.swift in Sources */,
 				B645744B1FD1E92B002185C6 /* Contact.swift in Sources */,
 				B645745D1FD1EF4B002185C6 /* Service.swift in Sources */,
@@ -834,6 +849,7 @@
 				B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */,
 				B6CF2D9B20B783B70035EA51 /* RegisterDelegate.swift in Sources */,
 				B6CF2D8320B767D50035EA51 /* ServicesDescResponse.swift in Sources */,
+				B6653C1120CEEB4500F9189C /* MultimediaViewController.swift in Sources */,
 				B64E53F520BCA8640062C41E /* RegisterPresenter.swift in Sources */,
 				B64574011FD1D481002185C6 /* AppDelegate.swift in Sources */,
 				B6316B7920C052970050DC02 /* TicketPresenter.swift in Sources */,
