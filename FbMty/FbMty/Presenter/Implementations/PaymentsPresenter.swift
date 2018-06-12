@@ -21,7 +21,7 @@ class PaymentsPresenter: BasePresenter {
         self.delegate = delegate
     }
     
-    func payments(idHolding:Double){
+    func payments(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_payments, idHolding)as String

@@ -15,4 +15,5 @@ public protocol PaymentsDelegate: NSObjectProtocol {
     
     func onPaymentsError(msg:String?);
 
+    func onOpenPayments(payment: Payments)
 }

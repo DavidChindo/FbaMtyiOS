@@ -11,6 +11,8 @@
 		B6316B7920C052970050DC02 /* TicketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6316B7820C052970050DC02 /* TicketPresenter.swift */; };
 		B6316B7B20C075C40050DC02 /* StatusParkings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6316B7A20C075C40050DC02 /* StatusParkings.swift */; };
 		B63BF03820D0415600676087 /* MaintenanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BF03720D0415600676087 /* MaintenanceDetailViewController.swift */; };
+		B63BF03A20D07AFF00676087 /* PaymentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BF03920D07AFF00676087 /* PaymentsTableViewCell.swift */; };
+		B63BF03C20D07B2200676087 /* PaymentsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BF03B20D07B2200676087 /* PaymentsDataSource.swift */; };
 		B64574011FD1D481002185C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574001FD1D481002185C6 /* AppDelegate.swift */; };
 		B64574031FD1D481002185C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574021FD1D481002185C6 /* ViewController.swift */; };
 		B64574061FD1D481002185C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64574041FD1D481002185C6 /* Main.storyboard */; };
@@ -128,6 +130,8 @@
 		B6316B7820C052970050DC02 /* TicketPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketPresenter.swift; sourceTree = "<group>"; };
 		B6316B7A20C075C40050DC02 /* StatusParkings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusParkings.swift; sourceTree = "<group>"; };
 		B63BF03720D0415600676087 /* MaintenanceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailViewController.swift; sourceTree = "<group>"; };
+		B63BF03920D07AFF00676087 /* PaymentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewCell.swift; sourceTree = "<group>"; };
+		B63BF03B20D07B2200676087 /* PaymentsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsDataSource.swift; sourceTree = "<group>"; };
 		B64573FD1FD1D481002185C6 /* FbMty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FbMty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64574001FD1D481002185C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B64574021FD1D481002185C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../ViewController.swift; sourceTree = "<group>"; };
@@ -346,6 +350,8 @@
 				B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */,
 				B64C686B20D020CC00D9AAE4 /* MaintenanceDataSource.swift */,
 				B64C686D20D020E500D9AAE4 /* MaintenanceTableViewCell.swift */,
+				B63BF03920D07AFF00676087 /* PaymentsTableViewCell.swift */,
+				B63BF03B20D07B2200676087 /* PaymentsDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -835,6 +841,7 @@
 				B6E498A2201EB14D00703224 /* LocationViewController.swift in Sources */,
 				B64E53EF20BC78990062C41E /* ParkingsRequestPresenter.swift in Sources */,
 				B64E53E120B78B850062C41E /* Constants.swift in Sources */,
+				B63BF03A20D07AFF00676087 /* PaymentsTableViewCell.swift in Sources */,
 				B6CF2D8120B764580035EA51 /* ServicesDataResponse.swift in Sources */,
 				B65DD6A81FDF16CE00F3626C /* BaseViewController.swift in Sources */,
 				B6B2CE1220C1BF04003BD535 /* LogicUtils.swift in Sources */,
@@ -867,6 +874,7 @@
 				B64E53F520BCA8640062C41E /* RegisterPresenter.swift in Sources */,
 				B64574011FD1D481002185C6 /* AppDelegate.swift in Sources */,
 				B6316B7920C052970050DC02 /* TicketPresenter.swift in Sources */,
+				B63BF03C20D07B2200676087 /* PaymentsDataSource.swift in Sources */,
 				B64574491FD1E780002185C6 /* Address.swift in Sources */,
 				B6ACBE1120C9F781006561EE /* ServicesTabDelegate.swift in Sources */,
 				B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */,

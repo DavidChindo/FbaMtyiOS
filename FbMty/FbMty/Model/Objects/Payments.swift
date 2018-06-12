@@ -17,19 +17,25 @@ open class Payments: Object, Mappable {
     dynamic var descriptionPay: String?
     dynamic var amount:String?
     dynamic var dateValidity:String?
-    dynamic var dateAccounting:String?
+    dynamic var name:String?
     dynamic var status:String?
+    dynamic var currency:String?
+    
+    override open static func primaryKey()-> String?{
+        return "documentNumber"
+    }
     
     public required convenience init?(map: Map) {
         self.init()
     }
     
     public func mapping(map: Map) {
-        documentNumber <- map["documentNumber"]
-        descriptionPay <- map["desciption"]
-        amount <- map["amount"]
-        dateValidity <- map["dateValidity"]
-        dateAccounting <- map["dateAccounting"]
-        status <- map["status"]
+        documentNumber <- map["DOC_NO"]
+        descriptionPay <- map["ITEM_TEXT"]
+        amount <- map["AMT_DOCCUR"]
+        dateValidity <- map["POSTING_DATE"]
+        name <- map["DOC_TYPE"]
+        status <- map["CLR_DOC_NO"]
+        currency <- map["CURRENCY"]
     }
 }

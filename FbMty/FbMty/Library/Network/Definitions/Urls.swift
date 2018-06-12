@@ -15,7 +15,7 @@ class Urls: NSObject {
     static let API_LOGIN = API_FBMTY + "/token"
     static let API_holdingByUser = API_FBMTY + "/api/MySpace/holdingsByUser"
     static let API_register = API_FBMTY + "/api/Account/Register"
-    static let API_payments = API_FBMTY + "api/MySpace/paymentsByHolding/%d"
+    static let API_payments = API_FBMTY + "/api/MySpace/paymentsByHolding/%d"
     static let API_sendTicket = API_FBMTY + "/api/MySpace/sendTicket"
     static let API_cancelTicket = API_FBMTY + "/api/MySpace/cancelTicket"
     static let API_deleteTicket = API_FBMTY + "/api/MySpace/deleteTicket"
