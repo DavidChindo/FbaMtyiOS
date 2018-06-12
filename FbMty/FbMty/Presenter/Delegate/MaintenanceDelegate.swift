@@ -15,4 +15,5 @@ public protocol MaintenanceDelegate: NSObjectProtocol {
     
     func onErrorMaintenance(msgError:String?);
 
+    func onSelectedMaintenance(maintenance: Maintenance)
 }

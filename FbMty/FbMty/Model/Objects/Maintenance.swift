@@ -19,6 +19,11 @@ open class Maintenance: Object,Mappable {
     dynamic var frequency:String?
     dynamic var provider:String?
     dynamic var cost:String?
+    dynamic var id:Int = -1
+    dynamic var HoldingId: Int = -1
+    dynamic var ProviderPhone:String?
+    dynamic var ProviderCellPhone:String?
+    dynamic var ProviderEmail:String?
     
     
     public required convenience init?(map: Map) {
@@ -26,12 +31,17 @@ open class Maintenance: Object,Mappable {
     }
     
     public func mapping(map: Map) {
-        title <- map["title"]
-        descriptionMa <- map["description"]
-        schedule <- map["schedule"]
+        title <- map["Title"]
+        descriptionMa <- map["Description"]
+        schedule <- map["Schedule"]
         frequency <- map["frequency"]
-        provider <- map["provider"]
-        cost <- map["cost"]
+        provider <- map["ProviderName"]
+        cost <- map["Cost"]
+        ProviderPhone <- map["ProviderPhone"]
+        ProviderCellPhone <- map["ProviderCellPhone"]
+        ProviderEmail <- map["ProviderEmail"]
+        id <- map["Id"]
+        HoldingId <- map["HoldingId"]
     }
     
 }

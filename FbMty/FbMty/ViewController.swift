@@ -9,7 +9,6 @@
 import UIKit
 import SwiftSpinner
 
-
 class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFieldDelegate {
     
     

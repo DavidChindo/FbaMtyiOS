@@ -10,6 +10,7 @@
 		9859F6FB3C7737EF76B1BDF0 /* Pods_FbMty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49224737D84D00102777A932 /* Pods_FbMty.framework */; };
 		B6316B7920C052970050DC02 /* TicketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6316B7820C052970050DC02 /* TicketPresenter.swift */; };
 		B6316B7B20C075C40050DC02 /* StatusParkings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6316B7A20C075C40050DC02 /* StatusParkings.swift */; };
+		B63BF03820D0415600676087 /* MaintenanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BF03720D0415600676087 /* MaintenanceDetailViewController.swift */; };
 		B64574011FD1D481002185C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574001FD1D481002185C6 /* AppDelegate.swift */; };
 		B64574031FD1D481002185C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574021FD1D481002185C6 /* ViewController.swift */; };
 		B64574061FD1D481002185C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64574041FD1D481002185C6 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 		B64574651FD1F3DB002185C6 /* MaintenanceTicketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574641FD1F3DB002185C6 /* MaintenanceTicketRequest.swift */; };
 		B64574671FD1F49B002185C6 /* PaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574661FD1F49B002185C6 /* PaymentRequest.swift */; };
 		B64574691FD1F55B002185C6 /* RecoveryPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64574681FD1F55B002185C6 /* RecoveryPasswordRequest.swift */; };
+		B64C686C20D020CC00D9AAE4 /* MaintenanceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C686B20D020CC00D9AAE4 /* MaintenanceDataSource.swift */; };
+		B64C686E20D020E500D9AAE4 /* MaintenanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C686D20D020E500D9AAE4 /* MaintenanceTableViewCell.swift */; };
 		B64E53DF20B78A090062C41E /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53DE20B78A090062C41E /* Reach.swift */; };
 		B64E53E120B78B850062C41E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53E020B78B850062C41E /* Constants.swift */; };
 		B64E53E320B88F550062C41E /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E53E220B88F550062C41E /* Validators.swift */; };
@@ -124,6 +127,7 @@
 		91904E2BF6FCD468340A11F3 /* Pods-FbMty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FbMty.release.xcconfig"; path = "Pods/Target Support Files/Pods-FbMty/Pods-FbMty.release.xcconfig"; sourceTree = "<group>"; };
 		B6316B7820C052970050DC02 /* TicketPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketPresenter.swift; sourceTree = "<group>"; };
 		B6316B7A20C075C40050DC02 /* StatusParkings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusParkings.swift; sourceTree = "<group>"; };
+		B63BF03720D0415600676087 /* MaintenanceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailViewController.swift; sourceTree = "<group>"; };
 		B64573FD1FD1D481002185C6 /* FbMty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FbMty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64574001FD1D481002185C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B64574021FD1D481002185C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 		B64574641FD1F3DB002185C6 /* MaintenanceTicketRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceTicketRequest.swift; sourceTree = "<group>"; };
 		B64574661FD1F49B002185C6 /* PaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentRequest.swift; sourceTree = "<group>"; };
 		B64574681FD1F55B002185C6 /* RecoveryPasswordRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordRequest.swift; sourceTree = "<group>"; };
+		B64C686B20D020CC00D9AAE4 /* MaintenanceDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDataSource.swift; sourceTree = "<group>"; };
+		B64C686D20D020E500D9AAE4 /* MaintenanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceTableViewCell.swift; sourceTree = "<group>"; };
 		B64E53DE20B78A090062C41E /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
 		B64E53E020B78B850062C41E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B64E53E220B88F550062C41E /* Validators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
@@ -338,6 +344,8 @@
 				B6E498AF201EB3A800703224 /* ServicesTableViewCell.swift */,
 				B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */,
 				B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */,
+				B64C686B20D020CC00D9AAE4 /* MaintenanceDataSource.swift */,
+				B64C686D20D020E500D9AAE4 /* MaintenanceTableViewCell.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -369,6 +377,7 @@
 				B6653C1020CEEB4500F9189C /* MultimediaViewController.swift */,
 				B6653C1220CEFDE100F9189C /* MenuTabViewController.swift */,
 				B6653C1420CF1C9B00F9189C /* ProfileViewController.swift */,
+				B63BF03720D0415600676087 /* MaintenanceDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -708,6 +717,7 @@
 				"${BUILT_PRODUCTS_DIR}/CTPanoramaView/CTPanoramaView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LSDialogViewController/LSDialogViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PocketSVG/PocketSVG.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -730,6 +740,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTPanoramaView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSDialogViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSVG.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -789,10 +800,12 @@
 				B6CF2D9D20B784500035EA51 /* TicketDelegate.swift in Sources */,
 				B6E498AC201EB36000703224 /* ServicesDataSource.swift in Sources */,
 				B64574571FD1ED84002185C6 /* Picture.swift in Sources */,
+				B64C686E20D020E500D9AAE4 /* MaintenanceTableViewCell.swift in Sources */,
 				B64E53E520B8D4070062C41E /* HoldingPresenter.swift in Sources */,
 				B6CF2D7F20B760F90035EA51 /* MyTicketResponse.swift in Sources */,
 				B64574651FD1F3DB002185C6 /* MaintenanceTicketRequest.swift in Sources */,
 				B6653C1520CF1C9B00F9189C /* ProfileViewController.swift in Sources */,
+				B64C686C20D020CC00D9AAE4 /* MaintenanceDataSource.swift in Sources */,
 				B64574671FD1F49B002185C6 /* PaymentRequest.swift in Sources */,
 				B645744B1FD1E92B002185C6 /* Contact.swift in Sources */,
 				B645745D1FD1EF4B002185C6 /* Service.swift in Sources */,
@@ -841,6 +854,7 @@
 				B65DD6B01FDF3D9C00F3626C /* PaymentsViewController.swift in Sources */,
 				B6CF2D7920B62DE10035EA51 /* PicturesResponse.swift in Sources */,
 				B6CF2D7B20B75CBC0035EA51 /* LoginResponse.swift in Sources */,
+				B63BF03820D0415600676087 /* MaintenanceDetailViewController.swift in Sources */,
 				B64574531FD1EBCD002185C6 /* Office.swift in Sources */,
 				B6E498AA201EB34200703224 /* ActivityDataSource.swift in Sources */,
 				B64574611FD1F20B002185C6 /* ChatRequest.swift in Sources */,

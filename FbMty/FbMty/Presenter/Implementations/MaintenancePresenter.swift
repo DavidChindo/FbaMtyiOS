@@ -21,7 +21,7 @@ class MaintenancePresenter: BasePresenter {
         self.delegate = delegate
     }
 
-    func maintenances(idHolding:Double){
+    func maintenances(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_maintenances, idHolding)as String
