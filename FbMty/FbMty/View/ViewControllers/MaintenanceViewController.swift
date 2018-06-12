@@ -63,10 +63,15 @@ class MaintenanceViewController: BaseViewController,MaintenanceDelegate {
         
         let viewController = storyboard!.instantiateViewController(withIdentifier: "MaintenanceDetailID") as! MaintenanceDetailViewController
         viewController.maintenanceObj = maintenance
+        viewController.title  = LogicUtils.validateStringByString(word: maintenance.title)
         
         let popup : STPopupController = STPopupController(rootViewController: viewController)
         popup.containerView.layer.cornerRadius = 4
         popup.style = STPopupStyle.formSheet
+        popup.navigationBar.barTintColor = DesignUtils.primaryDark
+        popup.navigationBar.backgroundColor = DesignUtils.primaryDark
+        popup.navigationBar.tintColor = UIColor.white
+    
         popup.present(in: self)
         
     }

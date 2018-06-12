@@ -20,32 +20,28 @@ class MaintenanceDetailViewController: BaseViewController {
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var mobileLbl: UILabel!
     @IBOutlet weak var nameProviderLbl: UILabel!
-    @IBOutlet weak var titleLbl: UILabel!
+
     
     var maintenanceObj: Maintenance?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.contentSizeInPopup = CGSize(width: 300, height: 500)
+        
+        self.navigationController?.navigationBar.backgroundColor = DesignUtils.primaryDark
+        
+        self.contentSizeInPopup = CGSize(width: 300, height: 470)
         self.landscapeContentSizeInPopup = CGSize(width: 300, height: 150)
 
         initViews()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
     
     func initViews(){
         scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 750)
         containerView.frame = CGRect(x: containerView.frame.origin.x, y: containerView.frame.origin.y, width: containerView.frame.width, height: 750)
 
-        
         if LogicUtils.isObjectNotNil(object: maintenanceObj){
             
-            titleLbl.text = "  " + LogicUtils.validateStringByString(word: maintenanceObj?.title)
             frequencyLbl.text = LogicUtils.validateStringByString(word: maintenanceObj?.schedule)
             nameProviderLbl.text = LogicUtils.validateStringByString(word: maintenanceObj?.provider)
             phoneLbl.text = LogicUtils.validateStringByString(word: maintenanceObj?.ProviderPhone)

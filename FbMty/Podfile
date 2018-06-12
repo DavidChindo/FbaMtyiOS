@@ -25,5 +25,5 @@ pod 'XLPagerTabStrip', '~> 7.0.0’
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'BmoImageLoader'
-pod 'LSDialogViewController', '~> 0.1.9'
+
 end

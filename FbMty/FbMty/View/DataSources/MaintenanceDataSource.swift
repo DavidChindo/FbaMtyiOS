@@ -66,6 +66,8 @@ class MaintenanceDataSource: NSObject, UITableViewDataSource,UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.onSelectedMaintenance(maintenance: self.items[indexPath.row])
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func update(_ items: [Maintenance]){

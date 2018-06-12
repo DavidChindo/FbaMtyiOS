@@ -49,6 +49,7 @@ class DownloadsDataSource: NSObject, UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.onOpenDocto(path: self.items[indexPath.row])
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func update(_ items: [String]){

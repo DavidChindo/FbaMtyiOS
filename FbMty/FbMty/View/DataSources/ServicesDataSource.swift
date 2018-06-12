@@ -76,6 +76,8 @@ class ServicesDataSource: NSObject, UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.onOpenService(service: self.items[indexPath.row])
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func update(_ items: [Service]){

@@ -36,7 +36,6 @@ class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFi
     }
     
     @IBAction func onRegisterClick(_ sender: Any) {
-        //initView(idView: "RegisterID")
         
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterID") else {
             print("View controller Six not found")
@@ -44,7 +43,6 @@ class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFi
         }
         present(vc, animated: true, completion: nil)
 
-        
     }
     
     @IBAction func onForgetPassClick(_ sender: Any) {
