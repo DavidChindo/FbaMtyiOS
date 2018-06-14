@@ -68,6 +68,10 @@
 		B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */; };
 		B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */; };
 		B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */; };
+		B6A1617C20D1761100334EFA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1617B20D1761100334EFA /* ChatViewController.swift */; };
+		B6A1617E20D18EB600334EFA /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1617D20D18EB600334EFA /* MessageTableViewCell.swift */; };
+		B6A1618020D18EED00334EFA /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1617F20D18EED00334EFA /* MessageDataSource.swift */; };
+		B6A1618220D1C57000334EFA /* MessageSentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1618120D1C57000334EFA /* MessageSentTableViewCell.swift */; };
 		B6ACBE1120C9F781006561EE /* ServicesTabDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ACBE1020C9F781006561EE /* ServicesTabDelegate.swift */; };
 		B6B2CE1220C1BF04003BD535 /* LogicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2CE1120C1BF04003BD535 /* LogicUtils.swift */; };
 		B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2CE1320C1BFF1003BD535 /* Prefs.swift */; };
@@ -193,6 +197,10 @@
 		B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsDataSource.swift; sourceTree = "<group>"; };
 		B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsTableViewCell.swift; sourceTree = "<group>"; };
 		B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDelegate.swift; sourceTree = "<group>"; };
+		B6A1617B20D1761100334EFA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B6A1617D20D18EB600334EFA /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		B6A1617F20D18EED00334EFA /* MessageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
+		B6A1618120D1C57000334EFA /* MessageSentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSentTableViewCell.swift; sourceTree = "<group>"; };
 		B6ACBE1020C9F781006561EE /* ServicesTabDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTabDelegate.swift; sourceTree = "<group>"; };
 		B6B2CE1120C1BF04003BD535 /* LogicUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicUtils.swift; sourceTree = "<group>"; };
 		B6B2CE1320C1BFF1003BD535 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
@@ -352,6 +360,9 @@
 				B64C686D20D020E500D9AAE4 /* MaintenanceTableViewCell.swift */,
 				B63BF03920D07AFF00676087 /* PaymentsTableViewCell.swift */,
 				B63BF03B20D07B2200676087 /* PaymentsDataSource.swift */,
+				B6A1617D20D18EB600334EFA /* MessageTableViewCell.swift */,
+				B6A1617F20D18EED00334EFA /* MessageDataSource.swift */,
+				B6A1618120D1C57000334EFA /* MessageSentTableViewCell.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -384,6 +395,7 @@
 				B6653C1220CEFDE100F9189C /* MenuTabViewController.swift */,
 				B6653C1420CF1C9B00F9189C /* ProfileViewController.swift */,
 				B63BF03720D0415600676087 /* MaintenanceDetailViewController.swift */,
+				B6A1617B20D1761100334EFA /* ChatViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -798,6 +810,7 @@
 				B6CF2D8920B77FA10035EA51 /* DonwloadDelegate.swift in Sources */,
 				B65DD6B21FDF3DAE00F3626C /* MaintenanceViewController.swift in Sources */,
 				B6CF2D9720B782BE0035EA51 /* PaymentsDelegate.swift in Sources */,
+				B6A1617E20D18EB600334EFA /* MessageTableViewCell.swift in Sources */,
 				B6E498A8201EB1A000703224 /* CharacteristicsViewController.swift in Sources */,
 				B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */,
 				B6CF2D9520B782420035EA51 /* ParkingsRequestDelegate.swift in Sources */,
@@ -828,6 +841,7 @@
 				B64574451FD1E3C7002185C6 /* DesignUtils.swift in Sources */,
 				B64574591FD1EE53002185C6 /* Plan.swift in Sources */,
 				B64574511FD1EAE2002185C6 /* Maintenance.swift in Sources */,
+				B6A1618020D18EED00334EFA /* MessageDataSource.swift in Sources */,
 				B6CF2D9120B781810035EA51 /* MyTicketsDelegate.swift in Sources */,
 				B6E498A6201EB18D00703224 /* ServicesViewController.swift in Sources */,
 				B6CF2D8B20B77FDF0035EA51 /* HoldingDelegate.swift in Sources */,
@@ -868,6 +882,7 @@
 				B6CF2D8F20B780EC0035EA51 /* MaintenanceDelegate.swift in Sources */,
 				B6E498AE201EB38F00703224 /* ActivityTableViewCell.swift in Sources */,
 				B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */,
+				B6A1618220D1C57000334EFA /* MessageSentTableViewCell.swift in Sources */,
 				B6CF2D9B20B783B70035EA51 /* RegisterDelegate.swift in Sources */,
 				B6CF2D8320B767D50035EA51 /* ServicesDescResponse.swift in Sources */,
 				B6653C1120CEEB4500F9189C /* MultimediaViewController.swift in Sources */,
@@ -879,6 +894,7 @@
 				B6ACBE1120C9F781006561EE /* ServicesTabDelegate.swift in Sources */,
 				B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */,
 				B64E53ED20BC750C0062C41E /* ParkingsInboxPresenter.swift in Sources */,
+				B6A1617C20D1761100334EFA /* ChatViewController.swift in Sources */,
 				B64E53DF20B78A090062C41E /* Reach.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

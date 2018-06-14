@@ -14,5 +14,9 @@ class Validators: NSObject {
         return !(textField.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty)!
     }
     
+    class func validateUITextView(textField: UITextView) -> Bool{
+        return !(textField.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty)!
+    }
+    
     
 }

@@ -38,16 +38,19 @@ class MaintenanceViewController: BaseViewController,MaintenanceDelegate {
         SwiftSpinner.show("Cargando...")
         maintenencePresenter?.maintenances(idHolding: (MenuViewController.holdingResponse?.Id)!)
         
+        maintenanceDataSource = MaintenanceDataSource(tableView: maintenanceTableView, items: mMaintenance, delegate: self)
+        
+        maintenanceTableView.dataSource = maintenanceDataSource
+        maintenanceTableView.delegate = maintenanceDataSource
+        
         
     }
     
     func onLoadMaintenance(maintenances: [Maintenance]) {
         
         mMaintenance = maintenances
-        maintenanceDataSource = MaintenanceDataSource(tableView: maintenanceTableView, items: mMaintenance, delegate: self)
-        
-        maintenanceTableView.dataSource = maintenanceDataSource
-        maintenanceTableView.delegate = maintenanceDataSource
+       
+        maintenanceDataSource?.update(mMaintenance)
         
         SwiftSpinner.hide()
     }

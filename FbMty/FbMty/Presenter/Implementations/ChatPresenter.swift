@@ -21,7 +21,7 @@ class ChatPresenter: BasePresenter {
         self.delegate = delegate
     }
     
-    func messages(idHolding:Double){
+    func messages(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_messages, idHolding)as String
@@ -62,22 +62,22 @@ class ChatPresenter: BasePresenter {
     }
     
     
-    func valid(field:UITextField){
+    func valid(field:UITextView){
         var isValid:Bool = true
         var msg:String = ""
-        if(Validators.validateTextField(textField: field)){
+        if(Validators.validateUITextView(textField: field)){
                 isValid = true
         }else{
-                msg =  "El campo " + field.text! + "es requerido"
+                msg =  "El campo mensaje es requerido"
                 isValid = false
         }
         self.delegate?.onValid(isValid: isValid, msg: msg)
     }
     
-    func chatSent(msg:String?, idHolding:Double){
+    func chatSent(msg:String?, idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
-        let params: Parameters = ["holdingId" : idHolding, "message" : msg]
+        let params: Parameters = ["holdingId" : idHolding, "message" : msg!]
         
         let status = Reach().connectionStatus()
         
