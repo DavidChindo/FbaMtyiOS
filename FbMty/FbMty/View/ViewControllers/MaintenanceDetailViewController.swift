@@ -12,7 +12,6 @@ import STPopup
 class MaintenanceDetailViewController: BaseViewController {
     
     @IBOutlet weak var contentTxtView: UITextView!
-    
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var frequencyLbl: UILabel!
@@ -21,8 +20,8 @@ class MaintenanceDetailViewController: BaseViewController {
     @IBOutlet weak var mobileLbl: UILabel!
     @IBOutlet weak var nameProviderLbl: UILabel!
 
-    
     var maintenanceObj: Maintenance?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

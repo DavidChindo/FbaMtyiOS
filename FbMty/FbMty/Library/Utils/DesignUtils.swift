@@ -18,6 +18,7 @@ class DesignUtils: NSObject {
     static let grayFont = UIColor(red: 88/255, green: 89/255, blue: 91/255, alpha: 1)
     static let primaryDark = UIColor(red: 16/255, green: 40/255, blue: 58/255, alpha: 1)
     static let colorPrimary = UIColor(red: 92/255, green: 193/255, blue: 220/255, alpha: 1)
+    static let greenStatus = UIColor(red: 27/255, green: 155/255, blue: 36/255, alpha: 1)
     
     class func setBorder(button: UIButton,mred:Int,mgreen:Int,mblue:Int){
         button.layer.borderColor = UIColor(red: CGFloat(mred)/255, green: CGFloat(mgreen)/255, blue: CGFloat(mblue)/255, alpha: 1).cgColor
@@ -28,6 +29,13 @@ class DesignUtils: NSObject {
         view.layer.borderColor = UIColor(red: CGFloat(mred)/255, green: CGFloat(mgreen)/255, blue: CGFloat(mblue)/255, alpha: 1).cgColor
         view.layer.borderWidth = 1.0
     }
+    
+    class func setFillView(view: UIView,background: UIColor){
+        view.layer.shadowOffset = CGSize(width: -1, height: 1)
+        view.layer.shadowOpacity = 0.2
+        view.backgroundColor = background
+    }
+    
     
     class func alertConfirm(titleMessage:String, message:String,vc:UIViewController){
         

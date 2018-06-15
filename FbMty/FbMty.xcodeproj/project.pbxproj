@@ -68,10 +68,14 @@
 		B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */; };
 		B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */; };
 		B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */; };
+		B6A0481720D432600072AFC4 /* TicketsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481620D432600072AFC4 /* TicketsDataSource.swift */; };
+		B6A0481920D432810072AFC4 /* TicketsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481820D432810072AFC4 /* TicketsTableViewCell.swift */; };
+		B6A0481B20D435140072AFC4 /* TicketsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481A20D435140072AFC4 /* TicketsDelegate.swift */; };
 		B6A1617C20D1761100334EFA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1617B20D1761100334EFA /* ChatViewController.swift */; };
 		B6A1617E20D18EB600334EFA /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1617D20D18EB600334EFA /* MessageTableViewCell.swift */; };
 		B6A1618020D18EED00334EFA /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1617F20D18EED00334EFA /* MessageDataSource.swift */; };
 		B6A1618220D1C57000334EFA /* MessageSentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1618120D1C57000334EFA /* MessageSentTableViewCell.swift */; };
+		B6A1618420D336A600334EFA /* PaymentsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1618320D336A600334EFA /* PaymentsDetailViewController.swift */; };
 		B6ACBE1120C9F781006561EE /* ServicesTabDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ACBE1020C9F781006561EE /* ServicesTabDelegate.swift */; };
 		B6B2CE1220C1BF04003BD535 /* LogicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2CE1120C1BF04003BD535 /* LogicUtils.swift */; };
 		B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2CE1320C1BFF1003BD535 /* Prefs.swift */; };
@@ -197,10 +201,14 @@
 		B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsDataSource.swift; sourceTree = "<group>"; };
 		B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsTableViewCell.swift; sourceTree = "<group>"; };
 		B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDelegate.swift; sourceTree = "<group>"; };
+		B6A0481620D432600072AFC4 /* TicketsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDataSource.swift; sourceTree = "<group>"; };
+		B6A0481820D432810072AFC4 /* TicketsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsTableViewCell.swift; sourceTree = "<group>"; };
+		B6A0481A20D435140072AFC4 /* TicketsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDelegate.swift; sourceTree = "<group>"; };
 		B6A1617B20D1761100334EFA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B6A1617D20D18EB600334EFA /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		B6A1617F20D18EED00334EFA /* MessageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		B6A1618120D1C57000334EFA /* MessageSentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSentTableViewCell.swift; sourceTree = "<group>"; };
+		B6A1618320D336A600334EFA /* PaymentsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsDetailViewController.swift; sourceTree = "<group>"; };
 		B6ACBE1020C9F781006561EE /* ServicesTabDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTabDelegate.swift; sourceTree = "<group>"; };
 		B6B2CE1120C1BF04003BD535 /* LogicUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicUtils.swift; sourceTree = "<group>"; };
 		B6B2CE1320C1BFF1003BD535 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
@@ -363,6 +371,8 @@
 				B6A1617D20D18EB600334EFA /* MessageTableViewCell.swift */,
 				B6A1617F20D18EED00334EFA /* MessageDataSource.swift */,
 				B6A1618120D1C57000334EFA /* MessageSentTableViewCell.swift */,
+				B6A0481620D432600072AFC4 /* TicketsDataSource.swift */,
+				B6A0481820D432810072AFC4 /* TicketsTableViewCell.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -396,6 +406,7 @@
 				B6653C1420CF1C9B00F9189C /* ProfileViewController.swift */,
 				B63BF03720D0415600676087 /* MaintenanceDetailViewController.swift */,
 				B6A1617B20D1761100334EFA /* ChatViewController.swift */,
+				B6A1618320D336A600334EFA /* PaymentsDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -532,6 +543,7 @@
 				B6CF2D9C20B784500035EA51 /* TicketDelegate.swift */,
 				B6ACBE1020C9F781006561EE /* ServicesTabDelegate.swift */,
 				B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */,
+				B6A0481A20D435140072AFC4 /* TicketsDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -803,6 +815,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A0481B20D435140072AFC4 /* TicketsDelegate.swift in Sources */,
 				B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */,
 				B64E53F720BCAA4E0062C41E /* RegisterRequest.swift in Sources */,
 				B6653C1320CEFDE100F9189C /* MenuTabViewController.swift in Sources */,
@@ -817,6 +830,7 @@
 				B64E53EB20BC6FBC0062C41E /* MyTicketsPresenter.swift in Sources */,
 				B6CF2D9F20B785E90035EA51 /* ChatPresenter.swift in Sources */,
 				B6CF2D9D20B784500035EA51 /* TicketDelegate.swift in Sources */,
+				B6A1618420D336A600334EFA /* PaymentsDetailViewController.swift in Sources */,
 				B6E498AC201EB36000703224 /* ServicesDataSource.swift in Sources */,
 				B64574571FD1ED84002185C6 /* Picture.swift in Sources */,
 				B64C686E20D020E500D9AAE4 /* MaintenanceTableViewCell.swift in Sources */,
@@ -832,6 +846,7 @@
 				B6CF2D7720B625550035EA51 /* HoldingResponse.swift in Sources */,
 				B645745B1FD1EECC002185C6 /* Provider.swift in Sources */,
 				B64574691FD1F55B002185C6 /* RecoveryPasswordRequest.swift in Sources */,
+				B6A0481720D432600072AFC4 /* TicketsDataSource.swift in Sources */,
 				B65DD6B41FDF3DBB00F3626C /* TicketViewController.swift in Sources */,
 				B6B3BD2C20C884ED00EDAF89 /* RegisterViewController.swift in Sources */,
 				B65DD6AE1FDF175E00F3626C /* MenuViewController.swift in Sources */,
@@ -848,6 +863,7 @@
 				B65DD6AA1FDF16F700F3626C /* BasePresenter.swift in Sources */,
 				B64E53E720BC5EA90062C41E /* LoginPresenter.swift in Sources */,
 				B6CF2D9320B781F30035EA51 /* ParkingsInboxDelegate.swift in Sources */,
+				B6A0481920D432810072AFC4 /* TicketsTableViewCell.swift in Sources */,
 				B645744F1FD1EA6F002185C6 /* Coordinate.swift in Sources */,
 				B6CF2D7D20B75F580035EA51 /* MessageResponse.swift in Sources */,
 				B64574631FD1F320002185C6 /* LoginRequest.swift in Sources */,

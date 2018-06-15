@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftSpinner
+import STPopup
 
 class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDelegate {
 
@@ -130,6 +131,19 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
     }
     
     func onOpenPayments(payment: Payments) {
+        
+        let viewController = storyboard!.instantiateViewController(withIdentifier: "PaymentsDetaiID") as! PaymentsDetailViewController
+        viewController.payment = payment
+        viewController.title  = LogicUtils.validateStringByString(word: payment.documentNumber)
+        
+        let popup : STPopupController = STPopupController(rootViewController: viewController)
+        popup.containerView.layer.cornerRadius = 4
+        popup.style = STPopupStyle.formSheet
+        popup.navigationBar.barTintColor = DesignUtils.primaryDark
+        popup.navigationBar.backgroundColor = DesignUtils.primaryDark
+        popup.navigationBar.tintColor = UIColor.white
+        
+        popup.present(in: self)
         
     }
     

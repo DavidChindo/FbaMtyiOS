@@ -1,8 +1,8 @@
 //
-//  ServicesDataSource.swift
+//  TicketsDataSource.swift
 //  FbMty
 //
-//  Created by David Barrera on 1/28/18.
+//  Created by David Barrera on 6/15/18.
 //  Copyright © 2018 HICS SA DE CV. All rights reserved.
 //
 
@@ -11,20 +11,19 @@ import Kingfisher
 import RealmSwift
 import Kingfisher
 
-
-class ServicesDataSource: NSObject, UITableViewDataSource,UITableViewDelegate {
+class TicketsDataSource:  NSObject, UITableViewDataSource,UITableViewDelegate {
     
     var tableView: UITableView?
     var items = List<Service>()
     
-    var emptyMessage = "No hay servicios"
-    var delegate: ServicesTabDelegate?
+    var emptyMessage = "No hay tickets"
+    var delegate: TicketsDelegate?
     
-    init(tableView: UITableView,items:List<Service>, delegate: ServicesTabDelegate) {
+    init(tableView: UITableView,items:List<Service>, delegate: TicketsDelegate) {
         self.tableView = tableView
         self.items = items
         self.delegate = delegate
-    
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,18 +44,18 @@ class ServicesDataSource: NSObject, UITableViewDataSource,UITableViewDelegate {
             self.tableView?.separatorStyle = .none
             
             return 0
-
+            
         }
         
     }
     
-   
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:ServicesTableViewCell = tableView.dequeueReusableCell(withIdentifier: "servicesCell") as! ServicesTableViewCell
+        let cell:TicketsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TicketsCell") as! TicketsTableViewCell
         let item = self.items[indexPath.row]
         DesignUtils.setBorderView(view: cell.containerMajor,mred: 209, mgreen: 211, mblue: 212)
         cell.titleLbl.text = item.descriptionSer
@@ -65,12 +64,12 @@ class ServicesDataSource: NSObject, UITableViewDataSource,UITableViewDelegate {
         print(indexPath.row.description)
         print(url?.absoluteString)
         reloadImage(url: url!, image: cell.imgIcon)
-    
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.onOpenService(service: self.items[indexPath.row])
+        delegate?.onOpenTicket(ticket: self.items[indexPath.row])
         
         tableView.deselectRow(at: indexPath, animated: true)
     }

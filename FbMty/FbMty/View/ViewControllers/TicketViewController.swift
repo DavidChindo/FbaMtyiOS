@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
 
-class TicketViewController: BaseViewController {
+class TicketViewController: BaseViewController, TicketsDelegate {
 
+    @IBOutlet weak var ticketTableView: UITableView!
+    
+    var servicesTicket = List<Service>()
+    var ticketDataSource: TicketsDataSource?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Tickets"
@@ -19,18 +26,34 @@ class TicketViewController: BaseViewController {
         UIDevice.current.setValue(value, forKey: "orientation")
         UIViewController.attemptRotationToDeviceOrientation()
 
+        initViews()
+        
+        ticketTableView.dataSource = ticketDataSource
+        ticketTableView.delegate = ticketDataSource
     }
 
+    func initViews(){
+        
+        if (MenuViewController.holdingResponse?.ServiceTickets.count)! > 0 {
+            
+            servicesTicket = (MenuViewController.holdingResponse?.ServiceTickets)!
+            
+            ticketDataSource = TicketsDataSource(tableView: ticketTableView, items: servicesTicket, delegate: self)
+        }
+    }
+    
     func dissmissView(_ sender: Any){
         self.dismiss(animated: true, completion: nil)
     }
     
+    func onOpenTicket(ticket: Service) {
+        
+    }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         get {
             return .portrait
         }
     }
-
     
 }
