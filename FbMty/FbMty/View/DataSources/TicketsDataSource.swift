@@ -61,8 +61,7 @@ class TicketsDataSource:  NSObject, UITableViewDataSource,UITableViewDelegate {
         cell.titleLbl.text = item.descriptionSer
         
         let url = URL(string: Urls.API_FBMTY + (item.icon)! + ".png")
-        print(indexPath.row.description)
-        print(url?.absoluteString)
+        
         reloadImage(url: url!, image: cell.imgIcon)
         
         return cell

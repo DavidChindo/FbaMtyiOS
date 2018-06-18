@@ -9,6 +9,8 @@
 import UIKit
 import Realm
 import RealmSwift
+import STPopup
+
 
 class TicketViewController: BaseViewController, TicketsDelegate {
 
@@ -48,6 +50,18 @@ class TicketViewController: BaseViewController, TicketsDelegate {
     
     func onOpenTicket(ticket: Service) {
         
+        let viewController = storyboard!.instantiateViewController(withIdentifier: "TicketFormId") as! TicketFormViewController
+        viewController.ticketService = ticket
+        viewController.title  = LogicUtils.validateStringByString(word: ticket.title)
+        
+        let popup : STPopupController = STPopupController(rootViewController: viewController)
+        popup.containerView.layer.cornerRadius = 4
+        popup.style = STPopupStyle.formSheet
+        popup.navigationBar.barTintColor = DesignUtils.colorPrimary
+        popup.navigationBar.backgroundColor = DesignUtils.colorPrimary
+        popup.navigationBar.tintColor = UIColor.white
+        
+        popup.present(in: self)
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
