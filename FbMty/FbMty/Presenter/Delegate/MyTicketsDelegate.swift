@@ -23,4 +23,6 @@ public protocol MyTicketsDelegate: NSObjectProtocol {
     
     func onErrorDelete(msg:String?);
     
+    func onOpenMyTicket(myTicket: MyTicketResponse?)
+    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
-
+import GoogleMaps
 
 
 @UIApplicationMain
@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = .lightContent
         
         customNavBar()
-    
+        GMSServices.provideAPIKey("AIzaSyDi_oRWiCfjWZkzKaf3oKsbR21OaT81DCQ")
+
         IQKeyboardManager.sharedManager().enable = true
         
         return true

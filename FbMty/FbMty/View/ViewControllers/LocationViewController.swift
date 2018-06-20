@@ -7,29 +7,48 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class LocationViewController: BaseViewController {
 
+    @IBOutlet weak var addressLbl: UILabel!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var addressContainer: UIView!
+    @IBOutlet weak var majorContainer: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var containerMap: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+    override func loadView() {
+        
+        let camera = GMSCameraPosition.camera(withLatitude: (MenuViewController.holdingResponse?.Coordinates?.latitude)!, longitude: (MenuViewController.holdingResponse?.Coordinates?.longitude)!, zoom: 14.0)
+        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        
+        let marker = GMSMarker()
+        marker.position = camera.target
+        marker.snippet = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.NombreEdificio)
+   
+        marker.map = mapView
+        
+        view = mapView
+        
+        
     }
     
+    func initViews(){
+        
+        if LogicUtils.isObjectNotNil(object:  MenuViewController.holdingResponse){
+            DesignUtils.containerRound(content: containerMap)
+            nameLbl.text = MenuViewController.holdingResponse?.NombreEdificio!
+            if LogicUtils.isObjectNotNil(object: MenuViewController.holdingResponse?.Address){
+                addressLbl.text = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.street)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.numberExt)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.suburb)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.town)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.zip)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.state)
+            }
+        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }

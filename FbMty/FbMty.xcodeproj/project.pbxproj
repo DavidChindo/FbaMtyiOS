@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9859F6FB3C7737EF76B1BDF0 /* Pods_FbMty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49224737D84D00102777A932 /* Pods_FbMty.framework */; };
+		B61E0D5220D87328002268EC /* MyTicketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61E0D5120D87328002268EC /* MyTicketDetailViewController.swift */; };
+		B61E0D5420D95575002268EC /* ServiceAdminFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61E0D5320D95575002268EC /* ServiceAdminFormViewController.swift */; };
+		B61E0D5620D95AC5002268EC /* ParkingsRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61E0D5520D95AC5002268EC /* ParkingsRequestViewController.swift */; };
+		B61E0D5820D95AEC002268EC /* ParkingsInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61E0D5720D95AEC002268EC /* ParkingsInboxViewController.swift */; };
+		B61E0D5A20D9B0A9002268EC /* ServiceDescDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61E0D5920D9B0A9002268EC /* ServiceDescDataSource.swift */; };
+		B61E0D5C20D9B0C2002268EC /* ServiceDescTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61E0D5B20D9B0C2002268EC /* ServiceDescTableViewCell.swift */; };
+		B61E0D5E20DA2720002268EC /* ParkingsInboxDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61E0D5D20DA2720002268EC /* ParkingsInboxDataSource.swift */; };
+		B61E0D6020DA273A002268EC /* ParkingsInboxInboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61E0D5F20DA273A002268EC /* ParkingsInboxInboxTableViewCell.swift */; };
 		B6316B7920C052970050DC02 /* TicketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6316B7820C052970050DC02 /* TicketPresenter.swift */; };
 		B6316B7B20C075C40050DC02 /* StatusParkings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6316B7A20C075C40050DC02 /* StatusParkings.swift */; };
 		B63BF03820D0415600676087 /* MaintenanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BF03720D0415600676087 /* MaintenanceDetailViewController.swift */; };
@@ -73,6 +81,9 @@
 		B6A0481B20D435140072AFC4 /* TicketsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481A20D435140072AFC4 /* TicketsDelegate.swift */; };
 		B6A0481D20D71EC80072AFC4 /* TicketFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481C20D71EC80072AFC4 /* TicketFormViewController.swift */; };
 		B6A0482220D7F7D40072AFC4 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A0482120D7F7D40072AFC4 /* CloudKit.framework */; };
+		B6A0482420D864970072AFC4 /* MyTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0482320D864970072AFC4 /* MyTicketsViewController.swift */; };
+		B6A0482620D8694F0072AFC4 /* MyTicketsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0482520D8694F0072AFC4 /* MyTicketsTableViewCell.swift */; };
+		B6A0482820D86AC90072AFC4 /* MyTicketsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0482720D86AC90072AFC4 /* MyTicketsDataSource.swift */; };
 		B6A1617C20D1761100334EFA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1617B20D1761100334EFA /* ChatViewController.swift */; };
 		B6A1617E20D18EB600334EFA /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1617D20D18EB600334EFA /* MessageTableViewCell.swift */; };
 		B6A1618020D18EED00334EFA /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1617F20D18EED00334EFA /* MessageDataSource.swift */; };
@@ -137,6 +148,14 @@
 		24DDC1B4EC3D1659C16A8776 /* Pods-FbMty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FbMty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FbMty/Pods-FbMty.debug.xcconfig"; sourceTree = "<group>"; };
 		49224737D84D00102777A932 /* Pods_FbMty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FbMty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91904E2BF6FCD468340A11F3 /* Pods-FbMty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FbMty.release.xcconfig"; path = "Pods/Target Support Files/Pods-FbMty/Pods-FbMty.release.xcconfig"; sourceTree = "<group>"; };
+		B61E0D5120D87328002268EC /* MyTicketDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketDetailViewController.swift; sourceTree = "<group>"; };
+		B61E0D5320D95575002268EC /* ServiceAdminFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAdminFormViewController.swift; sourceTree = "<group>"; };
+		B61E0D5520D95AC5002268EC /* ParkingsRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingsRequestViewController.swift; sourceTree = "<group>"; };
+		B61E0D5720D95AEC002268EC /* ParkingsInboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingsInboxViewController.swift; sourceTree = "<group>"; };
+		B61E0D5920D9B0A9002268EC /* ServiceDescDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDescDataSource.swift; sourceTree = "<group>"; };
+		B61E0D5B20D9B0C2002268EC /* ServiceDescTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDescTableViewCell.swift; sourceTree = "<group>"; };
+		B61E0D5D20DA2720002268EC /* ParkingsInboxDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingsInboxDataSource.swift; sourceTree = "<group>"; };
+		B61E0D5F20DA273A002268EC /* ParkingsInboxInboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingsInboxInboxTableViewCell.swift; sourceTree = "<group>"; };
 		B6316B7820C052970050DC02 /* TicketPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketPresenter.swift; sourceTree = "<group>"; };
 		B6316B7A20C075C40050DC02 /* StatusParkings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusParkings.swift; sourceTree = "<group>"; };
 		B63BF03720D0415600676087 /* MaintenanceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +228,9 @@
 		B6A0481C20D71EC80072AFC4 /* TicketFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketFormViewController.swift; sourceTree = "<group>"; };
 		B6A0481E20D7F70F0072AFC4 /* FbMty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FbMty.entitlements; sourceTree = "<group>"; };
 		B6A0482120D7F7D40072AFC4 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B6A0482320D864970072AFC4 /* MyTicketsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketsViewController.swift; sourceTree = "<group>"; };
+		B6A0482520D8694F0072AFC4 /* MyTicketsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketsTableViewCell.swift; sourceTree = "<group>"; };
+		B6A0482720D86AC90072AFC4 /* MyTicketsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketsDataSource.swift; sourceTree = "<group>"; };
 		B6A1617B20D1761100334EFA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B6A1617D20D18EB600334EFA /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		B6A1617F20D18EED00334EFA /* MessageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
@@ -381,6 +403,12 @@
 				B6A1618120D1C57000334EFA /* MessageSentTableViewCell.swift */,
 				B6A0481620D432600072AFC4 /* TicketsDataSource.swift */,
 				B6A0481820D432810072AFC4 /* TicketsTableViewCell.swift */,
+				B6A0482520D8694F0072AFC4 /* MyTicketsTableViewCell.swift */,
+				B6A0482720D86AC90072AFC4 /* MyTicketsDataSource.swift */,
+				B61E0D5920D9B0A9002268EC /* ServiceDescDataSource.swift */,
+				B61E0D5B20D9B0C2002268EC /* ServiceDescTableViewCell.swift */,
+				B61E0D5D20DA2720002268EC /* ParkingsInboxDataSource.swift */,
+				B61E0D5F20DA273A002268EC /* ParkingsInboxInboxTableViewCell.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -416,6 +444,11 @@
 				B6A1617B20D1761100334EFA /* ChatViewController.swift */,
 				B6A1618320D336A600334EFA /* PaymentsDetailViewController.swift */,
 				B6A0481C20D71EC80072AFC4 /* TicketFormViewController.swift */,
+				B6A0482320D864970072AFC4 /* MyTicketsViewController.swift */,
+				B61E0D5120D87328002268EC /* MyTicketDetailViewController.swift */,
+				B61E0D5320D95575002268EC /* ServiceAdminFormViewController.swift */,
+				B61E0D5520D95AC5002268EC /* ParkingsRequestViewController.swift */,
+				B61E0D5720D95AEC002268EC /* ParkingsInboxViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -838,12 +871,15 @@
 				B6A0481B20D435140072AFC4 /* TicketsDelegate.swift in Sources */,
 				B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */,
 				B64E53F720BCAA4E0062C41E /* RegisterRequest.swift in Sources */,
+				B61E0D5A20D9B0A9002268EC /* ServiceDescDataSource.swift in Sources */,
 				B6653C1320CEFDE100F9189C /* MenuTabViewController.swift in Sources */,
+				B61E0D6020DA273A002268EC /* ParkingsInboxInboxTableViewCell.swift in Sources */,
 				B6CF2D9920B783510035EA51 /* ProfileDelegate.swift in Sources */,
 				B6CF2D8920B77FA10035EA51 /* DonwloadDelegate.swift in Sources */,
 				B65DD6B21FDF3DAE00F3626C /* MaintenanceViewController.swift in Sources */,
 				B6CF2D9720B782BE0035EA51 /* PaymentsDelegate.swift in Sources */,
 				B6A1617E20D18EB600334EFA /* MessageTableViewCell.swift in Sources */,
+				B61E0D5C20D9B0C2002268EC /* ServiceDescTableViewCell.swift in Sources */,
 				B6E498A8201EB1A000703224 /* CharacteristicsViewController.swift in Sources */,
 				B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */,
 				B6CF2D9520B782420035EA51 /* ParkingsRequestDelegate.swift in Sources */,
@@ -860,6 +896,7 @@
 				B6653C1520CF1C9B00F9189C /* ProfileViewController.swift in Sources */,
 				B64C686C20D020CC00D9AAE4 /* MaintenanceDataSource.swift in Sources */,
 				B64574671FD1F49B002185C6 /* PaymentRequest.swift in Sources */,
+				B6A0482820D86AC90072AFC4 /* MyTicketsDataSource.swift in Sources */,
 				B645744B1FD1E92B002185C6 /* Contact.swift in Sources */,
 				B645745D1FD1EF4B002185C6 /* Service.swift in Sources */,
 				B64E53E920BC6B650062C41E /* MaintenancePresenter.swift in Sources */,
@@ -879,6 +916,7 @@
 				B6A1618020D18EED00334EFA /* MessageDataSource.swift in Sources */,
 				B6CF2D9120B781810035EA51 /* MyTicketsDelegate.swift in Sources */,
 				B6E498A6201EB18D00703224 /* ServicesViewController.swift in Sources */,
+				B61E0D5620D95AC5002268EC /* ParkingsRequestViewController.swift in Sources */,
 				B6CF2D8B20B77FDF0035EA51 /* HoldingDelegate.swift in Sources */,
 				B65DD6AA1FDF16F700F3626C /* BasePresenter.swift in Sources */,
 				B64E53E720BC5EA90062C41E /* LoginPresenter.swift in Sources */,
@@ -891,6 +929,8 @@
 				B6E498A2201EB14D00703224 /* LocationViewController.swift in Sources */,
 				B64E53EF20BC78990062C41E /* ParkingsRequestPresenter.swift in Sources */,
 				B64E53E120B78B850062C41E /* Constants.swift in Sources */,
+				B61E0D5820D95AEC002268EC /* ParkingsInboxViewController.swift in Sources */,
+				B6A0482420D864970072AFC4 /* MyTicketsViewController.swift in Sources */,
 				B63BF03A20D07AFF00676087 /* PaymentsTableViewCell.swift in Sources */,
 				B6CF2D8120B764580035EA51 /* ServicesDataResponse.swift in Sources */,
 				B65DD6A81FDF16CE00F3626C /* BaseViewController.swift in Sources */,
@@ -900,11 +940,15 @@
 				B64574551FD1EC99002185C6 /* Payments.swift in Sources */,
 				B6E498A4201EB17900703224 /* DownloadsViewController.swift in Sources */,
 				B64E53F320BC87D10062C41E /* ProfilePresenter.swift in Sources */,
+				B61E0D5420D95575002268EC /* ServiceAdminFormViewController.swift in Sources */,
 				B6E498A0201BEE7800703224 /* MySpaceViewController.swift in Sources */,
 				B6E498B0201EB3A800703224 /* ServicesTableViewCell.swift in Sources */,
 				B6CF2D8D20B780500035EA51 /* LoginDelegate.swift in Sources */,
 				B6A0481D20D71EC80072AFC4 /* TicketFormViewController.swift in Sources */,
+				B61E0D5220D87328002268EC /* MyTicketDetailViewController.swift in Sources */,
 				B64574471FD1E555002185C6 /* ActivityHolding.swift in Sources */,
+				B61E0D5E20DA2720002268EC /* ParkingsInboxDataSource.swift in Sources */,
+				B6A0482620D8694F0072AFC4 /* MyTicketsTableViewCell.swift in Sources */,
 				B6CF2DA120B788080035EA51 /* RealmManager.swift in Sources */,
 				B645745F1FD1EFFB002185C6 /* Ticket.swift in Sources */,
 				B6316B7B20C075C40050DC02 /* StatusParkings.swift in Sources */,

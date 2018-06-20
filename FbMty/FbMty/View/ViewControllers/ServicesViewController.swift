@@ -39,7 +39,10 @@ class ServicesViewController: BaseViewController, ServicesTabDelegate {
     func onOpenService(service: Service) {
         
         let idServiceValue = idService(title: service.title!)
-        
+        let destination = self.storyboard?.instantiateViewController(withIdentifier: "ServicesAdminNav")
+        ServiceAdminFormViewController.idService = idServiceValue
+        ServiceAdminFormViewController.serviceAdmin = service
+        self.present(destination!, animated: true, completion: nil)
     }
     
     func idService(title: String)->Int {

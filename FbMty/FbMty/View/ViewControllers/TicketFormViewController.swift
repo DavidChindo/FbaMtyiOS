@@ -49,7 +49,7 @@ class TicketFormViewController: BaseViewController,TicketDelegate,UIDocumentMenu
             let sizeVideo = Double(data.length / 1048576)
             print("zipFileLenght: \(sizeVideo)")
             print("ZIPFILEPATH: \(zipFilePath)")
-            SwiftSpinner.sharedInstance.titleLabel.text = "Subiendo..."
+            SwiftSpinner.show("Enviando...")
             let descriptionS = LogicUtils.validateStringByString(word: explanationTxtView.text!)
         ticketPresenter?.uploadTicket(urlZip: zipFilePath, descriptionS: descriptionS, serviceId: (ticketService?.id.description)!, holdingId: (MenuViewController.holdingResponse?.Id.description)!)
         }

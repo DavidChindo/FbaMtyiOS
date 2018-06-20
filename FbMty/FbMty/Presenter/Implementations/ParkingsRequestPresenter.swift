@@ -21,7 +21,7 @@ class ParkingsRequestPresenter: BasePresenter {
         self.delegate = delegate
     }
  
-    func cajonesEstByUserAndHolding(idHolding:Double){
+    func cajonesEstByUserAndHolding(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_cajonesEstByUserAndHolding, idHolding)as String
@@ -61,7 +61,7 @@ class ParkingsRequestPresenter: BasePresenter {
         }
     }
     
-    func tarjetasEstByUserAndHolding(idHolding:Double){
+    func tarjetasEstByUserAndHolding(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_tarjetasEstByUserAndHolding, idHolding)as String
@@ -101,7 +101,7 @@ class ParkingsRequestPresenter: BasePresenter {
         }
     }
     
-    func CortesiasEstByUserAndHolding(idHolding:Double){
+    func CortesiasEstByUserAndHolding(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_CortesiasEstByUserAndHolding, idHolding)as String

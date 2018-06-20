@@ -8,11 +8,11 @@
 
 import UIKit
 import SlidingContainerViewController
-
-
+import Kingfisher
 
 class MySpaceViewController: BaseViewController{
 
+    @IBOutlet weak var portalImage: UIImageView!
     
     @IBOutlet weak var containerView: UIView!
     static var slidingParent: SlidingContainerViewController?
@@ -22,6 +22,7 @@ class MySpaceViewController: BaseViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
             setupTabBar()
+            initImages()
     }
 
     func setupTabBar(){
@@ -48,6 +49,22 @@ class MySpaceViewController: BaseViewController{
         containerView.addSubview((slidingContainerViewController?.view)!)
 }
 
+    override func viewWillAppear(_ animated: Bool) {
+        initImages()
+    }
+    func initImages(){
+        let url = URL(string: Urls.API_FBMTY + (MenuViewController.holdingResponse?.Picture?.comercialImages[0].Path)!)
+        
+        let resource = ImageResource(downloadURL: url!)
+        
+        let imagePlaceHolder = UIImage(named: "img_menu_back")
+        if let imgView = portalImage{
+            imgView.kf.indicatorType = .activity
+            imgView.kf.base.clipsToBounds = true
+            imgView.kf.setImage(with: resource)
+            imgView.kf.setImage(with: resource, placeholder: imagePlaceHolder, options: [.transition(.fade(0.2))], progressBlock: nil, completionHandler: nil)
+        }
+    }
     
     
     

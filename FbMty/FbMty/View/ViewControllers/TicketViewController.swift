@@ -24,6 +24,9 @@ class TicketViewController: BaseViewController, TicketsDelegate {
         self.navigationItem.title = "Tickets"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "iconBack") , style: .plain, target: self, action: #selector(dissmissView(_:)))
         
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "icDots") , style: .plain, target: self, action: #selector(showBar))
+        
+        
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         UIViewController.attemptRotationToDeviceOrientation()
@@ -42,6 +45,11 @@ class TicketViewController: BaseViewController, TicketsDelegate {
             
             ticketDataSource = TicketsDataSource(tableView: ticketTableView, items: servicesTicket, delegate: self)
         }
+    }
+    
+    func showBar(){
+        let destination = self.storyboard?.instantiateViewController(withIdentifier: "MyTicketsNavigation")
+        self.present(destination!, animated: true, completion: nil)
     }
     
     func dissmissView(_ sender: Any){

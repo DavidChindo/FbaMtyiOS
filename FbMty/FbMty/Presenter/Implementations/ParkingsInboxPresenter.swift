@@ -20,7 +20,7 @@ class ParkingsInboxPresenter: BasePresenter {
         self.delegate = delegate
     }
     
-    func getHoldingUserParkingLotsTickets(idHolding:Double){
+    func getHoldingUserParkingLotsTickets(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_getHoldingUserParkingLotsTickets, idHolding)as String
@@ -61,7 +61,7 @@ class ParkingsInboxPresenter: BasePresenter {
     }
 
     
-    func getHoldingUserParkingMembershipsTickets(idHolding:Double){
+    func getHoldingUserParkingMembershipsTickets(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_getHoldingUserParkingMembershipsTickets, idHolding)as String
@@ -102,7 +102,7 @@ class ParkingsInboxPresenter: BasePresenter {
     }
 
     
-    func getHoldingUserParkingCardsTickets(idHolding:Double){
+    func getHoldingUserParkingCardsTickets(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_getHoldingUserParkingCardsTickets, idHolding)as String

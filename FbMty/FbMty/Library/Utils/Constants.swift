@@ -22,4 +22,9 @@ class Constants: NSObject {
     static let SERVICE_CARDS = 1;
     static let SERVICE_COURTESIES = 2;
     
+    static let NUM_BOXES = "%d Cajones"
+    static let NUM_CARDS = "%d Tarjetas"
+    static let NUM_COURTESIES = "%d Cortesias"
+    static let PRICE = "$ %d"
+    
 }

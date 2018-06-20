@@ -13,7 +13,7 @@ import RealmSwift
 
 open class MyTicketResponse: Object, Mappable {
 
-    dynamic var status:String?
+    dynamic var status:Int = -1
     dynamic var updateDate:String?
     dynamic var requestDate:String?
     dynamic var filePath:String?

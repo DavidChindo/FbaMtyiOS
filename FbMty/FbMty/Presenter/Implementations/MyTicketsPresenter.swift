@@ -21,7 +21,7 @@ class MyTicketsPresenter: BasePresenter {
         self.delegate = delegate
     }
 
-    func myTickets(idHolding:Double){
+    func myTickets(idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()
         let url = String(format: Urls.API_myTickets, idHolding)as String
@@ -62,7 +62,7 @@ class MyTicketsPresenter: BasePresenter {
     }
     
     
-    func cancelMyTicket(idHolding: Double, id: Double){
+    func cancelMyTicket(idHolding: Int,id: Int){
     
         let authorization = "bearer "+RealmManager.token()
         let params: Parameters = ["holdingId" : idHolding, "Id" : id]
@@ -103,7 +103,7 @@ class MyTicketsPresenter: BasePresenter {
         }
     }
     
-    func deleteMyTicket(idHolding: Double, id: Double){
+    func deleteMyTicket(idHolding: Int, id: Int){
         
         let authorization = "bearer "+RealmManager.token()
         let params: Parameters = ["holdingId" : idHolding, "Id" : id]
