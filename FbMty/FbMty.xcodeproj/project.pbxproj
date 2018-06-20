@@ -116,6 +116,10 @@
 		B6CF2D9D20B784500035EA51 /* TicketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9C20B784500035EA51 /* TicketDelegate.swift */; };
 		B6CF2D9F20B785E90035EA51 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D9E20B785E90035EA51 /* ChatPresenter.swift */; };
 		B6CF2DA120B788080035EA51 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2DA020B788080035EA51 /* RealmManager.swift */; };
+		B6DCCEB720DAF17E0018178F /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DCCEB620DAF17E0018178F /* MessagesViewController.swift */; };
+		B6DCCEB920DAF1BC0018178F /* ChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DCCEB820DAF1BC0018178F /* ChatDataSource.swift */; };
+		B6DCCEBB20DAF1D20018178F /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DCCEBA20DAF1D20018178F /* ChatTableViewCell.swift */; };
+		B6DCCEBD20DAF2DC0018178F /* ChatUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DCCEBC20DAF2DC0018178F /* ChatUserTableViewCell.swift */; };
 		B6E498A0201BEE7800703224 /* MySpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4989F201BEE7800703224 /* MySpaceViewController.swift */; };
 		B6E498A2201EB14D00703224 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498A1201EB14C00703224 /* LocationViewController.swift */; };
 		B6E498A4201EB17900703224 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E498A3201EB17900703224 /* DownloadsViewController.swift */; };
@@ -263,6 +267,10 @@
 		B6CF2D9C20B784500035EA51 /* TicketDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDelegate.swift; sourceTree = "<group>"; };
 		B6CF2D9E20B785E90035EA51 /* ChatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
 		B6CF2DA020B788080035EA51 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B6DCCEB620DAF17E0018178F /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		B6DCCEB820DAF1BC0018178F /* ChatDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDataSource.swift; sourceTree = "<group>"; };
+		B6DCCEBA20DAF1D20018178F /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		B6DCCEBC20DAF2DC0018178F /* ChatUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUserTableViewCell.swift; sourceTree = "<group>"; };
 		B6E4989F201BEE7800703224 /* MySpaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySpaceViewController.swift; sourceTree = "<group>"; };
 		B6E498A1201EB14C00703224 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		B6E498A3201EB17900703224 /* DownloadsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
@@ -409,6 +417,9 @@
 				B61E0D5B20D9B0C2002268EC /* ServiceDescTableViewCell.swift */,
 				B61E0D5D20DA2720002268EC /* ParkingsInboxDataSource.swift */,
 				B61E0D5F20DA273A002268EC /* ParkingsInboxInboxTableViewCell.swift */,
+				B6DCCEB820DAF1BC0018178F /* ChatDataSource.swift */,
+				B6DCCEBA20DAF1D20018178F /* ChatTableViewCell.swift */,
+				B6DCCEBC20DAF2DC0018178F /* ChatUserTableViewCell.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -449,6 +460,7 @@
 				B61E0D5320D95575002268EC /* ServiceAdminFormViewController.swift */,
 				B61E0D5520D95AC5002268EC /* ParkingsRequestViewController.swift */,
 				B61E0D5720D95AEC002268EC /* ParkingsInboxViewController.swift */,
+				B6DCCEB620DAF17E0018178F /* MessagesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -800,13 +812,13 @@
 				"${BUILT_PRODUCTS_DIR}/CTPanoramaView/CTPanoramaView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/LSDialogViewController/LSDialogViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PocketSVG/PocketSVG.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/STPopup/STPopup.framework",
 				"${BUILT_PRODUCTS_DIR}/SlidingContainerViewController/SlidingContainerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SpaceView/SpaceView.framework",
 				"${BUILT_PRODUCTS_DIR}/StatefulTableView/StatefulTableView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
@@ -823,13 +835,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTPanoramaView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSDialogViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSVG.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STPopup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlidingContainerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpaceView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatefulTableView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
@@ -888,6 +900,8 @@
 				B6CF2D9D20B784500035EA51 /* TicketDelegate.swift in Sources */,
 				B6A1618420D336A600334EFA /* PaymentsDetailViewController.swift in Sources */,
 				B6E498AC201EB36000703224 /* ServicesDataSource.swift in Sources */,
+				B6DCCEBD20DAF2DC0018178F /* ChatUserTableViewCell.swift in Sources */,
+				B6DCCEB720DAF17E0018178F /* MessagesViewController.swift in Sources */,
 				B64574571FD1ED84002185C6 /* Picture.swift in Sources */,
 				B64C686E20D020E500D9AAE4 /* MaintenanceTableViewCell.swift in Sources */,
 				B64E53E520B8D4070062C41E /* HoldingPresenter.swift in Sources */,
@@ -920,6 +934,7 @@
 				B6CF2D8B20B77FDF0035EA51 /* HoldingDelegate.swift in Sources */,
 				B65DD6AA1FDF16F700F3626C /* BasePresenter.swift in Sources */,
 				B64E53E720BC5EA90062C41E /* LoginPresenter.swift in Sources */,
+				B6DCCEBB20DAF1D20018178F /* ChatTableViewCell.swift in Sources */,
 				B6CF2D9320B781F30035EA51 /* ParkingsInboxDelegate.swift in Sources */,
 				B6A0481920D432810072AFC4 /* TicketsTableViewCell.swift in Sources */,
 				B645744F1FD1EA6F002185C6 /* Coordinate.swift in Sources */,
@@ -961,6 +976,7 @@
 				B6E498AA201EB34200703224 /* ActivityDataSource.swift in Sources */,
 				B64574611FD1F20B002185C6 /* ChatRequest.swift in Sources */,
 				B6CF2D8F20B780EC0035EA51 /* MaintenanceDelegate.swift in Sources */,
+				B6DCCEB920DAF1BC0018178F /* ChatDataSource.swift in Sources */,
 				B6E498AE201EB38F00703224 /* ActivityTableViewCell.swift in Sources */,
 				B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */,
 				B6A1618220D1C57000334EFA /* MessageSentTableViewCell.swift in Sources */,

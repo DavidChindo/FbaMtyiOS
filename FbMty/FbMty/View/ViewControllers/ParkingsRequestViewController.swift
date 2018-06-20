@@ -13,8 +13,8 @@ import SwiftSpinner
 
 
 class ParkingsRequestViewController: BaseViewController, ParkingsRequestDelegate {
-    @IBOutlet weak var cancelShortBtn: UIButton!
     
+    @IBOutlet weak var cancelShortBtn: UIButton!
     @IBOutlet weak var title_pricexcardLbl: UILabel!
     @IBOutlet weak var fr_parkings_edt_price_cardLbl: UILabel!
     @IBOutlet weak var fr_parkings_edt_cards_rentTxt: UITextField!
@@ -79,7 +79,7 @@ class ParkingsRequestViewController: BaseViewController, ParkingsRequestDelegate
         SwiftSpinner.show("Cargando...")
         requestServices(idTempService: idService)
         
-        titleLbl.text = titleInstructions(idTempService: idService)
+        
         
         parkingsMttotxt.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
         parkingsRent.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
@@ -210,6 +210,8 @@ class ParkingsRequestViewController: BaseViewController, ParkingsRequestDelegate
         servicesDesc = servicesDescResponses
         servicesDescDataSource?.update(servicesDescResponses)
         
+        titleLbl.text = titleInstructions(idTempService: idService)
+        
         if idService == Constants.SERVICE_PARKINGS {
             mServicesDescResponse = servicesDescResponseById(box: rentValue, place: mttoValue)
         }else if idService == Constants.SERVICE_CARDS{
@@ -217,6 +219,8 @@ class ParkingsRequestViewController: BaseViewController, ParkingsRequestDelegate
         }else{
             mServicesDescResponse = servicesDescResponses[0]
         }
+        
+        
         
         SwiftSpinner.hide()
     }
@@ -254,6 +258,13 @@ class ParkingsRequestViewController: BaseViewController, ParkingsRequestDelegate
             cardTypeLbl.isHidden = false
             cardSelected.isHidden = false
             titleCardsxrentLbl.text = EDTCARDTITLE
+         
+            servicesAdminTableView.frame = CGRect(x: servicesAdminTableView.frame.origin.x, y: servicesAdminTableView.frame.origin.y, width: servicesAdminTableView.frame.width, height: servicesAdminTableView.contentSize.height + 4)
+            
+            titleLbl.frame = CGRect(x: titleLbl.frame.origin.x, y: servicesAdminTableView.contentSize.height +  servicesAdminTableView.frame.origin.y + 12 , width: titleLbl.frame.width, height: titleLbl.frame.height)
+          
+            shortContainer.frame = CGRect(x: shortContainer.frame.origin.x, y: titleLbl.frame.height + titleLbl.frame.origin.y + 12, width: shortContainer.frame.width, height: shortContainer.frame.height)
+            
             scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 650)
             shortContainer.frame = CGRect(x: shortContainer.frame.origin.x, y: shortContainer.frame.origin.y, width: shortContainer.frame.width, height: 270)
             return TITLECARDS;
@@ -264,6 +275,14 @@ class ParkingsRequestViewController: BaseViewController, ParkingsRequestDelegate
             cardTypeLbl.isHidden = true
             cardSelected.isHidden = true
             titleCardsxrentLbl.text = EDTCOURTESIESTITLE
+            
+            servicesAdminTableView.frame = CGRect(x: servicesAdminTableView.frame.origin.x, y: servicesAdminTableView.frame.origin.y, width: servicesAdminTableView.frame.width, height: servicesAdminTableView.contentSize.height + 4)
+            
+            titleLbl.frame = CGRect(x: titleLbl.frame.origin.x, y: servicesAdminTableView.contentSize.height +  servicesAdminTableView.frame.origin.y + 12 , width: titleLbl.frame.width, height: titleLbl.frame.height)
+            
+            shortContainer.frame = CGRect(x: shortContainer.frame.origin.x, y: titleLbl.frame.height + titleLbl.frame.origin.y + 12, width: shortContainer.frame.width, height: shortContainer.frame.height)
+            
+            
             scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 650)
             shortContainer.frame = CGRect(x: shortContainer.frame.origin.x, y: shortContainer.frame.origin.y, width: shortContainer.frame.width, height: 270)
             return TITLECOURTESIES;

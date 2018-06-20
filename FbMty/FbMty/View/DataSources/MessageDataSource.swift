@@ -66,13 +66,13 @@ class MessageDataSource:NSObject, UITableViewDataSource,UITableViewDelegate {
             messageTxtViewTemp.frame = frame
             
             messageTxtViewTemp.frame = CGRect(x: messageTxtViewTemp.frame.origin.x, y: messageTxtViewTemp.frame.origin.y, width: messageTxtViewTemp.frame.width, height: (messageTxtViewTemp.frame.origin.y + messageTxtViewTemp.frame.height + 4))*/
-            /*
- cellSent.messageSentTxtView.sizeToFit()
- var frame = cellSent.messageSentTxtView.frame
- frame.size.height = cellSent.messageSentTxtView.contentSize.height
- cellSent.messageSentTxtView.frame = frame
+     /*
+ cell.messageSentTxtView.sizeToFit()
+ var frame = cell.messageSentTxtView.frame
+ frame.size.height = cell.messageSentTxtView.contentSize.height
+ cell.messageSentTxtView.frame = frame
  
- cellSent.containerMsgView.frame = CGRect(x: cellSent.containerMsgView.frame.origin.x, y: cellSent.containerMsgView.frame.origin.y, width: cellSent.containerMsgView.frame.width, height: (cellSent.messageSentTxtView.frame.origin.y + cellSent.messageSentTxtView.frame.height + 4))
+ cell.containerMsgView.frame = CGRect(x: cell.containerMsgView.frame.origin.x, y: cell.containerMsgView.frame.origin.y, width: cell.containerMsgView.frame.width, height: (cell.messageSentTxtView.frame.origin.y + cell.messageSentTxtView.frame.height + 4))
  
  */
             return cell

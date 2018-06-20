@@ -25,5 +25,6 @@ pod 'XLPagerTabStrip', '~> 7.0.0’
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'BmoImageLoader'
+pod 'SnapKit'
 
 end

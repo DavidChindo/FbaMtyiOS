@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AFFCE65ABDBBB8B79E157FBF525F73B8"
-               BlueprintName = "LSDialogViewController"
+               BlueprintIdentifier = "16A4B3BF68FDF772C1D61D66490DA105"
+               BlueprintName = "SnapKit"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "LSDialogViewController.framework">
+               BuildableName = "SnapKit.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

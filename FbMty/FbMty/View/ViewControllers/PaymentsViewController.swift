@@ -82,7 +82,9 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
     }
     
     func thumbsUpButtonPressed() {
-        let destination = self.storyboard?.instantiateViewController(withIdentifier: "ChatNavigation")
+        //MessageTbCell
+        //let destination = self.storyboard?.instantiateViewController(withIdentifier: "ChatNavigation")
+        let destination = self.storyboard?.instantiateViewController(withIdentifier: "MessageTbCell")
         self.present(destination!, animated: true, completion: nil)
     }
     

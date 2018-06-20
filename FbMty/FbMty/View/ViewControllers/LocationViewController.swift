@@ -21,25 +21,24 @@ class LocationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-    }
-  
-    override func loadView() {
-        
         let camera = GMSCameraPosition.camera(withLatitude: (MenuViewController.holdingResponse?.Coordinates?.latitude)!, longitude: (MenuViewController.holdingResponse?.Coordinates?.longitude)!, zoom: 14.0)
         let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
         
         let marker = GMSMarker()
         marker.position = camera.target
         marker.snippet = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.NombreEdificio)
-   
+        
         marker.map = mapView
         
-        view = mapView
+        self.view = mapView
         
+        self.view.addSubview(containerMap)
+        
+        initViews()
+
         
     }
-    
+
     func initViews(){
         
         if LogicUtils.isObjectNotNil(object:  MenuViewController.holdingResponse){
