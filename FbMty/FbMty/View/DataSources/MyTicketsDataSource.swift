@@ -56,7 +56,7 @@ class MyTicketsDataSource: NSObject, UITableViewDataSource,UITableViewDelegate {
         
         let cell:MyTicketsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MyTicketsCell") as! MyTicketsTableViewCell
         
-        cell.requestDateLbl.text = LogicUtils.validateStringByString(word: item.requestDate)
+        cell.requestDateLbl.text = LogicUtils.formatterDateMiliseconds(stringDate: LogicUtils.validateStringByString(word: item.requestDate))
         cell.ticketLbl.text = LogicUtils.validateStringByString(word: item.id.description)
         cell.statusLbl.text = item.status == 0 ? "Pendiente" : "Cancelado"
         

@@ -48,7 +48,7 @@ class LoginPresenter: BasePresenter {
                                 RealmManager.insert(LoginResponse.self, item: response.result.value!)
                                 self.delegate?.onLoginSuccess(loginResponse: response.result.value!)
                             }else{
-                                self.delegate?.onLoginError(msg:  response.description)
+                                self.delegate?.onLoginError(msg:  "Usuario o contraseña incorrectas")
                             }
                         case .failure(let error):
                             print(error)

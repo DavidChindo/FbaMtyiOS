@@ -60,8 +60,8 @@ class MySpaceViewController: BaseViewController{
         let imagePlaceHolder = UIImage(named: "img_menu_back")
         if let imgView = portalImage{
             imgView.kf.indicatorType = .activity
-            imgView.kf.base.clipsToBounds = true
-            imgView.kf.setImage(with: resource)
+            //imgView.kf.base.clipsToBounds = true
+            //imgView.kf.setImage(with: resource)
             imgView.kf.setImage(with: resource, placeholder: imagePlaceHolder, options: [.transition(.fade(0.2))], progressBlock: nil, completionHandler: nil)
         }
     }

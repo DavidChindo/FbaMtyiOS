@@ -72,7 +72,7 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
         button.layer.masksToBounds = false
         button.layer.shadowRadius = 1.0
         button.layer.shadowOpacity = 0.5
-        button.layer.cornerRadius = button.frame.width / 2
+        button.layer.cornerRadius = 5
         button.clipsToBounds = true
         let image: UIImage = UIImage(named: "icChat")!
         button.setImage(image, for: UIControlState.normal)
@@ -84,7 +84,7 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
     func thumbsUpButtonPressed() {
         //MessageTbCell
         //let destination = self.storyboard?.instantiateViewController(withIdentifier: "ChatNavigation")
-        let destination = self.storyboard?.instantiateViewController(withIdentifier: "MessagesConsViewController")
+        let destination = self.storyboard?.instantiateViewController(withIdentifier: "MessagesConsNav")
         self.present(destination!, animated: true, completion: nil)
     }
     

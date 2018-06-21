@@ -28,7 +28,7 @@ class MyTicketDetailViewController: BaseViewController,MyTicketsDelegate {
         
         self.navigationController?.navigationBar.backgroundColor = DesignUtils.primaryDark
         
-        self.contentSizeInPopup = CGSize(width: 300, height: 420)
+        self.contentSizeInPopup = CGSize(width: 310, height: 420)
         self.landscapeContentSizeInPopup = CGSize(width: 300, height: 150)
         
         initViews()

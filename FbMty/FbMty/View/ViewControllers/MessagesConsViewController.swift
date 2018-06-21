@@ -25,6 +25,10 @@ class MessagesConsViewController: BaseViewController,ChatDelegate,UITableViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Chat"
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "iconBack") , style: .plain, target: self, action: #selector(dissmissView(_:)))
+        
 
         initViews()
     
@@ -137,8 +141,13 @@ class MessagesConsViewController: BaseViewController,ChatDelegate,UITableViewDel
         DesignUtils.messageError(vc: self, title: "Error", msg: msg!)
 
     }
+   
     func onErrrorMessages(msg: String?) {
         SwiftSpinner.hide()
+    }
+    
+    func dissmissView(_ sender: Any){
+        self.dismiss(animated: true, completion: nil)
     }
     
     func scrollToBottom(){
