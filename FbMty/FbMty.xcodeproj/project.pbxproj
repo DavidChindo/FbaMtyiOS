@@ -81,6 +81,7 @@
 		B6907E6B20DB229A009D11FA /* ChatUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6907E6A20DB229A009D11FA /* ChatUserCollectionViewCell.swift */; };
 		B6907E6F20DC07B2009D11FA /* MessagesConsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6907E6E20DC07B2009D11FA /* MessagesConsViewController.swift */; };
 		B6907E7120DC07C9009D11FA /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6907E7020DC07C9009D11FA /* MessagesTableViewCell.swift */; };
+		B6907E7320DC1404009D11FA /* MessagesFbTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6907E7220DC1404009D11FA /* MessagesFbTableViewCell.swift */; };
 		B6A0481720D432600072AFC4 /* TicketsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481620D432600072AFC4 /* TicketsDataSource.swift */; };
 		B6A0481920D432810072AFC4 /* TicketsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481820D432810072AFC4 /* TicketsTableViewCell.swift */; };
 		B6A0481B20D435140072AFC4 /* TicketsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481A20D435140072AFC4 /* TicketsDelegate.swift */; };
@@ -236,6 +237,7 @@
 		B6907E6A20DB229A009D11FA /* ChatUserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUserCollectionViewCell.swift; sourceTree = "<group>"; };
 		B6907E6E20DC07B2009D11FA /* MessagesConsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesConsViewController.swift; sourceTree = "<group>"; };
 		B6907E7020DC07C9009D11FA /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
+		B6907E7220DC1404009D11FA /* MessagesFbTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesFbTableViewCell.swift; sourceTree = "<group>"; };
 		B6A0481620D432600072AFC4 /* TicketsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDataSource.swift; sourceTree = "<group>"; };
 		B6A0481820D432810072AFC4 /* TicketsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsTableViewCell.swift; sourceTree = "<group>"; };
 		B6A0481A20D435140072AFC4 /* TicketsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDelegate.swift; sourceTree = "<group>"; };
@@ -434,6 +436,7 @@
 				B6907E6A20DB229A009D11FA /* ChatUserCollectionViewCell.swift */,
 				B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */,
 				B6907E7020DC07C9009D11FA /* MessagesTableViewCell.swift */,
+				B6907E7220DC1404009D11FA /* MessagesFbTableViewCell.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -907,6 +910,7 @@
 				B6CF2D9720B782BE0035EA51 /* PaymentsDelegate.swift in Sources */,
 				B6A1617E20D18EB600334EFA /* MessageTableViewCell.swift in Sources */,
 				B61E0D5C20D9B0C2002268EC /* ServiceDescTableViewCell.swift in Sources */,
+				B6907E7320DC1404009D11FA /* MessagesFbTableViewCell.swift in Sources */,
 				B6E498A8201EB1A000703224 /* CharacteristicsViewController.swift in Sources */,
 				B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */,
 				B6CF2D9520B782420035EA51 /* ParkingsRequestDelegate.swift in Sources */,

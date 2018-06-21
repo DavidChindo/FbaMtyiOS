@@ -74,6 +74,18 @@ class ChatPresenter: BasePresenter {
         self.delegate?.onValid(isValid: isValid, msg: msg)
     }
     
+    func validTxtField(field:UITextField){
+        var isValid:Bool = true
+        var msg:String = ""
+        if(Validators.validateTextField(textField: field)){
+            isValid = true
+        }else{
+            msg =  "El campo mensaje es requerido"
+            isValid = false
+        }
+        self.delegate?.onValid(isValid: isValid, msg: msg)
+    }
+    
     func chatSent(msg:String?, idHolding:Int){
         
         let authorization = "bearer "+RealmManager.token()

@@ -1,5 +1,5 @@
 //
-//  MessagesTableViewCell.swift
+//  MessagesFbTableViewCell.swift
 //  FbMty
 //
 //  Created by David Barrera on 6/21/18.
@@ -8,12 +8,9 @@
 
 import UIKit
 
-class MessagesTableViewCell: UITableViewCell {
+class MessagesFbTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var containerView: UIView!
-    
-    @IBOutlet weak var messageLbl: UILabel!
-    
+    @IBOutlet weak var messageFbLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

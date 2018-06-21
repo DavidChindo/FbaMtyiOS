@@ -25,6 +25,12 @@ class DesignUtils: NSObject {
         button.layer.borderWidth = 1.0 
     }
     
+    class func setBorderLabel(button: UILabel){
+        button.layer.borderColor = UIColor(red: 92/255, green: 193/255, blue: 220/255, alpha: 1).cgColor
+        button.layer.borderWidth = 1.0
+        button.layer.cornerRadius = 4
+    }
+    
     class func setBorderRaidous(txtView: UITextView,mred:Int,mgreen:Int,mblue:Int){
         txtView.layer.borderColor = UIColor(red: CGFloat(mred)/255, green: CGFloat(mgreen)/255, blue: CGFloat(mblue)/255, alpha: 1).cgColor
         txtView.layer.cornerRadius = 5.0
