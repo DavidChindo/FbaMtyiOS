@@ -76,6 +76,11 @@
 		B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */; };
 		B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */; };
 		B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */; };
+		B6907E6720DB2261009D11FA /* ChatCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6907E6620DB2261009D11FA /* ChatCollectionViewController.swift */; };
+		B6907E6920DB2284009D11FA /* ChatCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6907E6820DB2284009D11FA /* ChatCollectionCollectionViewCell.swift */; };
+		B6907E6B20DB229A009D11FA /* ChatUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6907E6A20DB229A009D11FA /* ChatUserCollectionViewCell.swift */; };
+		B6907E6F20DC07B2009D11FA /* MessagesConsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6907E6E20DC07B2009D11FA /* MessagesConsViewController.swift */; };
+		B6907E7120DC07C9009D11FA /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6907E7020DC07C9009D11FA /* MessagesTableViewCell.swift */; };
 		B6A0481720D432600072AFC4 /* TicketsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481620D432600072AFC4 /* TicketsDataSource.swift */; };
 		B6A0481920D432810072AFC4 /* TicketsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481820D432810072AFC4 /* TicketsTableViewCell.swift */; };
 		B6A0481B20D435140072AFC4 /* TicketsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A0481A20D435140072AFC4 /* TicketsDelegate.swift */; };
@@ -226,6 +231,11 @@
 		B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsDataSource.swift; sourceTree = "<group>"; };
 		B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsTableViewCell.swift; sourceTree = "<group>"; };
 		B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDelegate.swift; sourceTree = "<group>"; };
+		B6907E6620DB2261009D11FA /* ChatCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewController.swift; sourceTree = "<group>"; };
+		B6907E6820DB2284009D11FA /* ChatCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6907E6A20DB229A009D11FA /* ChatUserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUserCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6907E6E20DC07B2009D11FA /* MessagesConsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesConsViewController.swift; sourceTree = "<group>"; };
+		B6907E7020DC07C9009D11FA /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
 		B6A0481620D432600072AFC4 /* TicketsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDataSource.swift; sourceTree = "<group>"; };
 		B6A0481820D432810072AFC4 /* TicketsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsTableViewCell.swift; sourceTree = "<group>"; };
 		B6A0481A20D435140072AFC4 /* TicketsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDelegate.swift; sourceTree = "<group>"; };
@@ -244,7 +254,7 @@
 		B6B2CE1120C1BF04003BD535 /* LogicUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicUtils.swift; sourceTree = "<group>"; };
 		B6B2CE1320C1BFF1003BD535 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 		B6B3BD2920C8338C00EDAF89 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
-		B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../ViewControllers/RegisterViewController.swift; sourceTree = "<group>"; };
 		B6CF2D7620B625550035EA51 /* HoldingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldingResponse.swift; sourceTree = "<group>"; };
 		B6CF2D7820B62DE10035EA51 /* PicturesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesResponse.swift; sourceTree = "<group>"; };
 		B6CF2D7A20B75CBC0035EA51 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -420,6 +430,10 @@
 				B6DCCEB820DAF1BC0018178F /* ChatDataSource.swift */,
 				B6DCCEBA20DAF1D20018178F /* ChatTableViewCell.swift */,
 				B6DCCEBC20DAF2DC0018178F /* ChatUserTableViewCell.swift */,
+				B6907E6820DB2284009D11FA /* ChatCollectionCollectionViewCell.swift */,
+				B6907E6A20DB229A009D11FA /* ChatUserCollectionViewCell.swift */,
+				B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */,
+				B6907E7020DC07C9009D11FA /* MessagesTableViewCell.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -447,7 +461,6 @@
 				B6E498A3201EB17900703224 /* DownloadsViewController.swift */,
 				B6E498A5201EB18D00703224 /* ServicesViewController.swift */,
 				B6E498A7201EB1A000703224 /* CharacteristicsViewController.swift */,
-				B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */,
 				B6653C1020CEEB4500F9189C /* MultimediaViewController.swift */,
 				B6653C1220CEFDE100F9189C /* MenuTabViewController.swift */,
 				B6653C1420CF1C9B00F9189C /* ProfileViewController.swift */,
@@ -461,6 +474,8 @@
 				B61E0D5520D95AC5002268EC /* ParkingsRequestViewController.swift */,
 				B61E0D5720D95AEC002268EC /* ParkingsInboxViewController.swift */,
 				B6DCCEB620DAF17E0018178F /* MessagesViewController.swift */,
+				B6907E6620DB2261009D11FA /* ChatCollectionViewController.swift */,
+				B6907E6E20DC07B2009D11FA /* MessagesConsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -897,6 +912,7 @@
 				B6CF2D9520B782420035EA51 /* ParkingsRequestDelegate.swift in Sources */,
 				B64E53EB20BC6FBC0062C41E /* MyTicketsPresenter.swift in Sources */,
 				B6CF2D9F20B785E90035EA51 /* ChatPresenter.swift in Sources */,
+				B6907E6920DB2284009D11FA /* ChatCollectionCollectionViewCell.swift in Sources */,
 				B6CF2D9D20B784500035EA51 /* TicketDelegate.swift in Sources */,
 				B6A1618420D336A600334EFA /* PaymentsDetailViewController.swift in Sources */,
 				B6E498AC201EB36000703224 /* ServicesDataSource.swift in Sources */,
@@ -909,6 +925,7 @@
 				B64574651FD1F3DB002185C6 /* MaintenanceTicketRequest.swift in Sources */,
 				B6653C1520CF1C9B00F9189C /* ProfileViewController.swift in Sources */,
 				B64C686C20D020CC00D9AAE4 /* MaintenanceDataSource.swift in Sources */,
+				B6907E6B20DB229A009D11FA /* ChatUserCollectionViewCell.swift in Sources */,
 				B64574671FD1F49B002185C6 /* PaymentRequest.swift in Sources */,
 				B6A0482820D86AC90072AFC4 /* MyTicketsDataSource.swift in Sources */,
 				B645744B1FD1E92B002185C6 /* Contact.swift in Sources */,
@@ -916,6 +933,7 @@
 				B64E53E920BC6B650062C41E /* MaintenancePresenter.swift in Sources */,
 				B6CF2D7720B625550035EA51 /* HoldingResponse.swift in Sources */,
 				B645745B1FD1EECC002185C6 /* Provider.swift in Sources */,
+				B6907E6720DB2261009D11FA /* ChatCollectionViewController.swift in Sources */,
 				B64574691FD1F55B002185C6 /* RecoveryPasswordRequest.swift in Sources */,
 				B6A0481720D432600072AFC4 /* TicketsDataSource.swift in Sources */,
 				B65DD6B41FDF3DBB00F3626C /* TicketViewController.swift in Sources */,
@@ -928,6 +946,7 @@
 				B64574591FD1EE53002185C6 /* Plan.swift in Sources */,
 				B64574511FD1EAE2002185C6 /* Maintenance.swift in Sources */,
 				B6A1618020D18EED00334EFA /* MessageDataSource.swift in Sources */,
+				B6907E7120DC07C9009D11FA /* MessagesTableViewCell.swift in Sources */,
 				B6CF2D9120B781810035EA51 /* MyTicketsDelegate.swift in Sources */,
 				B6E498A6201EB18D00703224 /* ServicesViewController.swift in Sources */,
 				B61E0D5620D95AC5002268EC /* ParkingsRequestViewController.swift in Sources */,
@@ -992,6 +1011,7 @@
 				B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */,
 				B64E53ED20BC750C0062C41E /* ParkingsInboxPresenter.swift in Sources */,
 				B6A1617C20D1761100334EFA /* ChatViewController.swift in Sources */,
+				B6907E6F20DC07B2009D11FA /* MessagesConsViewController.swift in Sources */,
 				B64E53DF20B78A090062C41E /* Reach.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
