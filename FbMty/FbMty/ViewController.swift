@@ -73,20 +73,21 @@ class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFi
         SwiftSpinner.hide()
         if LogicUtils.isObjectNotNil(object: holdingResponses as AnyObject) && holdingResponses.count > 0{
             Prefs.instance().putBool(Keys.PREF_LOGIN, value: true)
+            Prefs.instance().putBool(Keys.PREF_LOADING, value: false)
             //RealmManager.insert(HoldingResponse.self, items: holdingResponses)
             MenuViewController.holdingResponses = holdingResponses
 //            MenuViewController.holdingResponse = holdingResponses[Prefs.instance().integer(Keys.PREF_POSITION_SELECTED)]
             MenuViewController.holdingResponse = holdingResponses[1]
             initView(idView: "MenuTabViewController")
         }else{
-            DesignUtils.alertConfirm(titleMessage: "Ingreso", message: "No tiene ningún edificio contratado", vc: self)
+            DesignUtils.alertConfirmFinish(titleMessage: "Ingreso", message: "No tiene ningún edificio contratado", vc: self)
         }
         
     }
     
     func onDownloadError(msg: String?) {
         SwiftSpinner.hide()
-         DesignUtils.alertConfirm(titleMessage: "Descarga", message: msg!, vc: self)
+         DesignUtils.alertConfirmFinish(titleMessage: "Descarga", message: msg!, vc: self)
     }
     
     func login(){

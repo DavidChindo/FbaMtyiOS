@@ -11,6 +11,7 @@ import UIKit
 class Keys: NSObject {
     
     static let PREF_LOGIN = "PREF_IS_LOGIN"
+    static let PREF_LOADING = "PREF_NEED_LOADING"
     static let PREF_POSITION_SELECTED = "prefsPositionSelected"
     static let PREF_TOKEN = "PREF_TOKEN"
     static let PREF_PROF = "PREF_PROF"

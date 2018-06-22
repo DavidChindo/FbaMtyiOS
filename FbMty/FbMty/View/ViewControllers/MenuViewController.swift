@@ -8,16 +8,56 @@
 
 import UIKit
 import Kingfisher
-class MenuViewController: BaseViewController {
+import SwiftSpinner
+
+class MenuViewController: BaseViewController,HoldingDelegate {
 
     @IBOutlet weak var background: UIImageView!
 
     static var holdingResponses:[HoldingResponse] = []
     static var holdingResponse:HoldingResponse?
     
+    var holdingPresenter: HoldingPresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        initViews()
+        
+        if !Prefs.instance().bool(Keys.PREF_LOADING) {
+            initViews()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        if Prefs.instance().bool(Keys.PREF_LOADING) {
+            holdingPresenter = HoldingPresenter(delegate: self)
+            setupPresenter(holdingPresenter!)
+            
+            SwiftSpinner.show("Descargando")
+            holdingPresenter?.holding()
+        }
+        
+    }
+    
+    
+    func onDownloadHolding(holdingResponses: [HoldingResponse]) {
+        SwiftSpinner.hide()
+        if LogicUtils.isObjectNotNil(object: holdingResponses as AnyObject) && holdingResponses.count > 0{
+            Prefs.instance().putBool(Keys.PREF_LOADING, value: false)
+            
+            MenuViewController.holdingResponses = holdingResponses
+            //            MenuViewController.holdingResponse = holdingResponses[Prefs.instance().integer(Keys.PREF_POSITION_SELECTED)]
+            MenuViewController.holdingResponse = holdingResponses[1]
+            initViews()
+        }else{
+            DesignUtils.alertConfirmFinish(titleMessage: "Ingreso", message: "No tiene ningún edificio contratado", vc: self)
+        }
+        
+    }
+    
+    func onDownloadError(msg: String?) {
+        SwiftSpinner.hide()
+        DesignUtils.alertConfirmFinish(titleMessage: "Descarga", message: msg!, vc: self)
     }
     
     @IBAction func onOpenTicketClick(_ sender: Any) {

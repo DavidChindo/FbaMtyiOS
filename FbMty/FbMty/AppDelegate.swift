@@ -12,10 +12,12 @@ import GoogleMaps
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
 
     var window: UIWindow?
 
+    var menuViewController = "MenuTabViewController"
+    var loginViewController = "LoginViewController"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -25,6 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyDi_oRWiCfjWZkzKaf3oKsbR21OaT81DCQ")
 
         IQKeyboardManager.sharedManager().enable = true
+        
+        if Prefs.instance().bool(Keys.PREF_LOGIN){
+            Prefs.instance().putBool(Keys.PREF_LOADING, value: true)
+            initView(idView: menuViewController)
+        }else{
+            initView(idView: loginViewController)
+        }
         
         return true
     }
@@ -50,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
     func customNavBar(){
         UINavigationBar.appearance().barTintColor = DesignUtils.darkPrimary
         UINavigationBar.appearance().tintColor = UIColor.white
@@ -59,6 +68,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let titleAttributes:[String:Any] = [NSFontAttributeName:UIFont(name: "Verdana-UltraLight", size: 22) ?? UIFont.systemFont(ofSize: 20),NSForegroundColorAttributeName:UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = titleAttributes
         _ = UINavigationBar.appearance()
+    }
+    
+    func initView(idView:String){
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: idView)
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
     }
 
 }
