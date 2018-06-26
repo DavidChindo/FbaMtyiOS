@@ -43,7 +43,7 @@ class MyTicketDetailViewController: BaseViewController,MyTicketsDelegate {
             statusLbl.text = myTicket?.status == 0 ? "Pendiente" : "Cancelado"
             cancelBtn.isHidden = myTicket?.status == 0 ? false : true
             observationstxtView.text = myTicket?.observationsAdmin
-            requestDateLbl.text = myTicket?.requestDate
+            requestDateLbl.text = LogicUtils.formatterDateMiliseconds(stringDate: (myTicket?.requestDate)!)
             observationstxtView.sizeToFit()
             var frame = observationstxtView.frame
             frame.size.height = observationstxtView.contentSize.height

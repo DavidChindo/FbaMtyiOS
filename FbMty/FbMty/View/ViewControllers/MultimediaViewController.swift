@@ -12,7 +12,6 @@ class MultimediaViewController: BaseViewController, UIWebViewDelegate {
 
     @IBOutlet weak var webView: UIWebView!
     
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -33,7 +32,6 @@ class MultimediaViewController: BaseViewController, UIWebViewDelegate {
             
         self.webView.loadHTMLString(embededHTML, baseURL: Bundle.main.bundleURL)
 
-        
         button.frame = CGRect(x: view.bounds.maxX - 50, y: 8, width: 48, height: 38)
         button.autoresizingMask = [.flexibleLeftMargin, .flexibleBottomMargin]
         button.setTitle("Cerrar", for: UIControlState.normal)

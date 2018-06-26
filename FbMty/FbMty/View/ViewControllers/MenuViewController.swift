@@ -13,7 +13,11 @@ import SwiftSpinner
 class MenuViewController: BaseViewController,HoldingDelegate {
 
     @IBOutlet weak var background: UIImageView!
-
+    @IBOutlet weak var paysTicket: UIView!
+    @IBOutlet weak var paysView: UIView!
+    @IBOutlet weak var multimediaView: UIView!
+    @IBOutlet weak var maintenainceView: UIView!
+    
     static var holdingResponses:[HoldingResponse] = []
     static var holdingResponse:HoldingResponse?
     
@@ -89,6 +93,11 @@ class MenuViewController: BaseViewController,HoldingDelegate {
     func initViews(){
     
         self.navigationItem.title = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.NombreEdificio)
+        
+        DesignUtils.drawWhiteBorder(view: paysTicket)
+        DesignUtils.drawWhiteBorder(view: paysView)
+        DesignUtils.drawWhiteBorder(view: multimediaView)
+        DesignUtils.drawWhiteBorder(view: maintenainceView)
         
         let url = URL(string: Urls.API_FBMTY + (MenuViewController.holdingResponse?.Picture?.comercialImages[0].Path)!)
     

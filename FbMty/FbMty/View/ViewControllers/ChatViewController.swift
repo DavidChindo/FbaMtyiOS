@@ -38,7 +38,7 @@ class ChatViewController: BaseViewController,ChatDelegate {
     func initViews(){
         chatPresenter = ChatPresenter(delegate: self)
         setupPresenter(chatPresenter!)
-        
+        hideKeyboard()
         messageDataSource = MessageDataSource(tableView: chatTableView, items: mMessages)
         
         chatTableView.delegate = messageDataSource
@@ -96,6 +96,21 @@ class ChatViewController: BaseViewController,ChatDelegate {
     func dissmissView(_ sender: Any){
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
+    
     
     func printMessages(){
         

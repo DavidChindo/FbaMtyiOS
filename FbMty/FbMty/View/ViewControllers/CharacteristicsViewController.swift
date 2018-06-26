@@ -32,8 +32,6 @@ class CharacteristicsViewController: BaseViewController {
     
     func setFields(){
         
-        
-        
         if LogicUtils.isObjectNotNil(object: MenuViewController.holdingResponse) {
             
             birthCont.text = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.AniosContruccion.description)

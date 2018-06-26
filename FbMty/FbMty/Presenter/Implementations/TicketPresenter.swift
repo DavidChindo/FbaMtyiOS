@@ -47,7 +47,7 @@ class TicketPresenter: BasePresenter {
                         case .success:
                             if response.response?.statusCode == Constants.STATUS_OK{
                                 let idTicket = response.result.value! as! Double
-                                self.delegate?.onSentTicketSuccess(msg: "Se ha enviado correctamente el ticket número :  + \(idTicket)")
+                                self.delegate?.onSentTicketSuccess(msg: "Se ha enviado correctamente el ticket número :   \(idTicket)")
                             }else{
                                 self.delegate?.onSentTicketError(msg: response.description)
                             }

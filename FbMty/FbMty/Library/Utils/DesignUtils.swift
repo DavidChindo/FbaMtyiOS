@@ -118,6 +118,15 @@ class DesignUtils: NSObject {
         return content
     }
     
+    class func drawWhiteBorder(view: UIView) {
+        view.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+        view.layer.borderWidth = 1.0
+        view.layer.shadowOffset = CGSize(width: -1, height: 1)
+        view.layer.masksToBounds = false
+        view.layer.cornerRadius = view.frame.size.width/2.0
+        
+    }
+    
     class func numberFormat(numberd: Double)-> String{
         let formater = NumberFormatter()
         formater.groupingSeparator = ","

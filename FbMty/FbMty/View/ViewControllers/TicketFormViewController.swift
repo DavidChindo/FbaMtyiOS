@@ -67,11 +67,13 @@ class TicketFormViewController: BaseViewController,TicketDelegate,UIDocumentMenu
     }
     
     func onSentTicketSuccess(msg: String?) {
-    
+        SwiftSpinner.hide()
+        DesignUtils.alertConfirmFinish(titleMessage: "Exitoso", message: msg!, vc: self)
     }
     
     func onSentTicketError(msg: String?) {
-        
+        SwiftSpinner.hide()
+        DesignUtils.alertConfirmFinish(titleMessage: "Error", message: msg!, vc: self)
     }
     
     func openExplorer(){
@@ -82,6 +84,8 @@ class TicketFormViewController: BaseViewController,TicketDelegate,UIDocumentMenu
         
         self.present(importMenu, animated: true, completion: nil)
     }
+    
+    
     
     @available(iOS 8.0, *)
     public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
@@ -108,6 +112,8 @@ class TicketFormViewController: BaseViewController,TicketDelegate,UIDocumentMenu
             print("The Url is : \(path)")
             files.append(path.absoluteString)
             filesPath.append(destinationPath)
+            var namePath = path.absoluteString.split(separator: "/")
+            fileNmeLbl.text = namePath[namePath.count - 1].description
         } catch let error {
             print("Error: \(error.localizedDescription)")
         }

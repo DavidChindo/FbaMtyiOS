@@ -33,7 +33,6 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "icDots") , style: .plain, target: self, action: #selector(showBar))
         
-        
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         UIViewController.attemptRotationToDeviceOrientation()
@@ -64,7 +63,7 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
     
     func addBtn(){
         let button = UIButton(type: .custom)
-        button.frame = CGRect(x: view.bounds.maxX - 50, y: view.bounds.maxY - 50, width: 48, height: 38)
+        button.frame = CGRect(x: view.bounds.maxX - 60, y: view.bounds.maxY - 55, width: 48, height: 38)
         button.autoresizingMask = [.flexibleLeftMargin, .flexibleBottomMargin]
         button.backgroundColor = DesignUtils.primaryDark
         button.layer.shadowColor = UIColor.black.cgColor
@@ -82,13 +81,13 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
     }
     
     func thumbsUpButtonPressed() {
-        //MessageTbCell
-        //let destination = self.storyboard?.instantiateViewController(withIdentifier: "ChatNavigation")
         let destination = self.storyboard?.instantiateViewController(withIdentifier: "MessagesConsNav")
         self.present(destination!, animated: true, completion: nil)
     }
     
     @IBAction func onSearchPaymentsClick(_ sender: Any) {
+
+        hidePicker()
         
         if !LogicUtils.validateString(word: dateLbl.text!) || (dateLbl.text?.isEmpty)!  {
             DesignUtils.messageError(vc: self, title: "Validación", msg: "Es necesario seleccionar la fecha")
@@ -104,11 +103,14 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
     
     @IBAction func onsSelectStatus(_ sender: UISegmentedControl) {
         
+        hidePicker()
+        
         if sender.selectedSegmentIndex == 0 {
             status = "Pagada"
         }else{
             status = "No pagada"
         }
+        
     }
 
     func onPaymentsSuccess(payments: [Payments], isFilter: Bool) {
@@ -154,8 +156,6 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
          loadUrlInWebView(urlTemp: path)
     }
     
-
-    
     func userDidTapLabel(tapGestureRecognizer: UITapGestureRecognizer) {
         datesPicker.isHidden = false
     }
@@ -176,6 +176,7 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
         dateLbl.text = datesFiltes[row]
     }
     
+    
     func hideKeyboard()
     {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(
@@ -187,13 +188,17 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
 
     
     func loadUrlInWebView(urlTemp:String){
+        
+        hidePicker()
+        
         let url = URL(string: urlTemp)
 
-        if #available(iOS 10.0, *) {
+        if #available(iOS 10.0, *){
             UIApplication.shared.open(url!, options: [:], completionHandler: nil)
         } else {
             UIApplication.shared.openURL(url!)
         }
+        
     }
 
     

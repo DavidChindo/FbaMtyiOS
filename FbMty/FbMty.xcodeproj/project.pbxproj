@@ -1179,7 +1179,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fbmty.FbMty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7c5f1c32-02ad-459b-b093-9b2a5c01137c";
+				PROVISIONING_PROFILE = "9c070877-f7aa-45aa-b0e1-f766e00de1af";
 				PROVISIONING_PROFILE_SPECIFIER = FibraAdhoc;
 				SWIFT_VERSION = 3.0;
 			};
@@ -1198,7 +1198,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fbmty.FbMty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7c5f1c32-02ad-459b-b093-9b2a5c01137c";
+				PROVISIONING_PROFILE = "90e3af61-bd7e-40e5-a8f9-8627dc2f7eb2";
 				PROVISIONING_PROFILE_SPECIFIER = FibraAdhoc;
 				SWIFT_VERSION = 3.0;
 			};

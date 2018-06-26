@@ -32,6 +32,7 @@ class MessagesConsViewController: BaseViewController,ChatDelegate,UITableViewDel
 
         initViews()
     
+        hideKeyboard()
     }
 
     //MARK: Setup Views
@@ -155,5 +156,19 @@ class MessagesConsViewController: BaseViewController,ChatDelegate,UITableViewDel
             let indexPath = IndexPath(row: self.mMessages.count-1, section: 0)
             self.messagesTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
         }
+    }
+    
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
     }
 }
