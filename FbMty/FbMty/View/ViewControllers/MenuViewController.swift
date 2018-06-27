@@ -23,6 +23,9 @@ class MenuViewController: BaseViewController,HoldingDelegate {
     
     var holdingPresenter: HoldingPresenter?
     
+    var window: UIWindow?
+    var loginViewController = "LoginViewController"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,7 +64,11 @@ class MenuViewController: BaseViewController,HoldingDelegate {
     
     func onDownloadError(msg: String?) {
         SwiftSpinner.hide()
-        DesignUtils.alertConfirmFinish(titleMessage: "Descarga", message: msg!, vc: self)
+        if msg == "salir" {
+            initView(idView: loginViewController)
+        }else{
+            DesignUtils.alertConfirmFinish(titleMessage: "Descarga", message: msg!, vc: self)
+        }
     }
     
     @IBAction func onOpenTicketClick(_ sender: Any) {
@@ -112,7 +119,13 @@ class MenuViewController: BaseViewController,HoldingDelegate {
         }
     }
     
-    
+    func initView(idView:String){
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: idView)
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+    }
       
     
 }

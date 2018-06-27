@@ -45,7 +45,11 @@ class HoldingPresenter: BasePresenter {
                             if code == Constants.STATUS_OK{
                               self.delegate?.onDownloadHolding(holdingResponses: response.result.value!)
                             }else{
-                                self.delegate?.onDownloadError(msg: response.result.description)
+                                if(code == Constants.STATUS_UNATHOURAIZED){
+                                    self.delegate?.onDownloadError(msg: "salir")
+                                }else{
+                                    self.delegate?.onDownloadError(msg: response.result.description)
+                                }
                             }
                         
                         case .failure(let error):

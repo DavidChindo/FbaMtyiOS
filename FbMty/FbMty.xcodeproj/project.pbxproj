@@ -1172,14 +1172,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FbMty/FbMty.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PKFT6H4J27;
 				INFOPLIST_FILE = FbMty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fbmty.FbMty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9c070877-f7aa-45aa-b0e1-f766e00de1af";
+				PROVISIONING_PROFILE = "438211b5-d630-40da-8fbc-60400121e289";
 				PROVISIONING_PROFILE_SPECIFIER = FibraAdhoc;
 				SWIFT_VERSION = 3.0;
 			};
@@ -1191,14 +1193,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FbMty/FbMty.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PKFT6H4J27;
 				INFOPLIST_FILE = FbMty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fbmty.FbMty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "90e3af61-bd7e-40e5-a8f9-8627dc2f7eb2";
+				PROVISIONING_PROFILE = "438211b5-d630-40da-8fbc-60400121e289";
 				PROVISIONING_PROFILE_SPECIFIER = FibraAdhoc;
 				SWIFT_VERSION = 3.0;
 			};
