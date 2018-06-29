@@ -247,8 +247,17 @@ class ParkingsRequestViewController: BaseViewController, ParkingsRequestDelegate
             shortContainer.isHidden = true
             containerForm.isHidden = false
             
-            scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 870)
-            containerView.frame = CGRect(x: containerView.frame.origin.x, y: containerView.frame.origin.y, width: containerView.frame.width, height: 870)
+            servicesAdminTableView.frame = CGRect(x: servicesAdminTableView.frame.origin.x, y: servicesAdminTableView.frame.origin.y, width: servicesAdminTableView.frame.width, height: servicesAdminTableView.contentSize.height + 4)
+           
+            titleLbl.frame = CGRect(x: titleLbl.frame.origin.x, y: servicesAdminTableView.frame.origin.y + servicesAdminTableView.frame.height + 12, width: titleLbl.frame.width, height: titleLbl.frame.height)
+            
+            containerForm.frame = CGRect(x: containerForm.frame.origin.x, y: titleLbl.frame.origin.y + titleLbl.frame.height + 12 , width: containerForm.frame.width, height: containerForm.frame.height)
+            
+            scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: containerForm.frame.origin.y + containerForm.frame.height + 30)
+            
+           /* containerView.frame = CGRect(x: containerView.frame.origin.x, y: containerView.frame.origin.y, width: containerView.frame.width, height: containerForm.frame.origin.y + containerForm.frame.height + 30)
+            */
+            scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 1030)
             
             return TITLEPARKINGS;
         
@@ -267,6 +276,7 @@ class ParkingsRequestViewController: BaseViewController, ParkingsRequestDelegate
             
             scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 650)
             shortContainer.frame = CGRect(x: shortContainer.frame.origin.x, y: shortContainer.frame.origin.y, width: shortContainer.frame.width, height: 270)
+            
             return TITLECARDS;
         
         case  Constants.SERVICE_COURTESIES:
@@ -285,8 +295,9 @@ class ParkingsRequestViewController: BaseViewController, ParkingsRequestDelegate
             
             scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 650)
             shortContainer.frame = CGRect(x: shortContainer.frame.origin.x, y: shortContainer.frame.origin.y, width: shortContainer.frame.width, height: 270)
+            
             return TITLECOURTESIES;
-      
+    
         default:
             return "";
         }

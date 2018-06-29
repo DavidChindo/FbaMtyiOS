@@ -28,7 +28,7 @@ class MyTicketDetailViewController: BaseViewController,MyTicketsDelegate {
         
         self.navigationController?.navigationBar.backgroundColor = DesignUtils.primaryDark
         
-        self.contentSizeInPopup = CGSize(width: 310, height: 420)
+        self.contentSizeInPopup = CGSize(width: 330, height: 420)
         self.landscapeContentSizeInPopup = CGSize(width: 300, height: 150)
         
         initViews()
@@ -54,7 +54,8 @@ class MyTicketDetailViewController: BaseViewController,MyTicketsDelegate {
             cancelBtn.frame = CGRect(x: cancelBtn.frame.origin.x, y: deleteBtn.frame.origin.y, width: cancelBtn.frame.width, height: cancelBtn.frame.height)
             
             containerMajor.frame = CGRect(x: containerMajor.frame.origin.x, y: containerMajor.frame.origin.y, width: containerMajor.frame.width, height: (deleteBtn.frame.origin.y + deleteBtn.frame.height + 20))
-            
+         
+            self.contentSizeInPopup.height = deleteBtn.frame.origin.y + deleteBtn.frame.height + 12
         }
     }
     

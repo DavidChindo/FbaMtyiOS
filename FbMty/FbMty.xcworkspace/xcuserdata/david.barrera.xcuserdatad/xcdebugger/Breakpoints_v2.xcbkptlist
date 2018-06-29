@@ -346,7 +346,7 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/Presenter/Implementations/ChatPresenter.swift"
-                  timestampString = "551923596.7885129"
+                  timestampString = "551988617.323838"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "105"
@@ -361,7 +361,7 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/Presenter/Implementations/ChatPresenter.swift"
-                  timestampString = "551923596.791567"
+                  timestampString = "551988617.325892"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "107"
@@ -394,7 +394,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/PaymentsViewController.swift"
-            timestampString = "551923596.328535"
+            timestampString = "551988617.09383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "154"
@@ -410,7 +410,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/PaymentsViewController.swift"
-            timestampString = "551923596.329041"
+            timestampString = "551988617.093989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -426,7 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/DataSources/PaymentsDataSource.swift"
-            timestampString = "551923596.32938"
+            timestampString = "551988617.094103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -442,7 +442,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/PaymentsViewController.swift"
-            timestampString = "551923596.329452"
+            timestampString = "551988617.094193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "137"
@@ -458,7 +458,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/DataSources/PaymentsDataSource.swift"
-            timestampString = "551923596.329782"
+            timestampString = "551988617.094285"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -474,7 +474,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/DataSources/PaymentsDataSource.swift"
-            timestampString = "551923596.329844"
+            timestampString = "551988617.094353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "75"
@@ -522,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/MyTicketDetailViewController.swift"
-            timestampString = "551131466.460729"
+            timestampString = "551988617.094534"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "onViewFileClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -534,11 +534,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/MyTicketDetailViewController.swift"
-            timestampString = "551131471.885377"
+            timestampString = "551988617.095394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -554,11 +554,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/MyTicketDetailViewController.swift"
-            timestampString = "551131592.354931"
+            timestampString = "551988617.095497"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "loadUrlInWebView(urlTemp:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -570,7 +570,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/MyTicketDetailViewController.swift"
-            timestampString = "551131752.517144"
+            timestampString = "551988617.095546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
@@ -586,11 +586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/ParkingsRequestViewController.swift"
-            timestampString = "551231184.953902"
+            timestampString = "551988617.095634"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "373"
-            endingLineNumber = "373"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
             landmarkName = "sentRequestService(idTempoService:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -598,11 +598,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/ParkingsRequestViewController.swift"
-            timestampString = "551230614.894753"
+            timestampString = "551988617.096113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "247"
@@ -618,11 +618,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/ParkingsRequestViewController.swift"
-            timestampString = "551230614.894753"
+            timestampString = "551988617.096379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
             landmarkName = "titleInstructions(idTempService:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -634,11 +634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/ParkingsRequestViewController.swift"
-            timestampString = "551231184.953902"
+            timestampString = "551988617.096635"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "273"
-            endingLineNumber = "273"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
             landmarkName = "titleInstructions(idTempService:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -662,7 +662,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/LocationViewController.swift"
@@ -822,15 +822,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/ParkingsRequestViewController.swift"
-            timestampString = "551231184.953902"
+            timestampString = "551988617.0971791"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
+            startingLineNumber = "272"
+            endingLineNumber = "272"
             landmarkName = "titleInstructions(idTempService:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -842,7 +842,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/TicketFormViewController.swift"
-            timestampString = "551923596.3305171"
+            timestampString = "551988617.097443"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
@@ -858,7 +858,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/TicketFormViewController.swift"
-            timestampString = "551923596.330593"
+            timestampString = "551988617.097494"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
@@ -874,7 +874,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/TicketFormViewController.swift"
-            timestampString = "551923596.330669"
+            timestampString = "551988617.097538"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "126"
@@ -922,7 +922,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/Presenter/Implementations/HoldingPresenter.swift"
-            timestampString = "551923596.3308131"
+            timestampString = "551988617.0976501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -938,7 +938,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/Presenter/Implementations/HoldingPresenter.swift"
-            timestampString = "551923596.330884"
+            timestampString = "551988617.097695"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -954,7 +954,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/Presenter/Implementations/HoldingPresenter.swift"
-            timestampString = "551923596.330947"
+            timestampString = "551988617.097754"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
@@ -970,7 +970,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/Presenter/Implementations/HoldingPresenter.swift"
-            timestampString = "551923596.331008"
+            timestampString = "551988617.09781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -1018,7 +1018,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/Presenter/Implementations/HoldingPresenter.swift"
-            timestampString = "551923596.331068"
+            timestampString = "551988617.0978611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -1034,12 +1034,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/PaymentsViewController.swift"
-            timestampString = "551923596.331131"
+            timestampString = "551988617.0979199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "178"
             endingLineNumber = "178"
             landmarkName = "gestureRecognizer(_:shouldReceive:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FbMty/Library/Utils/LogicUtils.swift"
+            timestampString = "551988617.09799"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "formatterDateMiliseconds(stringDate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FbMty/View/ViewControllers/LocationViewController.swift"
+            timestampString = "551983758.615191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "initViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FbMty/View/ViewControllers/ParkingsRequestViewController.swift"
+            timestampString = "551988617.098087"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
+            landmarkName = "titleInstructions(idTempService:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FbMty/View/ViewControllers/ParkingsRequestViewController.swift"
+            timestampString = "551988617.0983419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
+            landmarkName = "titleInstructions(idTempService:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

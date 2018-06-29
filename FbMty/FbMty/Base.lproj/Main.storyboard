@@ -671,13 +671,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B7G-Bl-Zp9">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7G-Bl-Zp9">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B7G-Bl-Zp9" firstAttribute="leading" secondItem="hTb-6B-BwU" secondAttribute="leading" id="Tqc-vv-eHF"/>
+                            <constraint firstItem="B7G-Bl-Zp9" firstAttribute="centerX" secondItem="hTb-6B-BwU" secondAttribute="centerX" id="YGC-Du-c5T"/>
+                            <constraint firstItem="B7G-Bl-Zp9" firstAttribute="top" secondItem="9kv-rj-wGE" secondAttribute="bottom" id="bSr-o8-dUS"/>
+                            <constraint firstAttribute="trailing" secondItem="B7G-Bl-Zp9" secondAttribute="trailing" id="hMv-D5-jDB"/>
+                            <constraint firstItem="1tG-wh-0y7" firstAttribute="top" secondItem="B7G-Bl-Zp9" secondAttribute="bottom" id="yfg-HM-iOF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z7E-Fq-pp9"/>
                     <connections>
@@ -716,7 +722,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-na-IUI">
-                                                <rect key="frame" x="8" y="269" width="304" height="478"/>
+                                                <rect key="frame" x="8" y="269" width="304" height="498"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acción Deseada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRH-4x-MRa">
@@ -853,7 +859,7 @@
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpG-S7-zng">
-                                                        <rect key="frame" x="8" y="400" width="288" height="32"/>
+                                                        <rect key="frame" x="8" y="400" width="288" height="42"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" red="0.061594180759999999" green="0.1569948494" blue="0.22723790999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Solicitar">
@@ -864,7 +870,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycE-pQ-gGP">
-                                                        <rect key="frame" x="8" y="440" width="288" height="30"/>
+                                                        <rect key="frame" x="8" y="452" width="288" height="42"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Cancelar">
                                                             <color key="titleColor" red="0.061594180759999999" green="0.1569948494" blue="0.22723790999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
