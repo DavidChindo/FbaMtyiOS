@@ -13,7 +13,6 @@ class MyTicketsTableViewCell: UITableViewCell {
     @IBOutlet weak var requestDateLbl: UILabel!
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var ticketLbl: UILabel!
-    
-
     @IBOutlet weak var containerViews: UIView!
+    
 }

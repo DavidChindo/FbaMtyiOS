@@ -13,10 +13,5 @@ class PaymentsTableViewCell: UITableViewCell {
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var idDocumentLbl: UILabel!
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    @IBOutlet weak  var containerMajorView: UIView!
 }

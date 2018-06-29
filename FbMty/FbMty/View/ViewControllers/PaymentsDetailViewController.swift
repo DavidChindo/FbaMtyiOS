@@ -57,6 +57,8 @@ class PaymentsDetailViewController: BaseViewController {
             containerViews.frame = CGRect(x: containerViews.frame.origin.x, y: containerViews.frame.origin.y, width: containerViews.frame.width, height: (explanationTxtView.frame.origin.y + explanationTxtView.frame.height + 20))
             scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: (explanationTxtView.frame.origin.y + explanationTxtView.frame.height + 20))
             
+            self.contentSizeInPopup.height = explanationTxtView.frame.origin.y + explanationTxtView.frame.height + 12
+            
         }
     }
     

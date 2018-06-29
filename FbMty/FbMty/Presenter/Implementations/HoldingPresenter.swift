@@ -54,7 +54,7 @@ class HoldingPresenter: BasePresenter {
                         
                         case .failure(let error):
                             print(error.localizedDescription)
-                            self.delegate?.onDownloadError(msg: error.localizedDescription)
+                            self.delegate?.onDownloadError(msg: "salir")
                         }
                     })
                 

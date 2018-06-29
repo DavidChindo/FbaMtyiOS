@@ -12,10 +12,11 @@ import STPopup
 import MobileCoreServices
 import Zip
 
-class TicketFormViewController: BaseViewController,TicketDelegate,UIDocumentMenuDelegate,UIDocumentPickerDelegate,UINavigationControllerDelegate{
+class TicketFormViewController: BaseViewController,TicketDelegate,UIDocumentMenuDelegate,UIDocumentPickerDelegate,UINavigationControllerDelegate,UITextViewDelegate{
     
     @IBOutlet weak var fileNmeLbl: UILabel!
     @IBOutlet weak var explanationTxtView: UITextView!
+    @IBOutlet weak var sentBtn: UIButton!
     
     var ticketPresenter: TicketPresenter?
     var ticketService: Service?
@@ -36,6 +37,9 @@ class TicketFormViewController: BaseViewController,TicketDelegate,UIDocumentMenu
     }
     
     func initViews(){
+        explanationTxtView.delegate = self
+        hideKeyboard()
+        self.contentSizeInPopup.height = sentBtn.frame.origin.y + sentBtn.frame.height + 8
         ticketPresenter = TicketPresenter(delegate: self)
         setupPresenter(ticketPresenter!)
     }
@@ -74,6 +78,11 @@ class TicketFormViewController: BaseViewController,TicketDelegate,UIDocumentMenu
     func onSentTicketError(msg: String?) {
         SwiftSpinner.hide()
         DesignUtils.alertConfirmFinish(titleMessage: "Error", message: msg!, vc: self)
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.textColor = UIColor.black
+        textView.text = textView.text.contains("Ingrese explicación...") ? "" : textView.text
     }
     
     func openExplorer(){
@@ -130,6 +139,20 @@ class TicketFormViewController: BaseViewController,TicketDelegate,UIDocumentMenu
     func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
         print("we cancelled")
         dismiss(animated: true, completion: nil)
+    }
+    
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
     }
     
 

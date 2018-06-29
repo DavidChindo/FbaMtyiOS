@@ -10,7 +10,7 @@ import UIKit
 import SwiftSpinner
 import STPopup
 
-class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDelegate {
+class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDelegate,UIGestureRecognizerDelegate {
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var datesPicker: UIPickerView!
@@ -39,23 +39,21 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
 
     }
 
-    
     func initViews(){
         paymentsPresenter = PaymentsPresenter(delegate: self)
         setupPresenter(paymentsPresenter!)
         DesignUtils.containerRound(content: containerView)
         SwiftSpinner.show("Cargando...")
         paymentsPresenter?.payments(idHolding: (MenuViewController.holdingResponse?.Id)!)
-        
-        dateLbl.isUserInteractionEnabled = true
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(userDidTapLabel(tapGestureRecognizer:)))
-        dateLbl.addGestureRecognizer(tapGesture)
-        
         paymentsDataSource = PaymentsDataSource(tableView: tableView, items: mPayments, delegate: self)
         
         tableView?.delegate = paymentsDataSource
         tableView.dataSource = paymentsDataSource
-        
+       
+       dateLbl.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(userDidTapLabel(tapGestureRecognizer:)))
+        dateLbl.addGestureRecognizer(tapGesture)
+ 
         addBtn()
         
         hideKeyboard()
@@ -175,14 +173,20 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         dateLbl.text = datesFiltes[row]
     }
-    
+
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if touch.view != nil && (touch.view!.isDescendant(of: tableView)) {
+            return false
+        }
+        return true
+    }
     
     func hideKeyboard()
     {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(
             target: self,
             action: #selector(hidePicker))
-        
+        tap.delegate = self
         view.addGestureRecognizer(tap)
     }
 
@@ -232,18 +236,6 @@ class PaymentsViewController: BaseViewController,PaymentsDelegate,UIPickerViewDe
         }
         return result
     }
-
-
     
 }
-extension Array where Element : Equatable {
-    var unique: [Element] {
-        var uniqueValues: [Element] = []
-        forEach { item in
-            if !uniqueValues.contains(item) {
-                uniqueValues += [item]
-            }
-        }
-        return uniqueValues
-    }
-}
+
