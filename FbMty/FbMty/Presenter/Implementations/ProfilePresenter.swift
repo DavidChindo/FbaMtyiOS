@@ -39,8 +39,12 @@ class ProfilePresenter: BasePresenter {
                     request = Alamofire.request(Urls.API_LOGOUT, method: .post, parameters: nil, encoding: URLEncoding.default, headers: ["Authorization" : authorization]).responseJSON(completionHandler: {(response: DataResponse<Any>) in
                         
                         let statusCode = response.response?.statusCode
-                        
-                        switch response.result{
+                        if  statusCode == Constants.STATUS_OK{
+                                self.delegate?.logoutSuccess(msg: "Sesión Finalizada")
+                        }else{
+                            self.delegate?.logoutError(msg:  "Por el momento no se puede cerrar sesión")
+                        }
+                      /*  switch response.result{
                             
                         case .success:
                             if statusCode == 200{
@@ -51,7 +55,7 @@ class ProfilePresenter: BasePresenter {
                         case .failure(let error):
                             print(error)
                             self.delegate?.logoutError(msg:  error.localizedDescription)
-                        }
+                        }*/
                     })
                 
             } catch let error {

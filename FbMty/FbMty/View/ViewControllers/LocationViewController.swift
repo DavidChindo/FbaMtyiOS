@@ -48,6 +48,22 @@ class LocationViewController: BaseViewController {
                 addressLbl.text = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.street)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.numberExt)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.suburb)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.town)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.zip)+" "+LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.Address?.state)
             }
         }
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let camera = GMSCameraPosition.camera(withLatitude: (MenuViewController.holdingResponse?.Coordinates?.latitude)!, longitude: (MenuViewController.holdingResponse?.Coordinates?.longitude)!, zoom: 14.0)
+        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        
+        let marker = GMSMarker()
+        marker.position = camera.target
+        marker.snippet = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.NombreEdificio)
+        
+        marker.map = mapView
+        
+        self.view = mapView
+        
+        self.view.addSubview(containerMap)
+        
+        initViews()
     }
 }

@@ -101,4 +101,8 @@ class DownloadsViewController: BaseViewController,DownloadDelegate {
         webView?.isHidden = false
         isShowingWebView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        initViews()
+    }
 }

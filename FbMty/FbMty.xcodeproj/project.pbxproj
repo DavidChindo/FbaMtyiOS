@@ -100,6 +100,7 @@
 		B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2CE1320C1BFF1003BD535 /* Prefs.swift */; };
 		B6B3BD2A20C8338C00EDAF89 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3BD2920C8338C00EDAF89 /* Keys.swift */; };
 		B6B3BD2C20C884ED00EDAF89 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */; };
+		B6C88C3820E6E8C2001BF721 /* TmpDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C88C3720E6E8C2001BF721 /* TmpDirectory.swift */; };
 		B6CF2D7720B625550035EA51 /* HoldingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7620B625550035EA51 /* HoldingResponse.swift */; };
 		B6CF2D7920B62DE10035EA51 /* PicturesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7820B62DE10035EA51 /* PicturesResponse.swift */; };
 		B6CF2D7B20B75CBC0035EA51 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7A20B75CBC0035EA51 /* LoginResponse.swift */; };
@@ -257,6 +258,7 @@
 		B6B2CE1320C1BFF1003BD535 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 		B6B3BD2920C8338C00EDAF89 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../ViewControllers/RegisterViewController.swift; sourceTree = "<group>"; };
+		B6C88C3720E6E8C2001BF721 /* TmpDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmpDirectory.swift; sourceTree = "<group>"; };
 		B6CF2D7620B625550035EA51 /* HoldingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldingResponse.swift; sourceTree = "<group>"; };
 		B6CF2D7820B62DE10035EA51 /* PicturesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesResponse.swift; sourceTree = "<group>"; };
 		B6CF2D7A20B75CBC0035EA51 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -541,6 +543,7 @@
 				B6B2CE1120C1BF04003BD535 /* LogicUtils.swift */,
 				B6B2CE1320C1BFF1003BD535 /* Prefs.swift */,
 				B6B3BD2920C8338C00EDAF89 /* Keys.swift */,
+				B6C88C3720E6E8C2001BF721 /* TmpDirectory.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1013,6 +1016,7 @@
 				B64574491FD1E780002185C6 /* Address.swift in Sources */,
 				B6ACBE1120C9F781006561EE /* ServicesTabDelegate.swift in Sources */,
 				B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */,
+				B6C88C3820E6E8C2001BF721 /* TmpDirectory.swift in Sources */,
 				B64E53ED20BC750C0062C41E /* ParkingsInboxPresenter.swift in Sources */,
 				B6A1617C20D1761100334EFA /* ChatViewController.swift in Sources */,
 				B6907E6F20DC07B2009D11FA /* MessagesConsViewController.swift in Sources */,

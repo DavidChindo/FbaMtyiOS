@@ -36,6 +36,10 @@ class ServicesViewController: BaseViewController, ServicesTabDelegate {
         servicesDataSource = ServicesDataSource(tableView: ServicesTable, items: services, delegate: self)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        initViews()
+    }
+    
     func onOpenService(service: Service) {
         
         let idServiceValue = idService(title: service.title!)

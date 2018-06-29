@@ -49,14 +49,6 @@ class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFi
     
     }
     
-    func initView(idView:String){
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: idView)
-        self.window?.rootViewController = initialViewController
-        self.window?.makeKeyAndVisible()
-    }
-    
     func onLoginSuccess(loginResponse: LoginResponse) {
         if LogicUtils.isObjectNotNil(object: loginResponse){
             SwiftSpinner.sharedInstance.titleLabel.text = "Descargando..."
@@ -76,8 +68,8 @@ class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFi
             Prefs.instance().putBool(Keys.PREF_LOADING, value: false)
             //RealmManager.insert(HoldingResponse.self, items: holdingResponses)
             MenuViewController.holdingResponses = holdingResponses
-//            MenuViewController.holdingResponse = holdingResponses[Prefs.instance().integer(Keys.PREF_POSITION_SELECTED)]
-            MenuViewController.holdingResponse = holdingResponses[1]
+            MenuViewController.holdingResponse = holdingResponses[Prefs.instance().integer(Keys.PREF_POSITION_SELECTED)]
+//            MenuViewController.holdingResponse = holdingResponses[1] Just to test
             initView(idView: "MenuTabViewController")
         }else{
             DesignUtils.alertConfirmFinish(titleMessage: "Ingreso", message: "No tiene ningún edificio contratado", vc: self)
@@ -122,6 +114,14 @@ class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFi
         default:
             return true
         }
+    }
+    
+    func initView(idView:String){
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: idView)
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
     }
     
     func hideKeyboard()

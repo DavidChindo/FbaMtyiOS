@@ -8,6 +8,7 @@
 
 import UIKit
 import BmoImageLoader
+import SwiftSpinner
 
 class ProfileViewController: BaseViewController,ProfileDelegate,UIPickerViewDelegate {
     
@@ -18,6 +19,9 @@ class ProfileViewController: BaseViewController,ProfileDelegate,UIPickerViewDele
     
     var profilePresenter:ProfilePresenter?
     var holdings: [String] = []
+    var window:UIWindow?
+    
+    var loginViewController = "LoginViewController"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,14 +44,34 @@ class ProfileViewController: BaseViewController,ProfileDelegate,UIPickerViewDele
     
     @IBAction func onLogoutClick(_ sender: Any) {
     
+        let alertEmpty = UIAlertController(title: "Cerrar Sesión", message: "¿Desea cerrar sesión?", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alertEmpty.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: {(action:UIAlertAction!) in
+            SwiftSpinner.show("Cerrando Sesión...")
+            self.profilePresenter?.logOut()
+        }))
+        
+        alertEmpty.addAction(UIAlertAction(title: "Cancelar", style: .default, handler: {(action:UIAlertAction!) in
+            alertEmpty.dismiss(animated: true, completion: nil)
+        }))
+        
+        present(alertEmpty, animated: true, completion: nil)
+        
     }
 
     func logoutSuccess(msg: String?) {
-        
+        SwiftSpinner.hide()
+        Prefs.instance().putInt(Keys.PREF_POSITION_SELECTED, value: 0)
+        Prefs.instance().putBool(Keys.PREF_LOGIN, value: false)
+        Prefs.instance().putBool(Keys.PREF_LOADING, value: false)
+        TmpDirectory.clearTmpDirectory()
+        initView(idView: loginViewController)
     }
     
     func logoutError(msg: String?) {
+        SwiftSpinner.hide()
         
+        DesignUtils.alertConfirm(titleMessage: "Sesión", message: msg!, vc: self)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -71,5 +95,13 @@ class ProfileViewController: BaseViewController,ProfileDelegate,UIPickerViewDele
     func reloadImage(){
         let url = URL(string: DesignUtils.getUrlImage(holding: MenuViewController.holdingResponse!))
         holdingImg.bmo_setImageWithURL(url!, style: .circleBrush(borderShape: false))
+    }
+    
+    func initView(idView:String){
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: idView)
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
     }
 }

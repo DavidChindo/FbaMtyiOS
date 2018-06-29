@@ -24,8 +24,8 @@ class CharacteristicsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 780)
-        containerView.frame = CGRect(x: containerView.frame.origin.x, y: containerView.frame.origin.y, width: containerView.frame.width, height: 780)
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 880)
+        containerView.frame = CGRect(x: containerView.frame.origin.x, y: containerView.frame.origin.y, width: containerView.frame.width, height: 880)
 
         setFields()
     }
@@ -41,8 +41,12 @@ class CharacteristicsViewController: BaseViewController {
             nameAdmon.text = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.administrador)
             emailAdmon.text = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.AdministradorMail)
             phoneAdmon.text = LogicUtils.validateStringByString(word: MenuViewController.holdingResponse?.AdministradorNumero)
+            
         }
+    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setFields()
     }
 
 }
