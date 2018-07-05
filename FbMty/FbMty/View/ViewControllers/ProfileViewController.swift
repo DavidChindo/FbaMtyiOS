@@ -104,4 +104,8 @@ class ProfileViewController: BaseViewController,ProfileDelegate,UIPickerViewDele
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        initViews()
+    }
 }

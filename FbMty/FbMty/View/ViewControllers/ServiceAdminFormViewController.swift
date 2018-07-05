@@ -50,6 +50,10 @@ class ServiceAdminFormViewController: BaseViewController {
         containerViews.addSubview((slidingContainerViewController?.view)!)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setupTabBar()
+    }
+    
     func dissmissView(_ sender: Any){
         self.dismiss(animated: true, completion: nil)
     }

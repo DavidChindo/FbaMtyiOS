@@ -8,14 +8,15 @@
 
 import UIKit
 import SwiftSpinner
+import GrowingTextView
 
-class MessagesConsViewController: BaseViewController,ChatDelegate,UITableViewDelegate,UITableViewDataSource {
+class MessagesConsViewController: BaseViewController,ChatDelegate,GrowingTextViewDelegate, UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var sendBtn: UIButton!
     @IBOutlet weak var messagesTableView: UITableView!
     
     var mMessages: [MessageResponse] = []
-    @IBOutlet weak var messageTxtView: UITextField!
+    @IBOutlet weak var messageTxtView : GrowingTextView!
     var chatPresenter: ChatPresenter?
 
     var messageTableCell = "MessagesCellId"
@@ -28,8 +29,8 @@ class MessagesConsViewController: BaseViewController,ChatDelegate,UITableViewDel
         
         self.navigationItem.title = "Chat"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "iconBack") , style: .plain, target: self, action: #selector(dissmissView(_:)))
+       // automaticallyAdjustsScrollViewInsets = false
         
-
         initViews()
     
         hideKeyboard()
@@ -42,6 +43,8 @@ class MessagesConsViewController: BaseViewController,ChatDelegate,UITableViewDel
         
         SwiftSpinner.show("Cargando...")
         chatPresenter?.messages(idHolding: (MenuViewController.holdingResponse?.Id)!)
+        
+        messageTxtView.delegate = self
         
         messagesTableView.dataSource = self
         messagesTableView.delegate = self
@@ -147,14 +150,30 @@ class MessagesConsViewController: BaseViewController,ChatDelegate,UITableViewDel
         SwiftSpinner.hide()
     }
     
+    func textViewDidChange(_ textView: UITextView) {
+        
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        
+    }
+    
+    func textViewDidChangeHeight(_ textView: GrowingTextView, height: CGFloat) {
+        UIView.animate(withDuration: 0.2) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
     func dissmissView(_ sender: Any){
         self.dismiss(animated: true, completion: nil)
     }
     
     func scrollToBottom(){
-        DispatchQueue.main.async {
-            let indexPath = IndexPath(row: self.mMessages.count-1, section: 0)
-            self.messagesTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+        if self.mMessages.count > 0 {
+            DispatchQueue.main.async {
+                let indexPath = IndexPath(row: self.mMessages.count-1, section: 0)
+                self.messagesTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+            }
         }
     }
     

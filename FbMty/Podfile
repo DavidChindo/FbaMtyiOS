@@ -19,12 +19,15 @@ pod 'Zip', '~> 0.7'
 pod 'StatefulTableView', '0.0.17'
 pod 'SlidingContainerViewController'
 pod 'CTPanoramaView', '~> 1.0'
-pod 'AACarousel'
 pod 'PocketSVG', '~> 2.0'
 pod 'XLPagerTabStrip', '~> 7.0.0’
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'BmoImageLoader'
 pod 'SnapKit'
+pod 'GrowingTextView'
+pod 'FlexiblePageControl'
+pod 'ImageSlideshow'
+pod "ImageSlideshow/Kingfisher"
 
 end

@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AACarousel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,7 +29,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FlexiblePageControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GrowingTextView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ImageSlideshow.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -116,117 +131,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>0209001907C0675F936859636EF390B3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>16A4B3BF68FDF772C1D61D66490DA105</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2F0C0F810568D3E82219429D9D870F04</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2F5622F3B18DF497981AB58C6D1FC72F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2FE9D86AC5F15E7D7BAC2018790D4F1F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>30DC6B3B4BDC669DA3E63F0F0DA0CD52</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3A975659C4A2B0A1221849CB5023AC41</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3E6E8B79709DABE4D5F35188709FC435</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7A16CDA5ABC20460EFAF5572541033DD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7EB31AD5861E17AD28EFB10D4CA40DAB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>94243744C2BCE8AEC8F62E941435A9D3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9502FB01641FBABB78522037E882757B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9E6AD690247DFB9B96BBF70179B40D1B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9FCA2A577A1BD7A21180574B2832B5CD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C235F77E101E742652CCF98FFDFA5182</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CE6C6BA4E89AEEE6BBBC0D13D4E404C2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D98986199D4F04C546E0E25C7DC731EF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E971F1275CF552C1D9EE31BE3FED4932</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FBA431458AF24B4EDC01ED4358B72C1C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FF4EEE989990BB6E02297DF76BA6B002</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

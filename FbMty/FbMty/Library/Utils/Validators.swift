@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import GrowingTextView
 
 class Validators: NSObject {
 
     class func validateTextField(textField: UITextField) -> Bool{
+        return !(textField.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty)!
+    }
+    
+    class func validateGrowingTxtView(textField: GrowingTextView) -> Bool{
         return !(textField.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty)!
     }
     

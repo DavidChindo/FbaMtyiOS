@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7EB31AD5861E17AD28EFB10D4CA40DAB"
-               BlueprintName = "AACarousel"
+               BlueprintIdentifier = "FA0B261053CC4F091B535CE7593CDB1D"
+               BlueprintName = "FlexiblePageControl"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "AACarousel.framework">
+               BuildableName = "FlexiblePageControl.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

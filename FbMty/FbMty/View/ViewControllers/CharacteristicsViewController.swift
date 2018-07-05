@@ -46,7 +46,7 @@ class CharacteristicsViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        setFields()
+       // setFields()
     }
 
 }

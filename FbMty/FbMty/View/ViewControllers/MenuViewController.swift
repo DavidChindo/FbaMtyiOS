@@ -42,6 +42,8 @@ class MenuViewController: BaseViewController,HoldingDelegate {
             
             SwiftSpinner.show("Descargando")
             holdingPresenter?.holding()
+        }else{
+            initViews()
         }
         
     }
@@ -53,8 +55,7 @@ class MenuViewController: BaseViewController,HoldingDelegate {
             Prefs.instance().putBool(Keys.PREF_LOADING, value: false)
             
             MenuViewController.holdingResponses = holdingResponses
-            //            MenuViewController.holdingResponse = holdingResponses[Prefs.instance().integer(Keys.PREF_POSITION_SELECTED)]
-            MenuViewController.holdingResponse = holdingResponses[1]
+            MenuViewController.holdingResponse = holdingResponses[Prefs.instance().integer(Keys.PREF_POSITION_SELECTED)]
             initViews()
         }else{
             DesignUtils.alertConfirmFinish(titleMessage: "Ingreso", message: "No tiene ningún edificio contratado", vc: self)

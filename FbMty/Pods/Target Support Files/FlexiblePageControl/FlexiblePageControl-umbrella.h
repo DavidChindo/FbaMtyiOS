@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "FlexiblePageControl.h"
 
-FOUNDATION_EXPORT double AACarouselVersionNumber;
-FOUNDATION_EXPORT const unsigned char AACarouselVersionString[];
+FOUNDATION_EXPORT double FlexiblePageControlVersionNumber;
+FOUNDATION_EXPORT const unsigned char FlexiblePageControlVersionString[];
 

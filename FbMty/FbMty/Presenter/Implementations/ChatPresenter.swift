@@ -11,6 +11,7 @@ import Alamofire
 import AlamofireObjectMapper
 import ObjectMapper
 import Realm
+import GrowingTextView
 
 class ChatPresenter: BasePresenter {
 
@@ -74,10 +75,10 @@ class ChatPresenter: BasePresenter {
         self.delegate?.onValid(isValid: isValid, msg: msg)
     }
     
-    func validTxtField(field:UITextField){
+    func validTxtField(field: GrowingTextView){
         var isValid:Bool = true
         var msg:String = ""
-        if(Validators.validateTextField(textField: field)){
+        if(Validators.validateGrowingTxtView(textField: field)){
             isValid = true
         }else{
             msg =  "El campo mensaje es requerido"

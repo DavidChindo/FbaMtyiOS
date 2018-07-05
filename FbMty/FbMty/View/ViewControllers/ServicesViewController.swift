@@ -38,6 +38,8 @@ class ServicesViewController: BaseViewController, ServicesTabDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         initViews()
+        ServicesTable.dataSource = servicesDataSource
+        ServicesTable.delegate = servicesDataSource
     }
     
     func onOpenService(service: Service) {

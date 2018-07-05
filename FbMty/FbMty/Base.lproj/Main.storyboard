@@ -560,6 +560,11 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wyk-IS-RsK" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -570,6 +575,7 @@
                     <connections>
                         <outlet property="containerView" destination="kcH-gZ-cc2" id="g4V-Xk-SNQ"/>
                         <outlet property="portalImage" destination="sgV-Kk-4dE" id="hVv-u8-P4i"/>
+                        <outlet property="slideshow" destination="wyk-IS-RsK" id="0Wj-3c-LdE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrG-eM-dnu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1256,7 +1262,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nhj-Ej-b9s">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <rect key="frame" x="0.0" y="8" width="320" height="560"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha de Construcción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujd-LS-aj1">
@@ -1388,7 +1394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mg9-gC-sWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2393" y="416"/>
+            <point key="canvasLocation" x="2392.5" y="415.14084507042253"/>
         </scene>
         <!--Menu Tab View Controller-->
         <scene sceneID="dTt-pz-YXj">
@@ -1421,7 +1427,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_menu_back" translatesAutoresizingMaskIntoConstraints="NO" id="Afm-wf-PgD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_menu_back" translatesAutoresizingMaskIntoConstraints="NO" id="Afm-wf-PgD">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFf-pP-1y1">
@@ -2563,12 +2569,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMe-N2-Pcl">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DdZ-fB-ZbI">
-                                        <rect key="frame" x="8" y="10" width="256" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-gE-NOg">
                                         <rect key="frame" x="272" y="10" width="40" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2581,15 +2581,38 @@
                                             <action selector="onSendClick:" destination="pMB-el-Tkh" eventType="touchUpInside" id="bjf-Kv-GCj"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fBq-R0-YK0" customClass="GrowingTextView" customModule="GrowingTextView">
+                                        <rect key="frame" x="8" y="8" width="256" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                <integer key="value" value="500"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minHeight">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxHeight">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Mensaje"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeHolderLeftMargin">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.81578701730000003" green="0.82348114250000004" blue="0.82747560740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="DdZ-fB-ZbI" firstAttribute="leading" secondItem="fMe-N2-Pcl" secondAttribute="leading" constant="8" id="9kW-Sa-ipc"/>
+                                    <constraint firstItem="fBq-R0-YK0" firstAttribute="centerY" secondItem="fMe-N2-Pcl" secondAttribute="centerY" id="8cD-HW-FjG"/>
+                                    <constraint firstItem="fBq-R0-YK0" firstAttribute="leading" secondItem="fMe-N2-Pcl" secondAttribute="leading" constant="8" id="CFl-ID-hvg"/>
                                     <constraint firstAttribute="height" constant="50" id="FhT-ts-zB2"/>
-                                    <constraint firstItem="DdZ-fB-ZbI" firstAttribute="centerY" secondItem="fMe-N2-Pcl" secondAttribute="centerY" id="Zan-Hv-eEu"/>
+                                    <constraint firstItem="fBq-R0-YK0" firstAttribute="top" secondItem="fMe-N2-Pcl" secondAttribute="top" constant="8" id="UIq-Y9-5pO"/>
+                                    <constraint firstItem="fE8-gE-NOg" firstAttribute="leading" secondItem="fBq-R0-YK0" secondAttribute="trailing" constant="8" id="aUy-nw-uME"/>
                                     <constraint firstItem="fE8-gE-NOg" firstAttribute="centerY" secondItem="fMe-N2-Pcl" secondAttribute="centerY" id="bOx-J1-ivN"/>
-                                    <constraint firstItem="fE8-gE-NOg" firstAttribute="leading" secondItem="DdZ-fB-ZbI" secondAttribute="trailing" constant="8" id="cFj-jO-2ma"/>
                                     <constraint firstAttribute="trailing" secondItem="fE8-gE-NOg" secondAttribute="trailing" constant="8" id="eTN-N4-v1o"/>
+                                    <constraint firstAttribute="bottom" secondItem="fBq-R0-YK0" secondAttribute="bottom" constant="8" id="pKA-2B-CWi"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TrO-Af-HA0">
@@ -2685,14 +2708,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="4Pt-Vl-QhJ"/>
                     <connections>
-                        <outlet property="messageTxtView" destination="DdZ-fB-ZbI" id="mwH-ad-p6y"/>
+                        <outlet property="messageTxtView" destination="fBq-R0-YK0" id="yh9-c3-v6s"/>
                         <outlet property="messagesTableView" destination="TrO-Af-HA0" id="WdD-bD-ulO"/>
                         <outlet property="sendBtn" destination="fE8-gE-NOg" id="5bD-hy-vCh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oen-rs-u6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6746" y="-1488"/>
+            <point key="canvasLocation" x="6744.375" y="-1488.3802816901409"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GnO-rD-VBV">
@@ -2875,7 +2898,7 @@
         <image name="ico_pswd" width="75" height="75"/>
         <image name="ico_ticket" width="75" height="75"/>
         <image name="ico_user" width="75" height="75"/>
-        <image name="ico_video" width="75" height="75"/>
+        <image name="ico_video" width="64" height="64"/>
         <image name="iconBackButton" width="64" height="64"/>
         <image name="iconCajonesAdicpool" width="48" height="48"/>
         <image name="img_menu_back" width="540" height="960"/>
