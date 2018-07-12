@@ -9,13 +9,13 @@ PODS:
     - AlamofireImage (~> 3.1)
   - CTPanoramaView (1.0)
   - FlexiblePageControl (1.0.5)
-  - GoogleMaps (2.3.1):
-    - GoogleMaps/Maps (= 2.3.1)
-  - GoogleMaps/Base (2.3.1)
-  - GoogleMaps/Maps (2.3.1):
-    - GoogleMaps/Base
-  - GooglePlaces (2.3.1):
-    - GoogleMaps/Base (= 2.3.1)
+  - GoogleMaps (2.0.1):
+    - GoogleMaps/Maps (= 2.0.1)
+  - GoogleMaps/Base (2.0.1)
+  - GoogleMaps/Maps (2.0.1):
+    - GoogleMaps/Base (= 2.0.1)
+  - GooglePlaces (2.0.1):
+    - GoogleMaps/Base (= 2.0.1)
   - GrowingTextView (0.2.8)
   - ImageSlideshow (1.3.2):
     - ImageSlideshow/Core (= 1.3.2)
@@ -47,15 +47,15 @@ DEPENDENCIES:
   - BmoImageLoader
   - CTPanoramaView (~> 1.0)
   - FlexiblePageControl
-  - GoogleMaps
-  - GooglePlaces
+  - GoogleMaps (~> 2.0.0)
+  - GooglePlaces (~> 2.0.0)
   - GrowingTextView
   - ImageSlideshow
   - ImageSlideshow/Kingfisher
   - IQKeyboardManagerSwift
   - Kingfisher
   - PocketSVG (~> 2.0)
-  - RealmSwift
+  - RealmSwift (~> 2.8.1)
   - SlidingContainerViewController
   - SnapKit
   - SpaceView
@@ -99,8 +99,8 @@ SPEC CHECKSUMS:
   BmoImageLoader: 5e6ba842d321e3fd7d59c5ac13e3d978f87b9794
   CTPanoramaView: 26a11a330ff606ea5d059ffe86b7e34eb902023e
   FlexiblePageControl: 70caa5dad6603a7b361b154fa8b75295a8c44f9b
-  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
-  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
+  GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
+  GooglePlaces: 72fab1d1651c6df0322f2aad245ffb15b80d3c56
   GrowingTextView: 84d1c133d67fb88d5c027a6d6510036252a9b226
   ImageSlideshow: a68a76fc618ebd2b7481ce355ad67d7097203976
   IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
@@ -118,6 +118,6 @@ SPEC CHECKSUMS:
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
   Zip: e34513299ac38c0686d5b24504da7ce343799ab9
 
-PODFILE CHECKSUM: f2c9294e07eeaff3728d99245a5d0619856117fe
+PODFILE CHECKSUM: d31d0f56687f9553853cfcc0196df027214551c2
 
 COCOAPODS: 1.5.3

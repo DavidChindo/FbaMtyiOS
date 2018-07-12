@@ -73,6 +73,7 @@
 		B6653C1120CEEB4500F9189C /* MultimediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6653C1020CEEB4500F9189C /* MultimediaViewController.swift */; };
 		B6653C1320CEFDE100F9189C /* MenuTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6653C1220CEFDE100F9189C /* MenuTabViewController.swift */; };
 		B6653C1520CF1C9B00F9189C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6653C1420CF1C9B00F9189C /* ProfileViewController.swift */; };
+		B6735D3820F80FAA00AF88BD /* ResetPasswordDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6735D3720F80FAA00AF88BD /* ResetPasswordDialogViewController.swift */; };
 		B68FEDE820CAEB09005FD33A /* DownloadsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */; };
 		B68FEDEA20CAEB2E005FD33A /* DownloadsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */; };
 		B68FEDEC20CAEC13005FD33A /* DownloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */; };
@@ -100,6 +101,9 @@
 		B6B2CE1420C1BFF1003BD535 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2CE1320C1BFF1003BD535 /* Prefs.swift */; };
 		B6B3BD2A20C8338C00EDAF89 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3BD2920C8338C00EDAF89 /* Keys.swift */; };
 		B6B3BD2C20C884ED00EDAF89 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */; };
+		B6B848D620F80AAC00582CA9 /* ResetPasswordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B848D520F80AAC00582CA9 /* ResetPasswordDelegate.swift */; };
+		B6B848D820F80B0200582CA9 /* ResetPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B848D720F80B0200582CA9 /* ResetPasswordPresenter.swift */; };
+		B6B848DA20F80B6E00582CA9 /* ResetPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B848D920F80B6E00582CA9 /* ResetPasswordRequest.swift */; };
 		B6C88C3820E6E8C2001BF721 /* TmpDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C88C3720E6E8C2001BF721 /* TmpDirectory.swift */; };
 		B6CF2D7720B625550035EA51 /* HoldingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7620B625550035EA51 /* HoldingResponse.swift */; };
 		B6CF2D7920B62DE10035EA51 /* PicturesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF2D7820B62DE10035EA51 /* PicturesResponse.swift */; };
@@ -230,6 +234,7 @@
 		B6653C1020CEEB4500F9189C /* MultimediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultimediaViewController.swift; sourceTree = "<group>"; };
 		B6653C1220CEFDE100F9189C /* MenuTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTabViewController.swift; sourceTree = "<group>"; };
 		B6653C1420CF1C9B00F9189C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B6735D3720F80FAA00AF88BD /* ResetPasswordDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordDialogViewController.swift; sourceTree = "<group>"; };
 		B68FEDE720CAEB09005FD33A /* DownloadsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsDataSource.swift; sourceTree = "<group>"; };
 		B68FEDE920CAEB2E005FD33A /* DownloadsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsTableViewCell.swift; sourceTree = "<group>"; };
 		B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +263,9 @@
 		B6B2CE1320C1BFF1003BD535 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 		B6B3BD2920C8338C00EDAF89 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		B6B3BD2B20C884ED00EDAF89 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../ViewControllers/RegisterViewController.swift; sourceTree = "<group>"; };
+		B6B848D520F80AAC00582CA9 /* ResetPasswordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordDelegate.swift; sourceTree = "<group>"; };
+		B6B848D720F80B0200582CA9 /* ResetPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPresenter.swift; sourceTree = "<group>"; };
+		B6B848D920F80B6E00582CA9 /* ResetPasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordRequest.swift; sourceTree = "<group>"; };
 		B6C88C3720E6E8C2001BF721 /* TmpDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmpDirectory.swift; sourceTree = "<group>"; };
 		B6CF2D7620B625550035EA51 /* HoldingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldingResponse.swift; sourceTree = "<group>"; };
 		B6CF2D7820B62DE10035EA51 /* PicturesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesResponse.swift; sourceTree = "<group>"; };
@@ -481,6 +489,7 @@
 				B6DCCEB620DAF17E0018178F /* MessagesViewController.swift */,
 				B6907E6620DB2261009D11FA /* ChatCollectionViewController.swift */,
 				B6907E6E20DC07B2009D11FA /* MessagesConsViewController.swift */,
+				B6735D3720F80FAA00AF88BD /* ResetPasswordDialogViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -521,6 +530,7 @@
 				B64574661FD1F49B002185C6 /* PaymentRequest.swift */,
 				B64574681FD1F55B002185C6 /* RecoveryPasswordRequest.swift */,
 				B64E53F620BCAA4E0062C41E /* RegisterRequest.swift */,
+				B6B848D920F80B6E00582CA9 /* ResetPasswordRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -619,6 +629,7 @@
 				B6ACBE1020C9F781006561EE /* ServicesTabDelegate.swift */,
 				B68FEDEB20CAEC13005FD33A /* DownloadDelegate.swift */,
 				B6A0481A20D435140072AFC4 /* TicketsDelegate.swift */,
+				B6B848D520F80AAC00582CA9 /* ResetPasswordDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -638,6 +649,7 @@
 				B64E53F220BC87D10062C41E /* ProfilePresenter.swift */,
 				B64E53F420BCA8640062C41E /* RegisterPresenter.swift */,
 				B6316B7820C052970050DC02 /* TicketPresenter.swift */,
+				B6B848D720F80B0200582CA9 /* ResetPasswordPresenter.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -663,7 +675,7 @@
 				B64573FA1FD1D480002185C6 /* Frameworks */,
 				B64573FB1FD1D480002185C6 /* Resources */,
 				6A6F678AFE8E3BF8B4C06A65 /* [CP] Embed Pods Frameworks */,
-				EB81895E466A32480BD97423 /* [CP] Copy Pods Resources */,
+				5426C04758AEFBC4E54B8A9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -818,6 +830,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5426C04758AEFBC4E54B8A9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FbMty/Pods-FbMty-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FbMty/Pods-FbMty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6A6F678AFE8E3BF8B4C06A65 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -878,26 +910,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FbMty/Pods-FbMty-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB81895E466A32480BD97423 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FbMty/Pods-FbMty-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FbMty/Pods-FbMty-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -916,6 +928,7 @@
 				B65DD6B21FDF3DAE00F3626C /* MaintenanceViewController.swift in Sources */,
 				B6CF2D9720B782BE0035EA51 /* PaymentsDelegate.swift in Sources */,
 				B6A1617E20D18EB600334EFA /* MessageTableViewCell.swift in Sources */,
+				B6B848DA20F80B6E00582CA9 /* ResetPasswordRequest.swift in Sources */,
 				B61E0D5C20D9B0C2002268EC /* ServiceDescTableViewCell.swift in Sources */,
 				B6907E7320DC1404009D11FA /* MessagesFbTableViewCell.swift in Sources */,
 				B6E498A8201EB1A000703224 /* CharacteristicsViewController.swift in Sources */,
@@ -934,6 +947,7 @@
 				B64E53E520B8D4070062C41E /* HoldingPresenter.swift in Sources */,
 				B6CF2D7F20B760F90035EA51 /* MyTicketResponse.swift in Sources */,
 				B64574651FD1F3DB002185C6 /* MaintenanceTicketRequest.swift in Sources */,
+				B6B848D820F80B0200582CA9 /* ResetPasswordPresenter.swift in Sources */,
 				B6653C1520CF1C9B00F9189C /* ProfileViewController.swift in Sources */,
 				B64C686C20D020CC00D9AAE4 /* MaintenanceDataSource.swift in Sources */,
 				B6907E6B20DB229A009D11FA /* ChatUserCollectionViewCell.swift in Sources */,
@@ -974,6 +988,7 @@
 				B6E498A2201EB14D00703224 /* LocationViewController.swift in Sources */,
 				B64E53EF20BC78990062C41E /* ParkingsRequestPresenter.swift in Sources */,
 				B64E53E120B78B850062C41E /* Constants.swift in Sources */,
+				B6735D3820F80FAA00AF88BD /* ResetPasswordDialogViewController.swift in Sources */,
 				B61E0D5820D95AEC002268EC /* ParkingsInboxViewController.swift in Sources */,
 				B6A0482420D864970072AFC4 /* MyTicketsViewController.swift in Sources */,
 				B63BF03A20D07AFF00676087 /* PaymentsTableViewCell.swift in Sources */,
@@ -995,6 +1010,7 @@
 				B61E0D5E20DA2720002268EC /* ParkingsInboxDataSource.swift in Sources */,
 				B6A0482620D8694F0072AFC4 /* MyTicketsTableViewCell.swift in Sources */,
 				B6CF2DA120B788080035EA51 /* RealmManager.swift in Sources */,
+				B6B848D620F80AAC00582CA9 /* ResetPasswordDelegate.swift in Sources */,
 				B645745F1FD1EFFB002185C6 /* Ticket.swift in Sources */,
 				B6316B7B20C075C40050DC02 /* StatusParkings.swift in Sources */,
 				B645744D1FD1E986002185C6 /* Phone.swift in Sources */,

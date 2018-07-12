@@ -15,11 +15,16 @@
 #else
 #import <GoogleMapsBase/GoogleMapsBase.h>
 #endif
+#if __has_feature(modules)
+@import GoogleMapsBase;
+#else
+#import <GoogleMapsBase/GoogleMapsBase.h>
+#endif
 #import <GooglePlaces/GMSAutocompleteFilter.h>
 #import <GooglePlaces/GMSAutocompletePrediction.h>
 #import <GooglePlaces/GMSPlace.h>
 
-NS_ASSUME_NONNULL_BEGIN
+GMS_ASSUME_NONNULL_BEGIN
 
 @class GMSAutocompleteTableDataSource;
 
@@ -85,6 +90,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
 /**
  * GMSAutocompleteTableDataSource provides an interface for providing place autocomplete
  * predictions to populate a UITableView by implementing the UITableViewDataSource and
@@ -93,8 +99,9 @@ NS_ASSUME_NONNULL_BEGIN
  * GMSAutocompleteTableDataSource is designed to be used as the data source for a
  * UISearchDisplayController.
  *
- * NOTE: Using UISearchController with |GMSAutocompleteResultsViewController| instead of
- * UISearchDisplayController is highly recommended.
+ * NOTE: Unless iOS 7 compatibility is required, using UISearchController with
+ * |GMSAutocompleteResultsViewController| instead of UISearchDisplayController is highly
+ * recommended.
  *
  * Set an instance of GMSAutocompleteTableDataSource as the searchResultsDataSource and
  * searchResultsDelegate properties of UISearchDisplayController. In your implementation of
@@ -106,16 +113,18 @@ NS_ASSUME_NONNULL_BEGIN
  * UISearchDisplayController's table view.
  *
  */
-@interface GMSAutocompleteTableDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
+@interface GMSAutocompleteTableDataSource : NSObject <
+    UITableViewDataSource, UITableViewDelegate>
 
 /** Delegate to be notified when a place is selected or picking is cancelled. */
-@property(nonatomic, weak, nullable) IBOutlet id<GMSAutocompleteTableDataSourceDelegate> delegate;
+@property(nonatomic, weak)
+    IBOutlet id<GMSAutocompleteTableDataSourceDelegate> GMS_NULLABLE_PTR delegate;
 
 /** Bounds used to bias the autocomplete search (can be nil). */
-@property(nonatomic, strong, nullable) GMSCoordinateBounds *autocompleteBounds;
+@property(nonatomic, strong) GMSCoordinateBounds *GMS_NULLABLE_PTR autocompleteBounds;
 
 /** Filter to apply to autocomplete suggestions (can be nil). */
-@property(nonatomic, strong, nullable) GMSAutocompleteFilter *autocompleteFilter;
+@property(nonatomic, strong) GMSAutocompleteFilter *GMS_NULLABLE_PTR autocompleteFilter;
 
 /** The background color of table cells. */
 @property(nonatomic, strong) UIColor *tableCellBackgroundColor;
@@ -133,7 +142,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) UIColor *secondaryTextColor;
 
 /** The tint color applied to controls in the Autocomplete view. */
-@property(nonatomic, strong, nullable) UIColor *tintColor;
+@property(nonatomic, strong) UIColor *GMS_NULLABLE_PTR tintColor;
 
 /** Designated initializer */
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
@@ -148,8 +157,8 @@ NS_ASSUME_NONNULL_BEGIN
  * This method is non-blocking.
  * @param text The partial text to autocomplete.
  */
-- (void)sourceTextHasChanged:(nullable NSString *)text;
+- (void)sourceTextHasChanged:(NSString *GMS_NULLABLE_PTR)text;
 
 @end
 
-NS_ASSUME_NONNULL_END
+GMS_ASSUME_NONNULL_END

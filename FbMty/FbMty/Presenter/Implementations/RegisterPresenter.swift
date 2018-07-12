@@ -24,8 +24,6 @@ class RegisterPresenter: BasePresenter {
     func register(registerRequest: RegisterRequest){
         let params = Mapper().toJSON(registerRequest)
         
-        let authorization = "bearer "+RealmManager.token()
-        
         let status = Reach().connectionStatus()
         switch status {
         case .unknown, .offline:
@@ -33,7 +31,7 @@ class RegisterPresenter: BasePresenter {
         case .online(.wwan),.online(.wiFi):
             do{
                 try
-                    request = Alamofire.request(Urls.API_register, method: .post, parameters: params, encoding:JSONEncoding.default, headers: ["Authorization" : authorization]).responseJSON(completionHandler: {(response: DataResponse<Any>) in
+                    request = Alamofire.request(Urls.API_register, method: .post, parameters: params, encoding:JSONEncoding.default, headers: nil).responseJSON(completionHandler: {(response: DataResponse<Any>) in
                         switch response.result{
                         case .success:
                             let code = response.response?.statusCode

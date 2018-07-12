@@ -10,9 +10,14 @@
 
 #import <UIKit/UIKit.h>
 
+#if __has_feature(modules)
+@import GoogleMapsBase;
+#else
+#import <GoogleMapsBase/GoogleMapsBase.h>
+#endif
 #import <GooglePlaces/GMSPlacePhotoMetadata.h>
 
-NS_ASSUME_NONNULL_BEGIN
+GMS_ASSUME_NONNULL_BEGIN
 
 /**
  * A list of |GMSPlacePhotoMetadata| objects.
@@ -22,8 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * The array of |GMSPlacePhotoMetadata| objects.
  */
-@property(nonatomic, readonly, copy) NSArray<GMSPlacePhotoMetadata *> *results;
+@property(nonatomic, readonly, copy) GMS_NSArrayOf(GMSPlacePhotoMetadata *) * results;
 
 @end
 
-NS_ASSUME_NONNULL_END
+GMS_ASSUME_NONNULL_END

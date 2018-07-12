@@ -33,4 +33,5 @@ class Urls: NSObject {
     static let API_LOGOUT = API_FBMTY + "/api/Account/Logout"
     static let API_messages = API_FBMTY + "/api/MySpace/getHoldingUserMessages/%d"
     static let API_sentMessage = API_FBMTY + "/api/MySpace/sendMessage"
+    static let API_resetPassword = API_FBMTY + "/Home/ResetPassword"
 }

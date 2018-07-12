@@ -11,7 +11,13 @@
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
+#if __has_feature(modules)
+@import GoogleMapsBase;
+#else
+#import <GoogleMapsBase/GoogleMapsBase.h>
+#endif
+
+GMS_ASSUME_NONNULL_BEGIN
 
 /**
  * Represents a place constructed by a user, suitable for adding to Google's collection of places.
@@ -22,26 +28,26 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GMSUserAddedPlace : NSObject
 
 /** Name of the place. */
-@property(nonatomic, copy, nullable) NSString *name;
+@property(nonatomic, copy) NSString *GMS_NULLABLE_PTR name;
 
 /** Address of the place. */
-@property(nonatomic, copy, nullable) NSString *address;
+@property(nonatomic, copy) NSString *GMS_NULLABLE_PTR address;
 
 /** Location of the place. */
 @property(nonatomic, assign) CLLocationCoordinate2D coordinate;
 
 /** Phone number of the place. */
-@property(nonatomic, copy, nullable) NSString *phoneNumber;
+@property(nonatomic, copy) NSString *GMS_NULLABLE_PTR phoneNumber;
 
 /** List of types of the place as an array of NSStrings, like the GMSPlace.types property.
-* Only <a href="/places/ios-api/supported_types#table1">table 1 types</a>
+* Only <a href="/places/supported_types#table1">table 1 types</a>
 * are valid.
 */
-@property(nonatomic, copy, nullable) NSArray<NSString *> *types;
+@property(nonatomic, copy) GMS_NSArrayOf(NSString *) * GMS_NULLABLE_PTR types;
 
 /** The website for the place. */
-@property(nonatomic, copy, nullable) NSString *website;
+@property(nonatomic, copy) NSString *GMS_NULLABLE_PTR website;
 
 @end
 
-NS_ASSUME_NONNULL_END
+GMS_ASSUME_NONNULL_END

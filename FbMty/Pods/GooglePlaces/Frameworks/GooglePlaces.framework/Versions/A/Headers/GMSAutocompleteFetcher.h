@@ -13,11 +13,16 @@
 #else
 #import <GoogleMapsBase/GoogleMapsBase.h>
 #endif
+#if __has_feature(modules)
+@import GoogleMapsBase;
+#else
+#import <GoogleMapsBase/GoogleMapsBase.h>
+#endif
 #import <GooglePlaces/GMSAutocompleteFilter.h>
 
 @class GMSAutocompletePrediction;
 
-NS_ASSUME_NONNULL_BEGIN
+GMS_ASSUME_NONNULL_BEGIN
 
 /**
  * Protocol for objects that can receive callbacks from GMSAutocompleteFetcher
@@ -30,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Called when autocomplete predictions are available.
  * @param predictions an array of GMSAutocompletePrediction objects.
  */
-- (void)didAutocompleteWithPredictions:(NSArray<GMSAutocompletePrediction *> *)predictions;
+- (void)didAutocompleteWithPredictions:(GMS_NSArrayOf(GMSAutocompletePrediction *) *)predictions;
 
 /**
  * Called when an autocomplete request returns an error.
@@ -59,17 +64,18 @@ NS_ASSUME_NONNULL_BEGIN
  *               be returned outside of these bounds. This parameter may be nil.
  * @param filter The filter to apply to the results. This parameter may be nil.
  */
-- (instancetype)initWithBounds:(nullable GMSCoordinateBounds *)bounds
-                        filter:(nullable GMSAutocompleteFilter *)filter NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithBounds:(GMSCoordinateBounds *GMS_NULLABLE_PTR)bounds
+                        filter:(GMSAutocompleteFilter *GMS_NULLABLE_PTR)filter
+    NS_DESIGNATED_INITIALIZER;
 
 /** Delegate to be notified with autocomplete prediction results. */
-@property(nonatomic, weak, nullable) id<GMSAutocompleteFetcherDelegate> delegate;
+@property(nonatomic, weak) id<GMSAutocompleteFetcherDelegate> GMS_NULLABLE_PTR delegate;
 
 /** Bounds used to bias the autocomplete search (can be nil). */
-@property(nonatomic, strong, nullable) GMSCoordinateBounds *autocompleteBounds;
+@property(nonatomic, strong) GMSCoordinateBounds *GMS_NULLABLE_PTR autocompleteBounds;
 
 /** Filter to apply to autocomplete suggestions (can be nil). */
-@property(nonatomic, strong, nullable) GMSAutocompleteFilter *autocompleteFilter;
+@property(nonatomic, strong) GMSAutocompleteFilter *GMS_NULLABLE_PTR autocompleteFilter;
 
 /**
  * Notify the fetcher that the source text to autocomplete has changed.
@@ -81,8 +87,8 @@ NS_ASSUME_NONNULL_BEGIN
  * This method is non-blocking.
  * @param text The partial text to autocomplete.
  */
-- (void)sourceTextHasChanged:(nullable NSString *)text;
+- (void)sourceTextHasChanged:(NSString *GMS_NULLABLE_PTR)text;
 
 @end
 
-NS_ASSUME_NONNULL_END
+GMS_ASSUME_NONNULL_END

@@ -15,11 +15,16 @@
 #else
 #import <GoogleMapsBase/GoogleMapsBase.h>
 #endif
+#if __has_feature(modules)
+@import GoogleMapsBase;
+#else
+#import <GoogleMapsBase/GoogleMapsBase.h>
+#endif
 #import <GooglePlaces/GMSAutocompleteFilter.h>
 #import <GooglePlaces/GMSAutocompletePrediction.h>
 #import <GooglePlaces/GMSPlace.h>
 
-NS_ASSUME_NONNULL_BEGIN
+GMS_ASSUME_NONNULL_BEGIN
 
 @class GMSAutocompleteViewController;
 
@@ -33,10 +38,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Called when a place has been selected from the available autocomplete predictions.
- *
- * Implementations of this method should dismiss the view controller as the view controller will not
- * dismiss itself.
- *
  * @param viewController The |GMSAutocompleteViewController| that generated the event.
  * @param place The |GMSPlace| that was returned.
  */
@@ -45,11 +46,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Called when a non-retryable error occurred when retrieving autocomplete predictions or place
- * details.
- *
- * A non-retryable error is defined as one that is unlikely to be fixed by immediately retrying the
- * operation.
- *
+ * details. A non-retryable error is defined as one that is unlikely to be fixed by immediately
+ * retrying the operation.
+ * <p>
  * Only the following values of |GMSPlacesErrorCode| are retryable:
  * <ul>
  * <li>kGMSPlacesNetworkError
@@ -57,7 +56,6 @@ NS_ASSUME_NONNULL_BEGIN
  * <li>kGMSPlacesInternalError
  * </ul>
  * All other error codes are non-retryable.
- *
  * @param viewController The |GMSAutocompleteViewController| that generated the event.
  * @param error The |NSError| that was returned.
  */
@@ -66,10 +64,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Called when the user taps the Cancel button in a |GMSAutocompleteViewController|.
- *
- * Implementations of this method should dismiss the view controller as the view controller will not
- * dismiss itself.
- *
  * @param viewController The |GMSAutocompleteViewController| that generated the event.
  */
 - (void)wasCancelled:(GMSAutocompleteViewController *)viewController;
@@ -78,32 +72,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Called when the user selects an autocomplete prediction from the list but before requesting
- * place details.
- *
- * Returning NO from this method will suppress the place details fetch and didAutocompleteWithPlace
- * will not be called.
- *
+ * place details. Returning NO from this method will suppress the place details fetch and
+ * didAutocompleteWithPlace will not be called.
  * @param viewController The |GMSAutocompleteViewController| that generated the event.
  * @param prediction The |GMSAutocompletePrediction| that was selected.
  */
 - (BOOL)viewController:(GMSAutocompleteViewController *)viewController
-    didSelectPrediction:(GMSAutocompletePrediction *)prediction;
+   didSelectPrediction:(GMSAutocompletePrediction *)prediction;
 
 /**
  * Called once every time new autocomplete predictions are received.
- *
  * @param viewController The |GMSAutocompleteViewController| that generated the event.
  */
 - (void)didUpdateAutocompletePredictions:(GMSAutocompleteViewController *)viewController;
 
 /**
- * Called once immediately after a request for autocomplete predictions is made.
- *
  * @param viewController The |GMSAutocompleteViewController| that generated the event.
+ * Called once immediately after a request for autocomplete predictions is made.
  */
 - (void)didRequestAutocompletePredictions:(GMSAutocompleteViewController *)viewController;
 
 @end
+
 
 /**
  * GMSAutocompleteViewController provides an interface that displays a table of autocomplete
@@ -118,13 +108,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GMSAutocompleteViewController : UIViewController
 
 /** Delegate to be notified when a place is selected or picking is cancelled. */
-@property(nonatomic, weak, nullable) IBOutlet id<GMSAutocompleteViewControllerDelegate> delegate;
+@property(nonatomic, weak)
+    IBOutlet id<GMSAutocompleteViewControllerDelegate> GMS_NULLABLE_PTR delegate;
 
 /** Bounds used to bias the autocomplete search (can be nil). */
-@property(nonatomic, strong, nullable) GMSCoordinateBounds *autocompleteBounds;
+@property(nonatomic, strong) GMSCoordinateBounds *GMS_NULLABLE_PTR autocompleteBounds;
 
 /** Filter to apply to autocomplete suggestions (can be nil). */
-@property(nonatomic, strong, nullable) GMSAutocompleteFilter *autocompleteFilter;
+@property(nonatomic, strong) GMSAutocompleteFilter *GMS_NULLABLE_PTR autocompleteFilter;
 
 /** The background color of table cells. */
 @property(nonatomic, strong) IBInspectable UIColor *tableCellBackgroundColor;
@@ -142,8 +133,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) IBInspectable UIColor *secondaryTextColor;
 
 /** The tint color applied to controls in the Autocomplete view. */
-@property(nonatomic, strong, nullable) IBInspectable UIColor *tintColor;
+@property(nonatomic, strong) IBInspectable UIColor *GMS_NULLABLE_PTR tintColor;
 
 @end
 
-NS_ASSUME_NONNULL_END
+GMS_ASSUME_NONNULL_END

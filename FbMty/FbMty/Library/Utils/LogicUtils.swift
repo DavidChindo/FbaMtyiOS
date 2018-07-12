@@ -26,6 +26,10 @@ class LogicUtils: NSObject {
         }
     }
     
+    class func validateTextField(textField: UITextField) -> Bool{
+        return !(textField.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty)!
+    }
+    
     class func alertConfirm(titleMessage:String, message:String,vc:UIViewController){
         
         let alertEmpty = UIAlertController(title: titleMessage, message: message, preferredStyle: UIAlertControllerStyle.alert)

@@ -7,7 +7,7 @@ target 'FbMty' do
 
   # Pods for FbMty
 
-pod 'RealmSwift'
+pod 'RealmSwift', '~> 2.8.1'
 pod 'Alamofire'
 pod 'AlamofireObjectMapper'
 pod 'STPopup'
@@ -21,13 +21,13 @@ pod 'SlidingContainerViewController'
 pod 'CTPanoramaView', '~> 1.0'
 pod 'PocketSVG', '~> 2.0'
 pod 'XLPagerTabStrip', '~> 7.0.0’
-pod 'GoogleMaps'
-pod 'GooglePlaces'
+pod 'GoogleMaps', '~> 2.0.0’ 
+pod 'GooglePlaces', '~> 2.0.0’
 pod 'BmoImageLoader'
 pod 'SnapKit'
 pod 'GrowingTextView'
 pod 'FlexiblePageControl'
 pod 'ImageSlideshow'
-pod "ImageSlideshow/Kingfisher"
+pod 'ImageSlideshow/Kingfisher'
 
 end

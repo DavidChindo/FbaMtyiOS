@@ -816,7 +816,6 @@
 		005CD3B05797DEC91C8D56759A49BFBC /* Realm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Realm.swift; path = RealmSwift/Realm.swift; sourceTree = "<group>"; };
 		008F7DD28D99628131800310F2625382 /* SpaceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpaceView.framework; path = SpaceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01363D751B4BE63D3A1B2CF9679C7170 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		015299385516910626BFDD7C83F8D53B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		01D66AD7131529CCE0EBC852C21AABA6 /* RLMSyncSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncSession.h; path = include/RLMSyncSession.h; sourceTree = "<group>"; };
 		023EA17FB83F1B5C0563F9D7CCDACFDE /* Realm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Realm.xcconfig; sourceTree = "<group>"; };
 		03263BEC658DEB63D84663A05AB720F3 /* RLMSyncPermissionResults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncPermissionResults.h; path = include/RLMSyncPermissionResults.h; sourceTree = "<group>"; };
@@ -826,7 +825,6 @@
 		04DDAC0A88C380B325FE7868A4462C69 /* KingfisherSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherSource.swift; path = ImageSlideshow/Classes/InputSources/KingfisherSource.swift; sourceTree = "<group>"; };
 		04E32AE0D77137E41EF081670BA77A52 /* STPopupController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupController.h; path = STPopup/STPopupController.h; sourceTree = "<group>"; };
 		052285FE86077FDBCD59AFFA1DE64B71 /* SpaceView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpaceView.xcconfig; sourceTree = "<group>"; };
-		057CF5D12986997BFF7D8BFA069FD2AE /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		05FFDF4246926A40401DF60AD01347F7 /* FlexiblePageControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexiblePageControl.modulemap; sourceTree = "<group>"; };
 		063AAE48C5D724BD7BAFB2A7E4F96CB3 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
 		0664D21BB78423CAA183BF37F198C3A7 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
@@ -925,7 +923,6 @@
 		30A7D9991E26035A13BC82844863BB0F /* DefaultIndicatorProgressAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultIndicatorProgressAnimation.swift; path = BmoImageLoader/Classes/ProgressAnimation/DefaultIndicatorProgressAnimation.swift; sourceTree = "<group>"; };
 		30FF46C47B5201356D17780F9AF2F6A0 /* RLMSwiftSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMSwiftSupport.m; path = Realm/RLMSwiftSupport.m; sourceTree = "<group>"; };
 		310300ED193216F458AFEB67172FD377 /* StatefulTableView+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StatefulTableView+UITableView.swift"; path = "Sources/StatefulTableView+UITableView.swift"; sourceTree = "<group>"; };
-		31447E21AE6C056551F85D6A9978AB4D /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		31CCF7401D4C1CA0C21261BFD8A3DB35 /* RLMObjectStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectStore.h; path = include/RLMObjectStore.h; sourceTree = "<group>"; };
 		32437F789A18DB10B142FFF1E03D4653 /* CTPanoramaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CTPanoramaView.framework; path = CTPanoramaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AB58B85B2B044AC8AE67F3679EC3C8 /* RLMSyncManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncManager.mm; path = Realm/RLMSyncManager.mm; sourceTree = "<group>"; };
@@ -933,8 +930,8 @@
 		333C473D22EFFD79AA8E1B443C8AF560 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
 		33D2985A4FC1D06E125121C50A9D60EF /* StatefulTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StatefulTableView.modulemap; sourceTree = "<group>"; };
 		344D9E3E1F411CEEC6EACAD1E0623CB2 /* RLMArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray.h; path = include/RLMArray.h; sourceTree = "<group>"; };
-		35DFC27322BEE9FA61945FB56F89231A /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		3623AFBB6BED67E097B06D859E647552 /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
+		3660FA70FE10E6E4E1F05D88E02A4932 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		3716F2100D5A5DF3BF831260BC48E084 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
 		3743EDA03E70FD14ED764EA4A2B9725E /* RLMOptionalBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMOptionalBase.mm; path = Realm/RLMOptionalBase.mm; sourceTree = "<group>"; };
 		37F8333135AD58B2F53C170992BD569A /* Realm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Realm-prefix.pch"; sourceTree = "<group>"; };
@@ -998,6 +995,7 @@
 		545F4E627CC04916F662922DB656333B /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		546B5B4DF97047ECF7AA2E00486A6864 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		55141FF2D2EA8113324BCE0F6A8B3776 /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
+		55F477977471E8ACEFCE2FA67ED2C06B /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		56D1B9FBBF21DFED352956C4E8DA6D05 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
 		56D5F4988EC6C8F55AA860FE90D49AE1 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		56F07754CF0CDAFE2702D89E312EEC3A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1102,6 +1100,7 @@
 		83EBC5A931B4F8CBA483AEF190FA12AE /* STPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPopup-dummy.m"; sourceTree = "<group>"; };
 		840FDFFFDFEE1AFAA5FE35F989433E95 /* RLMObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObject.h; path = include/RLMObject.h; sourceTree = "<group>"; };
 		849466755DE01876BE12B014EDB08322 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		853B5F64A7DEE9BE296D9B4894B3ED44 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		85717AE96D4993C2FC07E0751DD1817D /* RLMPlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMPlatform.h; path = include/RLMPlatform.h; sourceTree = "<group>"; };
 		8589617294FA1CC53574F0E7719AE1BB /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = RealmSwift/Optional.swift; sourceTree = "<group>"; };
 		87FE7C6E11ABB544DF6D43E3042E092C /* RLMMigration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration_Private.h; path = include/RLMMigration_Private.h; sourceTree = "<group>"; };
@@ -1167,6 +1166,7 @@
 		A449355AA04B1904CC67A1076099D2CF /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		A46DACC874143544C9CBF0F408F9F3C7 /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
 		A51CF80A7AA95FBB25CBE4FF3DDA4558 /* CirclePieProgressAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CirclePieProgressAnimation.swift; path = BmoImageLoader/Classes/ProgressAnimation/CirclePieProgressAnimation.swift; sourceTree = "<group>"; };
+		A527EA6D42C4E0F30F66271AED141ED6 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		A7DBF15FA5F6693155E621BB6035920D /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
 		A7EB0CB84D2FAC98BCE16961C9D93EE8 /* CTPanoramaView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTPanoramaView-dummy.m"; sourceTree = "<group>"; };
 		A806AF5FBFAE7C4DDE27A5A24C3C4D28 /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AspectFit.swift"; path = "ImageSlideshow/Classes/Core/UIImage+AspectFit.swift"; sourceTree = "<group>"; };
@@ -1608,8 +1608,8 @@
 		0F57E994220CB3F6E9B41B27765CA60C /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				E390FE157968340045511C842338BF0A /* Frameworks */,
-				66789B1971D2507FE0C9A99581575116 /* Resources */,
+				305533C876E9E1EE1D6A52333F804A9D /* Frameworks */,
+				E7D9019558F9FA282C0DEE6BE4BA2C26 /* Resources */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -1822,6 +1822,15 @@
 			);
 			name = RealmSwift;
 			path = RealmSwift;
+			sourceTree = "<group>";
+		};
+		305533C876E9E1EE1D6A52333F804A9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				853B5F64A7DEE9BE296D9B4894B3ED44 /* GoogleMaps.framework */,
+				55F477977471E8ACEFCE2FA67ED2C06B /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		31283F9CE935ADB8CDCB212BE26EC416 /* Support Files */ = {
@@ -2147,14 +2156,6 @@
 			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
-		66789B1971D2507FE0C9A99581575116 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				35DFC27322BEE9FA61945FB56F89231A /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		669E17343062661B0220AF9D23B8AA16 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2248,7 +2249,7 @@
 		73A9E34FD5D3BC15DDC7A04832460B25 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				AAFE045E4EFB18AC64BEF34A19DD4361 /* Frameworks */,
+				F69FCA167416926234DBB559C94CE89F /* Frameworks */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -2364,14 +2365,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/RealmSwift";
-			sourceTree = "<group>";
-		};
-		AAFE045E4EFB18AC64BEF34A19DD4361 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				31447E21AE6C056551F85D6A9978AB4D /* GoogleMapsBase.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AEDE593DC3BEC98C489103BC9490B63B /* Targets Support Files */ = {
@@ -2555,15 +2548,6 @@
 			path = Zip;
 			sourceTree = "<group>";
 		};
-		E390FE157968340045511C842338BF0A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				015299385516910626BFDD7C83F8D53B /* GoogleMaps.framework */,
-				057CF5D12986997BFF7D8BFA069FD2AE /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E62BD149FBFB02740CAA70D07966A93D /* Pods-FbMty */ = {
 			isa = PBXGroup;
 			children = (
@@ -2595,6 +2579,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ImageSlideshow";
+			sourceTree = "<group>";
+		};
+		E7D9019558F9FA282C0DEE6BE4BA2C26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A527EA6D42C4E0F30F66271AED141ED6 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E7E932DF4BBF4615B8B549BFABFF3983 /* Kingfisher */ = {
@@ -2672,6 +2664,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BmoImageLoader";
+			sourceTree = "<group>";
+		};
+		F69FCA167416926234DBB559C94CE89F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3660FA70FE10E6E4E1F05D88E02A4932 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F764FA47375626232791D0763AB41445 /* STPopup */ = {

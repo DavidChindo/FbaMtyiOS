@@ -303,6 +303,52 @@
             </objects>
             <point key="canvasLocation" x="-1897.5" y="119.36619718309859"/>
         </scene>
+        <!--Reset Password Dialog View Controller-->
+        <scene sceneID="bUi-s8-9rz">
+            <objects>
+                <viewController storyboardIdentifier="ResetPasswordDialogViewController" id="Arc-f9-oP4" customClass="ResetPasswordDialogViewController" customModule="FbMty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VUK-jS-lBB"/>
+                        <viewControllerLayoutGuide type="bottom" id="PBe-mI-MDB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b4Q-i1-g15">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Correo Electrónico" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="qFr-R7-bfp">
+                                <rect key="frame" x="16" y="28" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.31781342629999998" green="0.32153725620000001" blue="0.32950457929999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTf-rH-9D9">
+                                <rect key="frame" x="16" y="57" width="288" height="1"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81578701730000003" green="0.82348114250000004" blue="0.82747560740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqf-MO-9bT">
+                                <rect key="frame" x="36" y="66" width="246" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.065324977039999996" green="0.1592018157" blue="0.24717189370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Enviar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onResetPasswordClick:" destination="Arc-f9-oP4" eventType="touchUpInside" id="sWG-Iv-JBb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="qFr-R7-bfp" id="N7u-X1-niP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15z-KW-oIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1884" y="795"/>
+        </scene>
         <!--Profile View Controller-->
         <scene sceneID="Sqe-fY-9Cr">
             <objects>

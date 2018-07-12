@@ -8,9 +8,9 @@
 
 import UIKit
 import SwiftSpinner
+import STPopup
 
 class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFieldDelegate {
-    
     
     @IBOutlet weak var usernameTxtField: UITextField!
     @IBOutlet weak var passwordTxtField: UITextField!
@@ -46,7 +46,7 @@ class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFi
     }
     
     @IBAction func onForgetPassClick(_ sender: Any) {
-    
+        openRecovery()
     }
     
     func onLoginSuccess(loginResponse: LoginResponse) {
@@ -122,6 +122,16 @@ class ViewController: BaseViewController, LoginDelegate,HoldingDelegate,UITextFi
         let initialViewController = storyboard.instantiateViewController(withIdentifier: idView)
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
+    }
+    
+    func openRecovery(){
+        let viewController = storyboard!.instantiateViewController(withIdentifier: "ResetPasswordDialogViewController") as! ResetPasswordDialogViewController
+        viewController.title = "Recuperar Contraseña"
+        
+        let popup : STPopupController = STPopupController(rootViewController: viewController)
+        popup.containerView.layer.cornerRadius = 4
+        popup.style = STPopupStyle.formSheet
+        popup.present(in: self)
     }
     
     func hideKeyboard()
