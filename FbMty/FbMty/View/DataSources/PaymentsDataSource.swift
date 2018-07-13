@@ -57,9 +57,11 @@ class PaymentsDataSource: NSObject, UITableViewDataSource,UITableViewDelegate {
         
         let item = self.items[indexPath.row]
         
-        cell.dateLbl.text = LogicUtils.validateStringByString(word: item.dateValidity)
-        cell.statusLbl.text = LogicUtils.validateStringByString(word: item.status)
+        cell.dateLbl.text = LogicUtils.formatterDate(stringDate: item.dateValidity!)
+        cell.statusLbl.text = LogicUtils.validateStringByString(word: item.amount)
         cell.idDocumentLbl.text = LogicUtils.validateStringByString(word: item.documentNumber)
+        cell.paymentStatus.layer.cornerRadius = cell.paymentStatus.frame.size.width/2
+        cell.paymentStatus.backgroundColor = LogicUtils.validateStringByString(word: item.status) == "Pagada" ? DesignUtils.greenStatus : DesignUtils.redBio
         
         return cell
     }

@@ -57,38 +57,22 @@ class LogicUtils: NSObject {
         }else{
             return ""
         }
-        
-        /*
-         formatter.locale = Locale(identifier: "en_US_POSIX")
-
-         
- let dateFormatterGet = DateFormatter()
- dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
- 
- let dateFormatterPrint = DateFormatter()
- dateFormatterPrint.dateFormat = "MMM dd,yyyy"
- 
- if let date = dateFormatterGet.date(from: "2016-02-29 12:24:26"){
- print(dateFormatterPrint.string(from: date))
- }
-         
- else {
- print("There was an error decoding the string")
- }
- 
-         func getFormattedDate(string: String , formatter:String) -> String{
-         let dateFormatterGet = DateFormatter()
-         dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-         
-         let dateFormatterPrint = DateFormatter()
-         dateFormatterPrint.dateFormat = "MMM dd,yyyy"
-         
-         let date: Date? = dateFormatterGet.date(from: "2018-02-01T19:10:04+00:00")
-         print("Date",dateFormatterPrint.string(from: date!)) // Feb 01,2018
-         return dateFormatterPrint.string(from: date!);
-         }
-         
- */
+    }
+    
+    class func formatterDate(stringDate: String) -> String{
+        //stringDate = "2017-07-03"
+        if validateString(word: stringDate){
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"//"SS" // //
+            dateFormatter.locale = Locale(identifier: "es_MX")
+            let date = dateFormatter.date(from: stringDate)
+            dateFormatter.dateFormat = "dd MMM yyyy"
+            let publishDate = dateFormatter.string(from: date!)
+            return publishDate
+        }else{
+            return ""
+        }
     }
     
     class func isObjectNotNil(object:AnyObject!) -> Bool

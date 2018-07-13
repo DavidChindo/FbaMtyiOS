@@ -29,14 +29,15 @@ class MultimediaViewController: BaseViewController, UIWebViewDelegate {
         let idVideo:[String] = (MenuViewController.holdingResponse?.UrlVideo?.components(separatedBy: "/"))!
         
         let embededHTML = "<div style=\"width: 100%\"><iframe src=\"https://player.vimeo.com/video/"+idVideo[(idVideo.count-1)]+"?autoplay=1&byline=0&portrait=0\"\" style=\"position:fixed;top:0;left:0;  width:100%;height:100%;\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>";
-            
+        
         self.webView.loadHTMLString(embededHTML, baseURL: Bundle.main.bundleURL)
 
-        button.frame = CGRect(x: view.bounds.maxX - 50, y: 8, width: 48, height: 38)
+        button.frame = CGRect(x: view.bounds.maxX - 60, y: 16, width: 48, height: 38)
         button.autoresizingMask = [.flexibleLeftMargin, .flexibleBottomMargin]
         button.setTitle("Cerrar", for: UIControlState.normal)
         button.backgroundColor = DesignUtils.primaryDark
         button.tintColor = UIColor.white
+        button.layer.cornerRadius = 5.0
         button.addTarget(self, action: #selector(MultimediaViewController.onCloseClick), for: .touchUpInside)
         webView.insertSubview(button, aboveSubview: webView)
         

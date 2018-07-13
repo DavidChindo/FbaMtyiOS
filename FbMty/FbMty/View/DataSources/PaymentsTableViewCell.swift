@@ -14,4 +14,5 @@ class PaymentsTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var idDocumentLbl: UILabel!
     @IBOutlet weak  var containerMajorView: UIView!
+    @IBOutlet weak  var paymentStatus: UIView!
 }
