@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/MultimediaViewController.swift"
-            timestampString = "553134255.166977"
+            timestampString = "554337802.757442"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,7 +282,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/Presenter/Implementations/ChatPresenter.swift"
-            timestampString = "552498408.154032"
+            timestampString = "554337802.7579041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -330,7 +330,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/Presenter/Implementations/ChatPresenter.swift"
-            timestampString = "552498408.154173"
+            timestampString = "554337802.758014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "106"
@@ -346,12 +346,12 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/Presenter/Implementations/ChatPresenter.swift"
-                  timestampString = "553443826.90275"
+                  timestampString = "554337803.021844"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "106"
                   endingLineNumber = "106"
-                  offsetFromSymbolStart = "1405">
+                  offsetFromSymbolStart = "1172">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -361,12 +361,12 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/Presenter/Implementations/ChatPresenter.swift"
-                  timestampString = "553443826.9078259"
+                  timestampString = "554337803.023819"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "108"
                   endingLineNumber = "108"
-                  offsetFromSymbolStart = "22">
+                  offsetFromSymbolStart = "32">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -378,7 +378,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/Presenter/Implementations/ChatPresenter.swift"
-            timestampString = "552498408.154224"
+            timestampString = "554337802.758063"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
@@ -890,7 +890,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/MenuViewController.swift"
-            timestampString = "553441190.560721"
+            timestampString = "554337802.7589639"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -906,7 +906,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/MenuViewController.swift"
-            timestampString = "553441190.562308"
+            timestampString = "554337802.759405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -1130,12 +1130,12 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/Presenter/Implementations/ProfilePresenter.swift"
-                  timestampString = "553443827.0634249"
+                  timestampString = "554337803.065647"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "39"
                   endingLineNumber = "39"
-                  offsetFromSymbolStart = "705">
+                  offsetFromSymbolStart = "648">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1145,12 +1145,12 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/Presenter/Implementations/ProfilePresenter.swift"
-                  timestampString = "553443827.066975"
+                  timestampString = "554337803.067621"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
                   endingLineNumber = "41"
-                  offsetFromSymbolStart = "21">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1354,12 +1354,12 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/View/ViewControllers/MySpaceViewController.swift"
-                  timestampString = "553443827.128863"
+                  timestampString = "554337803.096663"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "62"
                   endingLineNumber = "62"
-                  offsetFromSymbolStart = "13635">
+                  offsetFromSymbolStart = "9580">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1369,12 +1369,12 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/View/ViewControllers/MySpaceViewController.swift"
-                  timestampString = "553443827.1325639"
+                  timestampString = "554337803.098645"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "62"
                   endingLineNumber = "62"
-                  offsetFromSymbolStart = "15089">
+                  offsetFromSymbolStart = "10524">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1434,12 +1434,12 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/Presenter/Implementations/ResetPasswordPresenter.swift"
-                  timestampString = "553443827.1549881"
+                  timestampString = "554337803.107864"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
                   endingLineNumber = "33"
-                  offsetFromSymbolStart = "816">
+                  offsetFromSymbolStart = "696">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1449,12 +1449,12 @@
                   moduleName = "FbMty"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david.barrera/Documents/Dev/FbMtyiOS/FbMty/FbMty/Presenter/Implementations/ResetPasswordPresenter.swift"
-                  timestampString = "553443827.1588629"
+                  timestampString = "554337803.109925"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
                   endingLineNumber = "34"
-                  offsetFromSymbolStart = "21">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1482,7 +1482,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/MultimediaViewController.swift"
-            timestampString = "553134255.17129"
+            timestampString = "554337802.760362"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -1494,7 +1494,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FbMty/View/ViewControllers/PaymentsViewController.swift"
@@ -1503,6 +1503,38 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "125"
             endingLineNumber = "125"
+            landmarkName = "onPaymentsSuccess(payments:isFilter:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FbMty/View/ViewControllers/MenuViewController.swift"
+            timestampString = "554337802.760489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "onOpenPaymentsClick(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FbMty/View/ViewControllers/PaymentsViewController.swift"
+            timestampString = "554336199.688766"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "onPaymentsSuccess(payments:isFilter:)"
             landmarkType = "7">
          </BreakpointContent>

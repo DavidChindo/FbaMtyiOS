@@ -93,9 +93,33 @@ class MenuViewController: BaseViewController,HoldingDelegate {
     
     @IBAction func onMultimediOpenClick(_ sender: Any) {
         
-        let destination = self.storyboard?.instantiateViewController(withIdentifier: "multimediaId")
-        self.present(destination!, animated: true, completion: nil)
+        let status = Reach().connectionStatus()
+        let idVideo:[String] = (MenuViewController.holdingResponse?.UrlVideo?.components(separatedBy: "/"))!
         
+        switch status {
+            
+        case .unknown,.offline:
+            DesignUtils.alertConfirm(titleMessage: "Multimedia", message: "No hay conexión a Internet.", vc: self)
+        case .online(.wwan),.online(.wiFi):
+            MenuViewController.verifyURL(urlPath:"http://fibramty.hics.mx/HoldingMediaPath/"+idVideo[idVideo.count-1]+"/Video/360/index.html", completion: { (isOK) in
+                if isOK {
+                    let url = URL(string: "http://fibramty.hics.mx/HoldingMediaPath/"+idVideo[idVideo.count-1]+"/Video/360/index.html")
+                    if UIApplication.shared.canOpenURL(url!) {
+                        //If you want handle the completion block than
+                        UIApplication.shared.open(url!, options: [:], completionHandler: { (success) in
+                            if success == false{
+                                DesignUtils.alertConfirmFinish(titleMessage: "Multimedia", message: "Por el momento no se ha encontrado contenido que mostrar", vc: self)
+                            }
+                        })
+                    }else{
+                        DesignUtils.alertConfirm(titleMessage: "Multimedia", message: "Por el momento no se ha encontrado contenido que mostrar", vc: self)
+                    }
+                } else {
+                    DesignUtils.alertConfirm(titleMessage: "Multimedia", message: "Por el momento no se ha encontrado contenido que mostrar", vc: self)
+                }
+            })
+        }
+ 
     }
     
     func initViews(){
@@ -127,6 +151,23 @@ class MenuViewController: BaseViewController,HoldingDelegate {
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
     }
-      
+    
+    
+    class func verifyURL(urlPath: String, completion: @escaping (_ isOK: Bool)->()) {
+        if let url = URL(string: urlPath) {
+            let request = NSMutableURLRequest(url: url)
+            request.httpMethod = "HEAD"
+            let task = URLSession.shared.dataTask(with: request as URLRequest) { (_, response, error) in
+                if let httpResponse = response as? HTTPURLResponse, error == nil {
+                    completion(httpResponse.statusCode == 200)
+                } else {
+                    completion(false)
+                }
+            }
+            task.resume()
+        } else {
+            completion(false)
+        }
+    }
     
 }
